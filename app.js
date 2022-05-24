@@ -1,6 +1,6 @@
 const express = require('express');
 const ejs = require('ejs');
-const port = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const path = require('path');
 const controller = require('./controllers/controller');
@@ -15,6 +15,6 @@ app.use(express.static('./public'));
 controller(app);
 
 // port listening
-app.listen(port, ()=>{
+app.listen(PORT, ()=>{
     console.log(`Listening on port : ${port}`);
 });
