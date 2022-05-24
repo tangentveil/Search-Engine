@@ -1,4 +1,3 @@
-const data = require('algorithmia/lib/data');
 const { spawn } = require('child_process');
 
 module.exports = (app) => {
