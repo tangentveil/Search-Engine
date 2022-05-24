@@ -1,0 +1,63 @@
+
+Given a  tree with NN nodes numbered 11 to NN rooted at node 11, where the ithith node has a value AiAi, answer  QQ queries of the folowing type. :
+aa bb ww: For all nodes in the simple path between aa and bb, print the sum of values of nodes where value  is <=w<=w.
+Input:
+
+First line will contain NN & QQ
+Next N−1N−1 lines contain u,vu,v representing an edge between them.
+Next line contains NN integers A1,A2,...,ANA1,A2,...,AN.
+Each of the following QQ lines contain a query of type aa bb ww.
+
+Output:
+Answer each Query in a new line.
+Constraints
+
+3≤N,Q≤1053≤N,Q≤105
+0≤Ai,W≤5∗1050≤Ai,W≤5∗105
+1≤u,v,a,b≤N1≤u,v,a,b≤N
+u!=vu!=v
+
+Sample Input:
+5 3
+1 2
+2 3
+1 4
+4 5
+1 2 3 4 5
+1 3 2
+3 5 3
+4 5 1
+
+Sample Output:
+3
+6
+0
+
+
+Author:
+5★sandeep1103
+Editorial:
+https://discuss.codechef.com/problems/ECAUG209
+Tags:
+
+               
+                 enau2020, eulerian-tour, fenwick-tree, lowest-common-ancestor, sandeep1103, segment-tree, sorting
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+23-08-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

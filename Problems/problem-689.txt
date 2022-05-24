@@ -1,0 +1,129 @@
+
+Read problem statements in Mandarin Chinese, Russian, and Vietnamese as well.
+You're given a simple undirected graph GG with NN vertices and MM edges. You have to assign, to each vertex ii, a number CiCi such that 1≤Ci≤N1≤Ci≤N and ∀i≠j,Ci≠Cj∀i≠j,Ci≠Cj.
+For any such assignment, we define DiDi to be the number of neighbours jj of ii such that Cj<CiCj<Ci. 
+You want to minimise maxi∈{1..N}Di−mini∈{1..N}Dimaxi∈{1..N}Di−mini∈{1..N}Di.
+Output the minimum possible value of this expression for a valid assignment as described above, and also print the corresponding assignment.
+Note: 
+
+The given graph need not be connected.
+If there are multiple possible assignments, output anyone. 
+Since the input is large, prefer using fast input-output methods.
+
+Input Format
+
+First line will contain TT, number of testcases. Then the testcases follow.
+The first line of each test case contains two integers N,MN,M - the number of vertices and edges in the graph respectively.
+The next MM lines each contain two integers - X,YX,Y, denoting that there exists an edge between vertex XX and vertex YY.
+
+Output Format
+The output of each test case consists of two lines:
+
+The first line contains the minimum possible value of the expression described above.
+The second line contains NN space separated integers - the ithith of which is CiCi in the corresponding assignment.
+
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N,M≤3⋅1051≤N,M≤3⋅105
+1≤X≠Y≤N1≤X≠Y≤N
+The sum of NN across test cases does not exceed 3⋅1053⋅105.
+The sum of MM across test cases does not exceed 3⋅1053⋅105.
+                        Sample Input 1
+                        
+
+3
+5 7
+1 2
+1 3
+1 4
+2 3
+2 4
+2 5
+3 5
+5 4
+1 2
+2 3
+3 4
+4 5
+3 3
+1 2
+2 3
+1 3
+
+                        Sample Output 1
+                        
+
+2
+1 2 3 4 5 
+1
+5 3 1 2 4
+2
+3 2 1
+Explanation
+Test Case 11: The following assignment is optimal:
+
+C1=1C1=1
+C2=2C2=2
+C3=3C3=3
+C4=4C4=4
+C5=5C5=5
+
+We can see that 33 has two neighbours with smaller values - 11 and 22. Vertex 55 is also its neighbour, but has a larger value. Therefore, D3=2D3=2. 
+Similarly, we can calculate:
+
+D1=0D1=0
+D2=1D2=1
+D3=2D3=2
+D4=2D4=2
+D5=2D5=2
+
+Therefore, maxi∈{1..N}Di−mini∈{1..N}Dimaxi∈{1..N}Di−mini∈{1..N}Di = 2−02−0 = 22. 
+Test Case 22: The following assignment is optimal:
+
+C1=5C1=5
+C2=3C2=3
+C3=1C3=1
+C4=2C4=2
+C5=4C5=4
+
+The values of DD are:
+
+D1=1D1=1
+D2=1D2=1
+D3=0D3=0
+D4=1D4=1
+D5=1D5=1
+
+Therefore, maxi∈{1..N}Di−mini∈{1..N}Dimaxi∈{1..N}Di−mini∈{1..N}Di = 1−01−0 = 11. 
+
+Author:
+2★aryanag_adm
+Editorial:
+https://discuss.codechef.com/problems/MINDIFF1
+Tags:
+
+               
+                 Greedy, Graph Algos, Constructive
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+13-10-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

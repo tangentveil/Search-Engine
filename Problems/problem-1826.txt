@@ -1,0 +1,53 @@
+
+Problem Statement
+Chaitya goes to his new school today. His teacher Ms. Mansi gives him a homework. She gives him a string S and asks him to find out the number of strings he can make each containing P consonants and Q vowels from the given word. ( P and Q will be less than the number of consonants and the number of vowels in the given word respectively. ) Help him do his homework as he doesnt want to make a bad first impression on his teacher.
+Input:
+
+First line contains T.  T testcases follow.
+The first line of each testcase contains one string S, with lowercase letters.
+The next line contains P and Q.
+P - the number of consonants
+Q - the number of vowels
+
+Output:
+For each testcase, output the number of strings that can be formed each containing exactly P consonants and Q vowels.
+Constraints:
+
+1<=T<=100
+1<=P<=5
+1<=Q<=5
+1<= |s| <=10
+
+Repetition of letters is allowed
+Example:
+Input:
+2 codecell 2 2 crackathon 4 3
+ Output:  720 176400
+
+Author:
+4★vedipen
+Editorial:
+https://discuss.codechef.com/problems/AEIOUHW
+Tags:
+
+               
+                 combinatorics, kjcs1601, permutation, vedipen
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+30-09-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,79 @@
+
+You are given a binary string SS of length NN (i.e. every character of SS is either 00 or 11).
+You can perform the following operation on SS:
+
+select any two indices i,ji,j of the same parity, i.e. either both i,ji,j are odd or both i,ji,j are even
+swap SiSi and SjSj
+
+For example, in the string 11101110, we can swap the second and the fourth characters to get 10111011. However, we can never obtain 11011101 from 11101110 by performing such swaps.
+Find the maximum possible number of occurrences of the string 0101 as a substring of SS after performing the above operation any number of times (it is also allowed to not perform any operation).
+For example, the string 11101110 has no occurrence of the string 0101 as a substring, whereas we can swap the second and fourth characters to obtain 10111011 which has exactly one occurrence of 0101 (colored red).
+Input Format
+
+The first line of input contains an integer TT, denoting the number of testcases. The description of the TT testcases follow.
+Each testcase consists of two lines.
+The first line contains a single integer NN, the length of the string SS.
+The second line contains a binary string of length NN.
+
+Output Format
+
+For each testcase, print in a single line, an integer — the answer as per the problem statement.
+
+Constraints
+
+1≤T≤40001≤T≤4000
+1≤|S|≤1051≤|S|≤105
+The sum of |S||S| over all testcases doesn't exceed 105105
+
+Subtasks
+Subtask #1 (100 points): Original constraints
+
+                        Sample Input 1
+                        
+
+3
+5
+00100
+5
+01010
+5
+10001
+
+                        Sample Output 1
+                        
+
+1
+2
+2
+Explanation
+Test case 11: The only strings that can be obtained by performing the given operations are {10000,00100,00001}{10000,00100,00001}. Of these the two strings 0010000100 and 0000100001 contain exactly one occurrence of 0101.
+Test case 22: The given string SS cannot be changed by performing the given operation and contains 22 occurrences of the string 0101, i.e. 0101001010.
+Test case 33: The only strings that can be obtained by performing the given operations are {00101,10001,10100}{00101,10001,10100}. The string 0010100101 contains two occurrences of 0101.
+
+Author:
+srikkanth_adm
+Editorial:
+https://discuss.codechef.com/problems/MAX01EVSWP
+Tags:
+
+               
+                 easy, greedy, march222, srikkanth_adm
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1747
+Date Added:
+23-03-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

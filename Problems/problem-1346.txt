@@ -1,0 +1,75 @@
+
+          
+            Guruji is angry with Gaithonde for leaving the Aashram but Gaithonde realizing it comes back and Guruji gave him a question to solve. Being a gangster he cannot solve the problem and asks Bunty to do the work. Bunty reaches out to you and points the gun at you to solve it within time.
+
+You are given a tree with 'N' nodes rooted at node 1 with each node 'u' associated with weight a[u] . You are also given 2 type of queries to perform on the tree. The number of queries is 'M'.
+
+1) 1 U VAL : For query of type 1 you will be given a node 'U' and an integer VAL. let sum of subtree = (sum of weights of all nodes in the subtree of 'U' including 'U'). If the sum of subtree of node 'U' is even then add VAL to every node of the subtree of 'U' (including node 'U') else add 1 to every node of the subtree (including node 'U').
+
+2) 2 U V: For query of type 2 you will be given two nodes 'U' and 'V' and you have to print the bitwise XOR of the subtree sum of 'U' and 'V'. 
+
+Input:
+       The first line of the input contains two integers N and M denoting the size of the tree and the number of queries.
+       The second line of the input contains N integers denoting the weight of the nodes from 1 to N.
+       Then N-1 lines follow each containing 2 integers denoting an edge between 2 nodes U and V
+       Then M lines follow containing 3 integers 'X Y Z' with X denoting the 2 different queries. 
+       See example input for more clarification
+
+Output:
+       For each query of type 2, print a single line containing the answer to query of type 2.
+
+Constraints:
+       1 < = N,M < = 10^5
+       1 < = a[i] < = 10^9
+       1 < = X < = 2
+       U,V < = N
+       VAL < = 10^9
+
+Examples
+Input
+5 6
+1 4 5 9 8 
+3 1
+3 2
+5 4
+1 5
+2 4 5
+1 2 9
+2 3 4
+1 5 1
+2 2 1
+2 5 5
+
+Output
+24
+27
+43
+0
+
+Author:
+4★rohan101
+Editorial:
+https://discuss.codechef.com/problems/AASHRAM
+Tags:
+
+               
+                 coha2019, lazy-propagation, rohan101, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+23-08-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

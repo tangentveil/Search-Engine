@@ -1,0 +1,55 @@
+
+For the registration of Ojass'18 students of NIT Jsr prefer to go in a group of friends to the registration room. Oraganising members of the Ojass want to increase the number of registration as much as possible.
+There are N groups in total. You are given the in time, I  and out time, O of all the groups with their group size S. In a certain time range l to r, organising members of Ojass want to know the maximum numbers of students. They repeat this query Q number of times. As you are a good coder, they want to take your help.
+Input:
+First line contains N and Q, the number of groups came for registration and Q queries. Then N lines follows:
+Each line conatins three integers, I,O and S, intime, outtime and size of the group.
+Then follows Q lines each of which containing two integers l and r.
+Output:
+Print Q lines each of which is the maximum number of students in the room between time l to r.
+Contraints:
+1 ≤ N,Q ≤ 100000
+1 ≤ I ≤ O ≤ 10^18
+1 ≤ l ≤ r ≤ 10^18
+1 ≤ S ≤ 100000
+Sample Input:
+3 2
+2 4 3
+3 8 4
+5 7 5
+4 7
+2 4
+Sample Output:
+9
+7
+ 
+Explanation
+Total number of students between time 1 to 8 is {0,3,7,7,9,9,9,4}, so maximum number of students in time range 4 to 7 is 9 and maximum number of students in time range 2 to 4 is 7
+
+Author:
+5★akash1rakshit
+Editorial:
+https://discuss.codechef.com/problems/COMAPR02
+Tags:
+
+               
+                 akash1rakshit, com2018, easy-medium, hashing, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+3-02-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3
+
+Submit

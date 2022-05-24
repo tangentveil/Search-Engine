@@ -1,0 +1,51 @@
+
+There is a candy shop that sells NN varieties of candies. The ii-thth variety has aiai candies.
+You want to buy as many candies as possible. If you buy bibi candies of variety ii, then for all 1≤j<i1≤j<i either bj=0bj=0 (you bought 0 candies of type jj) or bj<bibj<bi (you bought less candies of type jj than of type ii).
+Remember, there is no shortage of money.
+
+Input
+
+The first line contains an integer NN, denoting the number of varieties of candies.
+The next line contains NN integers aiai, denoting the number of candies of each variety.
+Output
+Print the maximum number of candies you can buy.
+
+Constraints
+
+1≤N≤2⋅1051≤N≤2⋅105
+1≤ai≤1091≤ai≤109
+Sample Input:
+5
+1 3 2 5 8
+Sample Output:
+16
+Explanation
+It is optimal to buy 0+1+2+5+80+1+2+5+8 candies.
+
+Author:
+6★arpit0891
+Editorial:
+https://discuss.codechef.com/problems/CANDIES2
+Tags:
+
+               
+                 arpit0891, brute-force, c-plus-plus, graphs, greedy
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

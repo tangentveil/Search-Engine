@@ -1,0 +1,104 @@
+
+ 
+Under the Digital India initiative, Google decided to provide free wifi for 30 minutes at various railway stations in India. However, the number of passengers expected to use the wifi and the wifi charges differ from station to station. We are provided with a list of n railway stations, the number of passengers expected to use it per station, wifi charges per station and we are supposed to set up wifi connection at k stations out of the n such that we have an optimal solution where we can maximise the number of passengers served in minimum cost; i.e. we need to maximise the ratio summation(pi)/summation(pi*ci) where pi is the no. of passengers expected to use the wifi at the ith station and ci is the cost of wifi for 30 mins. per passenger at the ith station.
+For example, consider the table given below.
+
+S. no.
+Station name
+pi
+ci
+0Raipur100030
+1Gondia50050
+2Bilaspur250030
+3Durg130025
+4Bhilai Power House120025
+5Nagpur510010
+6Jharsuguda90055
+7Rourkela50040
+8Hatia170025
+9Titilagarh80045
+Input
+Input description.
+
+The first line of input will contain the integer n, i.e. the number of stations.
+The second line of input will contain the integer k, i.e. the number of stations where wifi is supposed to be provided.
+The next n lines will contain the integers pi.
+The next n lines will contain the integers ci.
+Tips:
+
+If you have multiple test cases in a file start this section as: "The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows."
+Don't write any constraints here, use section "Constraints" for this below.
+If for example the input of each test is an array you could write it like this: "The first line of each test case contains a single integer N denoting the number of .... The second line contains N space-separated integers A1, A2, ..., AN denoting the ...". 
+
+ 
+Output
+The first line of output will contain space separated integers i1, i2, i3,... ik which are the serial numbers of the station where wifi will be provided. The serial numbers must start from 0 and end at n-1. Print them in increasing order.
+
+Constraints
+Should contain all the constraints on the input data that you may have. Format it like:
+
+1 ≤ n ≤ 100
+1 ≤ k ≤ n
+
+ 
+Example
+Input:
+10
+2
+1000
+500
+2500
+1300
+1200
+5100
+900
+500
+1700
+800
+30
+50
+30
+25
+25
+10
+55
+40
+25
+45
+
+Output:
+5 7
+
+ 
+Explanation
+Example case 1.
+Of the given list of 10 stations (line 1), we need to install wifi at 2 of them (line 2). Refer the table above for simplicity. We find that on installing wifi at Nagpur and Rourkela, we can serve wifi to 5600 people on spending INR 71000, for which the ratio is 0.07887, the maximum for any 2 stations out of these ten. The serial no. of Nagpur is 5 and that of Rourkela is 7. Hence, the output.
+
+
+Author:
+abhirajphadnis
+Editorial:
+https://discuss.codechef.com/problems/TRINDIA2
+Tags:
+
+               
+                 abhirajphadnis, greedy
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+5-10-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,60 @@
+
+A game of Musical chairs is being played among 2∗N2∗N people .They start with NN chairs for the first round. All people gather around to form a circle , however the chairs are placed in a row. Moreover, since the chairs are only accessible from the same direction, it means , at any moment , one person has first access to a particular chair. 
+In particular, before the start of this first round, Person1Person1 has first access to Chair1Chair1 , Person2Person2 has first access to Chair2Chair2 ……..      PersonNPersonN has first access to ChairNChairN . Note that in this configuration PersonN+1PersonN+1 to Person2∗NPerson2∗N find it impossible to get to any chair before any one else.
+Once a round starts, everyone will start moving in a clockwise direction (Person1Person1 moves towards Chair2Chair2 ) at a speed of one position per unit time. This will change the set of people who are safely close to a chair at any moment. After some time, the round will stop. People will accordingly grab the chair they have available. Accordingly ,the people left with no chair will be eliminated. 
+The next round will start from this configuration of people , but now ⌈N/2⌉⌈N/2⌉ chairs from the end of the row (end with higher chair indexes) will be removed and the people will have to rearrange their positions to form a new circle. Safe People from previous round who had their chair removed will now be in an unsafe position .Rounds will follow this continuous process of circling around, elimination and then chair removal. RoundiRoundi of circling will run for TiTi units of time.
+If at any point, only one person remains , he is declared the winner. If there are not enough eliminations before the finish of XX rounds, there is no winner.
+Can you figure out the winner or tell if there's none?
+Input Format
+The first line contains an integer value PP denoting the number of test cases.
+Each of the next PP test case will be given in blocks of 2 lines:
+The first line contains two integers, NN and XX denoting the number of chairs and the number of rounds of musical chairs to happen respectively.
+The second line contains XX space seperated integers representing T1,T2.....TXT1,T2.....TX, length of each round in unit time
+Constraint
+1≤P≤101≤P≤10
+1≤N≤1091≤N≤109
+0≤X≤400≤X≤40
+0≤Ti≤1090≤Ti≤109
+Output Format
+Print PP lines with an integer, such that ithith line represents the winner of ithith test case . Incase there is no winner, print −1−1 for that round. 
+Sample Input
+1
+9 4
+1 2 1 1
+Sample Output
+7
+Explanation
+Eliminations in
+Round 1 :  9,10,11,12,13,14,15,16,17
+Round 2 :  2,3,4,5,6
+Round 3 :  8,18
+Round 4 : 1
+Winner : 7
+
+Author:
+4★gaurav_2000
+Editorial:
+https://discuss.codechef.com/problems/INQU2001
+Tags:
+
+               
+                 ad-hoc, easy-medium, gaurav_2000, inso2020, modular-arithmetic, recursion
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+3-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

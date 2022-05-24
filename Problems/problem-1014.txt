@@ -1,0 +1,65 @@
+
+You are given an array AA of length NN containing the elements −1−1 and 11 only. Determine if it is possible to rearrange the array AA in such a way that AiAi is not the geometric mean of Ai−1Ai−1 and Ai+1Ai+1, for all ii such that 2≤i≤N−12≤i≤N−1.
+YY is said to be the geometric mean of XX and ZZ if Y2=X⋅ZY2=X⋅Z.
+Input Format
+
+The first line contains a single integer TT - the number of test cases. Then the test cases follow.
+The first line of each test case contains an integer NN - the size of the array AA.
+The second line of each test case contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN denoting the array AA.
+
+Output Format
+For each test case, output Yes if it is possible to rearrange AA in such a way that AiAi is not the geometric mean of Ai−1Ai−1 and Ai+1Ai+1, where 2≤i≤N−12≤i≤N−1. Otherwise output No.
+You may print each character of Yes and No in uppercase or lowercase (for example, yes, yEs, YES will be considered identical).
+Constraints
+
+1≤T≤2001≤T≤200
+3≤N≤10003≤N≤1000
+Ai∈{−1,1}Ai∈{−1,1}
+                        Sample Input 1
+                        
+
+3
+5
+1 1 1 -1 -1
+3
+1 1 1
+6
+1 -1 -1 -1 -1 1
+
+                        Sample Output 1
+                        
+
+Yes
+No
+Yes
+Explanation
+Test case 1: We can rearrange the array AA to [1,1,−1,−1,1][1,1,−1,−1,1]. One can see that Ai2≠Ai−1⋅Ai+1Ai2≠Ai−1⋅Ai+1, for any 2≤i≤N−12≤i≤N−1.
+Test case 2: None of the rearrangements of AA satisy the given condition.
+
+Author:
+4★the_hyp0cr1t3
+Editorial:
+https://discuss.codechef.com/problems/GMINEQ
+Tags:
+
+               
+                 ad-hoc, april222, the_hyp0cr1t3
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1254
+Date Added:
+25-03-2022
+Time Limit:
+0.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

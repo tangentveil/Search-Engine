@@ -1,0 +1,94 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+You are given an undirected weighted graph with NN vertices (numbered 11 through NN) and MM edges (numbered 11 through MM). For each valid ii, the ii-th edge has weight SiSi and connects vertices uiui and vivi. The weights of all edges are pairwise distinct.
+Let's denote an edge that connects vertices uu and vv by (u,v)(u,v). A vibrating path is a sequence of distinct vertices V1,V2,…,VKV1,V2,…,VK such that the following conditions are satisfied:
+
+1≤K≤2561≤K≤256
+For each valid ii, the edge (Vi,Vi+1)(Vi,Vi+1) exists in the graph.
+For each valid ii and j≤i−2j≤i−2, the edge (Vi,Vj)(Vi,Vj) does not exist in the graph.
+For each valid ii: If i>1i>1, let's consider the graph without the edge (Vi−1,Vi)(Vi−1,Vi); otherwise, consider the original graph. In this graph, the weight of the edge (Vi,Vi+1)(Vi,Vi+1) is the minimum of weights of all edges adjacent to ViVi.
+
+A graph is KK-vertex-colourable if is possible to paint its vertices using at most KK distinct colours in such a way that no edge connects two vertices with the same colour.
+Your task is to make the graph KK-vertex-colourable by hitting the vertices. When a vertex uu is hit, all the edges on the vibrating path with maximum length that starts at uu are removed (note that this path is unique). You may hit vertices any number of times and in any order. However, each time you hit a vertex, at least one edge must be removed. For each valid ii, the cost of hitting the ii-th vertex is CiCi.
+You should make the graph KK-vertex-colourable and find one valid way to paint its vertices using KK colours (numbered 11 through KK). If there are multiple solutions, you may find any one. Then, the sum of costs of all hits you perform should be as small as possible.
+Input
+
+The first line of the input contains three space-separated integers NN, MM and KK.
+The second line contains NN space-separated integers C1,C2,…,CNC1,C2,…,CN.
+MM lines follow. For each valid ii, the ii-th of these lines contains three space-separated integers uiui, vivi and SiSi.
+
+Output
+Print three lines.
+
+The first of these lines should contain a single integer QQ ― the number of hits you want to perform.
+The second line should contain QQ space-separated integers ― the vertices you want to hit, in order.
+The third line should contain NN space-separated integers x1,x2,…,xNx1,x2,…,xN denoting that for each valid ii, the ii-th vertex should have the colour xixi (1≤xi≤K1≤xi≤K).
+
+Example Input
+8 10 1
+1 2 3 4 5 6 7 8
+1 2 1
+1 3 7
+2 3 2
+3 4 8
+3 5 3
+4 6 9
+5 6 4
+6 7 5
+6 8 10
+7 8 6
+
+Example Output
+3
+1 2 7
+1 1 1 1 1 1 1 1
+
+Explanation
+The following picture describes the graph:
+In the first hit, the edge (1,2)(1,2) is removed.
+In the second hit, the edges on the path (2,3,5,6,7)(2,3,5,6,7) are removed.
+In the third hit, the edges on the path (7,8,6,4,3,1)(7,8,6,4,3,1) are removed.
+
+Test generation and constraints
+
+NN is either 103103 or 104104
+M=105M=105
+KK is either 11, 22, 33 or 44
+
+There are eight test files, one for each combination of NN, MM and KK. For each test file:
+
+The costs C1,C2,…,CNC1,C2,…,CN are chosen uniformly randomly and independently between 11 and 512512 inclusive.
+MM distinct undirected edges are chosen uniformly randomly and independently from the N⋅(N−1)/2N⋅(N−1)/2 possibilities.
+S1,S2,…,SMS1,S2,…,SM is a uniformly randomly chosen permutation of the integers 11 through MM.
+
+Scoring
+If you perform a hit where no edge is removed, or if there is an edge connecting two vertices with the same colour after performing all hits, you will receive the Wrong Answer verdict. Otherwise, the score of a test file is the sum of costs of all hits you perform. The score of a submission is the sum of scores of all test files. Your goal is to minimise the score of your submission.
+There are 8 test files. During the contest, the displayed score will account for exactly 4 test files, i.e. your score reflects your submission's performance on 50% of the test files. However, if your program gets a non-AC verdict on any test file, your submission's verdict will be non-AC. In other words, an AC verdict denotes that your program runs successfully on all the test files. After the end of the contest, your score will be changed to include the sum of your program's scores over the other 4 test files.
+
+Author:
+7★alei
+Editorial:
+https://discuss.codechef.com/problems/VBR
+Tags:
+
+               
+                 alei, alei, challenge-problem, graph-coloring, graphs, sept20
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+3729
+Date Added:
+16-08-2020
+Time Limit:
+7 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

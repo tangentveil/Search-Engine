@@ -1,0 +1,50 @@
+
+AlienAlien likes to give challenges to CodezenCodezen team to check their implementation ability, this time he has given a string SS and asked to find out whether the given string is a GOODGOOD string or not.
+According to the challenge GOODGOOD String is a string that has at least 33 consecutive vowels and at least 55 different consonants.
+For example ACQUAINTANCESACQUAINTANCES  is a GOODGOODString ,as it contains 33 consecutive vowels  UAIUAI and 55 different consonants C,Q,N,T,SC,Q,N,T,S
+but  ACQUAINTACQUAINT is  not ,as it contain 33 vowels but have only 44 different consonants 
+C,Q,N,TC,Q,N,T.
+Input:
+A string input is given from Standard Input that consists of only capital letters. 
+Output:
+Output  a single line  that  is either GOODGOOD  (if string is a good string ) or −1−1(if string is not good).
+Constraints
+
+8≤S≤10008≤S≤1000
+
+Sample Input 1:
+AMBITIOUSNESS
+Sample Output 2:
+GOOD
+Sample Input 2:
+COOEY
+Sample Output 2:
+-1
+
+Author:
+3★dcpandey
+Editorial:
+https://discuss.codechef.com/problems/ALCHH
+Tags:
+
+               
+                 czen2020, dcpandey, implementation, set, strings
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+12-09-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

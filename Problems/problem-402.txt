@@ -1,0 +1,112 @@
+
+Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef has two matrices AA and BB, each with size N×MN×M. Each cell of the matrix AA contains a character '0' or '1', while each cell of the matrix BB contains '?', '0' or '1'.
+The matrix AA can be modified using zero or more operations. In one operation, Chef can choose two cells in the matrix AA which lie either in the same row or in the same column and flip the characters in each of these cells (flipping means changing '1' to '0' or '0' to '1').
+Chef wants the matrix AA to match the matrix BB. Formally, for each row rr and column cc, if the cell in row rr and column cc of BB contains '0' or '1', then he wants the cell in row rr and column cc of AA to contain the same character; otherwise (for cells containing '?'), it may contain either '0' or '1'.
+The difficulty of your task is described by a parameter EE. If E=0E=0, you should only find the smallest number of operations required to achieve this goal. If E=1E=1, you should also find one sequence of operations with the smallest length which achieves it.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains three space-separated integers NN, MM and EE.
+NN lines follow. For each valid ii, the ii-th of these lines contains a single string AiAi with length MM describing the ii-th row of the matrix AA.
+NN more lines follow. For each valid ii, the ii-th of these lines contains a single string BiBi with length MM describing the ii-th row of the matrix BB.
+
+Output
+For each test case:
+
+If it is not possible to make AA match BB, print a single line containing the integer −1−1.
+Otherwise, first, print a line containing a single integer KK ― the smallest required number of operations.
+Then, if E=1E=1, print KK lines describing the sequence of operations you want to perform. An operation should be printed in one of the following formats:
+R r i j to flip the characters in cells in row rr and columns ii and jj (1≤r≤N1≤r≤N, 1≤i,j≤M1≤i,j≤M)
+C c i j to flip the characters in cells in column cc and rows ii and jj (1≤c≤M1≤c≤M, 1≤i,j≤N1≤i,j≤N)
+
+If there are several possible answers, you may find any one of them.
+Constraints
+
+1≤T≤1001≤T≤100
+0≤E≤10≤E≤1
+for each valid ii, AiAi contains only characters '0' and '1'
+for each valid ii, BiBi contains only characters '?', '0' and '1'
+the sum of N⋅MN⋅M over all test cases does not exceed 200,000200,000
+
+Subtasks
+Subtask #1 (10 points):
+
+T≤3T≤3
+N⋅M≤16N⋅M≤16
+
+Subtask #2 (10 points):
+
+initially, for each pair of side-adjacent cells in the matrix AA, the characters in them are different (AA follows a chessboard pattern)
+for each valid ii, each character of BiBi is '0'
+
+Subtask #3 (30 points):
+
+E=0E=0
+for each valid ii, BiBi contains only characters '0' and '1'
+
+Subtask #4 (50 points): original constraints
+
+                        Sample Input 1
+                        
+
+3
+3 3 1
+010
+101
+101
+100
+110
+?00
+2 2 0
+10
+01
+0?
+??
+1 3 1
+101
+010
+
+                        Sample Output 1
+                        
+
+3
+C 2 1 2
+C 3 2 3
+C 1 3 1
+1
+-1
+Explanation
+Example case 1: This is not the only solution ? a valid sequence of 33 row operations also exists.
+Example case 2: We did not restore the sequence of operations because E=0E=0.
+
+Author:
+7★bthero
+Editorial:
+https://discuss.codechef.com/problems/PAIRFLIP
+Tags:
+
+               
+                 Greedy, DFS, Bipartite
+                 
+                     
+                     Algorithms, Graph Algos, Traversals, Coloring
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+3099
+Date Added:
+19-03-2021
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

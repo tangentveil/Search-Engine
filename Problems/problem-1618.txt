@@ -1,0 +1,67 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+Chef lives in a huge apartment building with NN floors, numbered 00 (ground floor) through NN (terrace). Unfortunately, it has only one lift. We say that when the lift travels from a floor aa to a floor bb, it travels |b−a||b−a| floors.
+Initially, the lift is on the ground floor. Then, it receives QQ requests (numbered 11 through QQ). For each valid ii, the ii-th request is for the lift to move from its current floor to a source floor fifi, where some people enter the lift, and then move to a destination floor didi, where they exit the lift. The lift should not stop anywhere in between moving to the floor fifi or from the floor fifi to the floor didi. The lift must serve the requests sequentially, i.e. completely fulfill request 11, then request 22 and so on. The lift does not move anywhere after serving the final request.
+Find the total number of floors the lift needs to travel to fulfill all the requests.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and QQ.
+The following QQ lines describe requests. For each valid ii, the ii-th of these lines contains two space-separated integers fifi and didi.
+
+Output
+For each test case, print a single line containing one integer ― the total number of floors travelled by the lift.
+Constraints
+
+1≤T≤2501≤T≤250
+1≤N≤1061≤N≤106
+1≤Q≤1051≤Q≤105
+0≤fi,di≤N0≤fi,di≤N for each valid ii
+fi≠difi≠di for each valid ii
+the sum of QQ over all test cases does not exceed 105105
+                        Sample Input 1
+                        
+
+1
+2 3
+1 2
+0 1
+1 0
+
+                        Sample Output 1
+                        
+
+6
+Explanation
+Example case 1: The lift travels 22 floors up to serve the first request, 33 floors (22 down, then 11 up) to serve the second request and 11 floor down to serve the third request. Note that in this case, the lift returned to the ground floor, but it may end up at any floor.
+
+Author:
+7★rumblefool
+Editorial:
+https://discuss.codechef.com/problems/LIFTME
+Tags:
+
+               
+                 Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1247
+Date Added:
+6-04-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

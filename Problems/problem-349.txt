@@ -1,0 +1,84 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Abdullah has recently moved to Tolland. In Tolland, there are NN cities (numbered 11 through NN) connected by N−1N−1 bidirectional roads such that it is possible to visit any city from any other city. For each city ii, there is a toll value TLiTLi.
+Abdullah lives in city XX. He has planned a tour of Tolland lasting for 2N2N days. For each ii (1≤i≤N1≤i≤N), on the 2i−12i−1-th day, he travels from city XX to city ii, and on the 2i2i-th day, he travels from city ii back to city XX.
+In Tolland, there are also special discount coupons. For each city cc and positive integer vv, there is a discount coupon for city cc with value vv. All discount coupons may be bought anywhere in Tolland; the cost of each discount coupon is twice its value.
+When travelling from any city ii to any (not necessarily different) city jj, Abdullah must pay a toll exactly once in each city on the path between them (including ii and jj); even if he passed through some cities before, he must pay the toll in these cities as well. For any city ii, the toll is TLiTLi when not using any discount coupons; however, if Abdullah bought some discount coupons for city ii, he may use some or all of them to decrease this toll to max(0,TLi−V)max(0,TLi−V), where VV is the sum of values of coupons for city ii used by Abdullah. Each coupon may be used at most once per day, but they do not expire when used and the same coupon may be used on multiple days. On each day, Abdullah may use any coupons he wants, but a coupon for city ii may only be used to decrease the toll in city ii.
+Abdullah has a travel budget: on each day, he must not spend more than KK units of money on paying tolls. Before the start of the tour, he may choose to buy any number of discount coupons, for any cities and with any values (possibly different ones for different cities); the cost of coupons is not included in the budget for any day of the tour. Help Abdullah find the minimum total amount of money he must spend on discount coupons so that on each day during the tour, he will be able to stay within his budget by using the coupons he bought.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains three space-separated integers NN, XX and KK.
+The second line contains NN space-separated integers TL1,TL2,…,TLNTL1,TL2,…,TLN.
+Each of the next N−1N−1 lines contains two space-separated integers UU and VV denoting that cities UU and VV are connected by a bidirectional road.
+
+Output
+For each test case, print a single line containing one integer ― the minimum amount of money Abdullah should spend on coupons.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤1041≤N≤104
+1≤K≤10131≤K≤1013
+1≤X,U,V≤N1≤X,U,V≤N
+1≤TLi≤1091≤TLi≤109 for each valid ii
+
+Subtasks
+Subtask #1 (40 points):
+
+each city is directly connected to at most two other cities
+city XX is directly connected to at most one city
+
+Subtask #2 (60 points): original constraints
+
+                        Sample Input 1
+                        
+
+2
+4 2 6
+4 7 6 2
+2 1
+2 3
+2 4
+3 1 8
+2 3 1
+1 2
+2 3
+
+                        Sample Output 1
+                        
+
+14
+0
+Explanation
+Example case 1: The total costs of tolls on each day without purchasing any discount coupons would be [11,11,7,7,13,13,9,9][11,11,7,7,13,13,9,9].
+The budget 66 is exceeded on each day of the tour. However, Abdullah can buy a discount coupon with value 55 for city 22 and a discount coupon with value 22 for city 33. The total cost of these coupons is 5⋅2+2⋅2=145⋅2+2⋅2=14. Now, the costs of tolls on each day are [6,6,2,2,6,6,4,4][6,6,2,2,6,6,4,4], and the budget is never exceeded.
+Example case 2: The costs of tolls on each day without purchasing any discount coupons would be [2,2,5,5,6,6][2,2,5,5,6,6]. Since the budget is already never exceeded, there is no need to buy any discount coupons.
+
+Author:
+7★abdullah768
+Tags:
+
+               
+                 Trees, Bottom-up, Greedy, DFS
+                 
+                     
+                     Data Structures, Graphs, Algorithms, Dynamic Programming, DP Approach, Graph Algos, Traversals
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-05-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

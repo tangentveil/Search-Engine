@@ -1,0 +1,68 @@
+
+
+In the forth coming days, we will be in College. Waiting anxiously for the college to open Mr. Fazlu is getting weird thoughts. One of his thoughts is: 
+We have strings of length K based on the alphabet of size N. And he calls any of its substring beautiful if it is a palindrome and has a length S. 
+You need to help Mr. Fazlu by finding
+(the number of strings having any of its substring “beautiful” ) % (10^9+7).
+Note: Here % means MODULO.
+
+Input:
+
+The only line of Input contains three unsigned integers:
+K, N and S.
+
+Output:
+
+Print the (number of required strings) modulo (1000000007) i.e. 10^9+7
+
+Constraints:
+
+1<=K<=2000
+1<=N<=2000
+1<=S<=2000
+
+Sample Input 1:
+1 1 1
+Sample Output 1:
+ 1
+Sample Input 2:
+5 2 4
+Sample Output 2:
+ 2
+EXPLANATION:
+In case 1:
+
+In the given test case only one such string is valid: “a” (let’s denote the only letter of our alphabet as “a”).
+
+In case 2:
+
+In the given test if we denote alphabet letters as “a” and “b” the following strings are valid:  “aaaaa” and “bbbbb”.
+
+
+Author:
+3★huntsatyam
+Editorial:
+https://discuss.codechef.com/problems/WTOFK3
+Tags:
+
+               
+                 combinatorics, huntsatyam, math, medium-hard
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+17-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

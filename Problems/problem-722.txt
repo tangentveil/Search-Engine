@@ -1,0 +1,71 @@
+
+Corruption is on the rise in the country of Freedonia, Gru's home. 
+This corruption network can be represented in the form of a tree having NN nodes and N−1N−1 edges. The nodes are numbered from 11 to NN, and the tree is rooted at node 11. These nodes represent the corrupt officials and each corrupt official works under some other corrupt official (except the Boss, who is represented by node 11).
+Gru believes in divide and conquer and thinks that this network needs to be divided into as many sub-networks as possible. To achieve this, the following operation can be applied by the minions any number of times (even 0):
+In one operation, the minions can select any one leaf node official (that is, an official who does not have any other official beneath him) in the graph and kill him along with all his ancestors. This operation deletes those nodes, along with all of their edges/connections from the graph. Hence after applying this operation on any tree, it breaks into some connected components which are also trees, which are the new sub-networks.
+Now the minions are a bit lazy and will do the task someday, but they need to submit a report to Gru as soon as possible. Help the minions by finding out the maximum number of connected components that can be achieved.
+Input:
+
+First line will contain NN, number of nodes in the tree. 
+Next N−1N−1 lines contains 2 integers UU, VV denoting the endpoints of the ithith edge.
+
+Output:
+
+Print the maximum number of connected components you can obtain after doing the operation any number of times.
+
+Constraints
+
+1≤N≤1061≤N≤106
+1≤U,V≤N1≤U,V≤N
+
+Sample Input:
+7
+1 2
+1 3
+2 4
+2 5
+3 6
+3 7
+
+Sample Output:
+2
+
+EXPLANATION:
+We have 44 leaf nodes in this tree: 44 55 66 77. 
+Suppose we delete nodes 55, 22, and 11. After these deletions we are left with 22 trees -
+
+One consisting of only node 44
+One consisting of nodes 33, 66, and 77
+
+This can also be achieved by deleting any of the other leaf nodes, and it can be proven that we cannot obtain more than 22 connected components in this example.
+
+Author:
+5★panik
+Editorial:
+https://discuss.codechef.com/problems/MINIKILL
+Tags:
+
+               
+                 DFS, Constructive
+                 
+                     
+                     Algorithms, Graph Algos, Traversals
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2240
+Date Added:
+21-12-2019
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

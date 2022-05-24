@@ -1,0 +1,57 @@
+
+ Read problems statements in Mandarin Chinese  and Russian.
+Roman has no idea, why this problem is called Stone. He also has no idea on how to solve the followong problem: given array of N integers A and a number K. During a turn the maximal value over all Ai is chosen, let's call it MAX. Then Ai = 
+MAX - Ai is done for every 1 <= i <= N. Help Roman to find out how will the array look like after K turns.
+
+Input
+The numbers N and K are given in the first line of an input. Then N integers are given in the second line which denote the array A. 
+Output
+Output N numbers on a single line. It should be the array A after K turns.
+Constraints
+
+1 <= N <= 105
+0 <= K <= 109
+Ai does not exceed 2 * 109 by it's absolute value.
+                        Sample Input 1
+                        
+
+4 1
+5 -1 7 0
+
+                        Sample Output 1
+                        
+
+2 8 0 7
+
+Author:
+roman_adm
+Tester:
+6★xcwgf666
+Editorial:
+https://discuss.codechef.com/problems/RRSTONE
+Tags:
+
+               
+                 1D Arrays, Arithmetic, ad-hoc
+                 
+                     
+                     Data Structures, Arrays, Mathematics, Basic Maths, Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1489
+Date Added:
+14-04-2014
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+Submit

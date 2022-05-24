@@ -1,0 +1,53 @@
+
+Problem Statement
+Find the smallest number such that the sum of it's digits is N and it is divisible by 10N.If no such number exists, print -1
+Input section
+The first line contains, T, denoting the number of test cases.
+Each test case consist of a single integer N.
+Output section
+For each test case, print the required answer.
+Input constraints
+1 ≤ T ≤ 100
+0 ≤ N ≤ 10000
+
+Subtasks
+
+Subtask #1 (5 points) : 0 ≤ N ≤ 6
+Subtask #2 (25 points) : 0 ≤ N ≤ 18
+Subtask #3 (70 points) : Original Constraints
+
+Sample Input
+1
+4
+
+Sample Output
+40000
+
+
+Author:
+6★likecs
+Editorial:
+https://discuss.codechef.com/problems/GEEK02
+Tags:
+
+               
+                 easy, greedy, likecs, likecs
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+9-11-2017
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

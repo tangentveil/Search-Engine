@@ -1,0 +1,69 @@
+
+For centuries ,humans have lived inside walls to protect them from man eating titans. Their peace was distorted when the massive colossal titan breached through the walls. Humanity is on the verge of extinction .     
+Fortunately , Commander Erwin Smith of the survey corps have come up with a brilliant plan to take down the colossal titan and all the other titans. His plan involves  deploying his troops towards the colossal titan via different paths taking down as many titans on the way as possible. The problem is that they only have limited fuel . They are fighting in a zero air resistance battle field  so you only need fuel to make a turn .    
+The battle field is a n∗mn∗m grid and the colossal titan is present at (N,M)(N,M) .
+Commander Erwin along with his troops is standing at (1,1)(1,1) and they can only move down or right .  
+He has asked you to find the number of ways of reaching the colossal titan making exactly K turns along the way .
+Since the answer can be very large print it modulo 109+7. 
+The Fate of humanity lies in your hands.
+Input:
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of test cases follows.   
+The First and only line of each test case contains two space separated integers M,N denoting the position of the colossal titan (M>N) i.e. the number of columns(vertical) is more than the number of rows(horizontal).
+
+Output:
+
+For Each Test Case print 2∗N−2 space separated integers denoting the number of ways of reaching (N,M) making exactly K turns along the way where 1≤K≤2∗N−2
+
+Constraints:
+
+1≤T≤10 
+1<N<M≤10001
+
+SubTask #1(15 points):
+
+1<N<M≤11 
+
+SubTask #2(25 points):
+
+1<N<M≤70
+
+SubTask #2(60 points):
+
+Original Constraints
+
+Example Input :
+1
+   4 3
+Example Output:
+2  3  4 1
+Explanation :
+ 
+
+Author:
+3★j_t_k
+Editorial:
+https://discuss.codechef.com/problems/D2C106
+Tags:
+
+               
+                 combinatorics, d2co2020, j_t_k, modular-arithmetic
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+20-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

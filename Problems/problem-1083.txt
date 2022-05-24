@@ -1,0 +1,71 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef calls a sequence good if it does not contain any two adjacent identical elements.
+Initially, Chef has a sequence a1,a2,…,aNa1,a2,…,aN. He likes to change the sequence every now and then. You should process QQ queries. In each query, Chef chooses an index xx and changes the xx-th element of the sequence to yy. After each query, can you find the length of the longest good subsequence of the current sequence?
+Note that the queries are not independent.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and QQ.
+The second line contains NN space-separated integers a1,a2,…,aNa1,a2,…,aN.
+QQ lines follow. Each of these lines contains two space-separated integers xx and yy describing a query.
+
+Output
+After each query, print a single line containing one integer ― the length of the longest good subsequence.
+Constraints
+
+1≤T≤51≤T≤5
+1≤N,Q≤1051≤N,Q≤105
+1≤ai≤1091≤ai≤109 for each valid ii
+1≤x≤N1≤x≤N
+1≤y≤1091≤y≤109
+
+Subtasks
+Subtask #1 (35 points): Q=1Q=1
+Subtask #2 (65 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+5 2
+1 1 2 5 2
+1 3
+4 2
+
+                        Sample Output 1
+                        
+
+5
+3
+
+Author:
+6★mohammed200218
+Editorial:
+https://discuss.codechef.com/problems/GSUB
+Tags:
+
+               
+                 Case work, Online Queries
+                 
+                     
+                     Special, Algorithms, Queries
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2017
+Date Added:
+13-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

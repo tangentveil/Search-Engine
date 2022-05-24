@@ -1,0 +1,82 @@
+
+ Read problems statements in Mandarin Chinese  , Russian and Vietnamese
+
+In a tree, a node having degree ≥ 3 is said to be a nice node. 
+For tree T, it's niceness is defined by the pseudo code given below.
+int niceness(Tree T):
+	ans = 0;
+	while (T is not empty):
+		Identify all the nice nodes.
+		Remove all nodes of T which have a path to 
+		a leaf not passing through any nice node.
+		ans++;
+	return ans;		
+
+
+e.g. niceness of the below given tree is 2. In the first iteration of while loop, the nodes marked with green color will be removed. In the second iteration remaining blue marked nodes will be removed. Now, tree will be empty.
+
+
+Given two integers N and μ. Find out whether there exists a tree of N nodes having niceness μ. Output your answer as "Yes" or "No" (without quotes).
+
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The only line of each test case contains two space separated integers denoting N and μ respectively.
+Output
+For each test case, output "Yes" or "No" (without quotes).
+
+Constraints
+
+1 ≤ T, N ≤ 105
+1 ≤ μ ≤ N
+Sum of N over all the test cases in a single file will not exceed 106.
+
+Example
+Input:
+4
+4 1
+5 2
+2 2
+8 2
+
+Output:
+Yes
+Yes
+No
+Yes
+
+Explanation
+In the first example, consider the tree which is just a path. It will have niceness of 1.
+In the second example, following given star graph will have niceness equal to 2.
+
+In the third example, there is only one tree of 2 nodes and it has a niceness of 1, so there does not exist a tree of 2 nodes with niceness equal to 2.
+In the last example, tree image given in the problem gives one such tree with niceness of 2.
+Note
+An empty tree is one which has no nodes.
+
+Author:
+admin2
+Editorial:
+https://discuss.codechef.com/problems/NICENESS
+Tags:
+
+               
+                 admin2, greedy, snck15fl
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+22-06-2015
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

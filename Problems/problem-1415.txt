@@ -1,0 +1,71 @@
+
+For this not so interesting problem, you are given N intervals. Each interval has two parameters L and R denoting left and right end-points of the interval. (L ≤ R)
+
+You have to answer Q queries. Each query has two parameters A and B.
+For each query, goal is to the find minimum possible value of magic.Magic for a given query is calculated as follows.
+
+magic = 0
+for i in range(0, N)
+    x = choose any point which lies in ith interval (x ≥ L[i] and x ≤ R[i])
+    y = choose A or B
+    magic += |x – y|
+Input Format
+First line of input contains N, the number of intervals.
+Next N lines, each contains two integers L and R.
+Next line has Q, the number of queries.
+Next Q lines, each contains two integers A and B.
+Output Format
+Output Q lines, where ith line contains minimum possible value of magic for ith query.
+
+Constraints
+
+1 ≤ N ≤ 2 * 105
+1 ≤ L ≤ R ≤ 5 * 108
+1 ≤ Q ≤ 105 
+1 ≤ A, B ≤ 5 * 108 
+
+Sample Input 1:
+2
+1 3
+2 3
+1
+1 5
+Output 1:
+1
+Sample Input 2:
+3
+2 7
+4 6
+5 9
+2
+1 3
+1 10
+Output 2:
+3
+5
+
+Author:
+skullcrackers
+Tags:
+
+               
+                 ipc15flb, medium, segment-tree, skullcrackers
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-10-2016
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

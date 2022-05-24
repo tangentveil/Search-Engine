@@ -1,0 +1,57 @@
+
+You have found MM different types of jewels in a mine and each type of jewel is present in an infinite number.
+There are NN different boxes located at position (1,2,3,...N)(1,2,3,...N).
+Each box can collect jewels up to a certain number ( box at position i have i different partitions and each partition can collect at most one jewel of any type).
+Boxes at odd positions are already fully filled with jewels while boxes at even positions are completely empty.
+Print the total number of different arrangements possible so that all boxes can be fully filled.
+As the answer can be very large you can print it by doing modulo with 1000000007(10^9+7).
+Input:
+
+First line will contain T, number of testcases. 
+Each testcase contains of a single line of input, two integers N,M. 
+
+Output:
+For each testcase, Print the total number of different arrangement.
+Constraints
+
+1≤T≤20000
+1≤N≤1e9
+1≤M≤1e14
+
+Sample Input:
+2
+1 10
+5 2
+
+Sample Output:
+1
+64
+
+
+Author:
+5★adikr_singh
+Editorial:
+https://discuss.codechef.com/problems/JEWELMIN
+Tags:
+
+               
+                 adikr_singh, combinatorics, easy, inro2021, modular-arithmetic
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+9-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

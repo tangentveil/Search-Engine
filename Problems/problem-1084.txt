@@ -1,0 +1,86 @@
+
+Read problems statements Mandarin , Bengali , Hindi , Russian and Vietnamese as well.
+Arya has a chessboard with NN rows (numbered 11 through NN) and NN columns (numbered 11 through NN); a square in row rr and column cc is denoted by (r,c)(r,c).
+Arya has already placed KK rooks on the chessboard in such a way that no two rooks attack each other. Note that two rooks attack each other if they are in the same row or in the same column and there is no rook between them. She is busy learning how to tame a dragon right now, so she asked you to place as many other rooks as possible on the chessboard in such a way that afterwards, no two rooks on the chessboard attack each other. Help Arya and choose the positions of these rooks.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and KK.
+Each of the next KK lines contains two space-separated integers rr and cc denoting that Arya placed a rook on the square (r,c)(r,c).
+
+Output
+For each test case:
+
+Let's assume that you placed PP rooks on squares (r1,c1),(r2,c2),…,(rP,cP)(r1,c1),(r2,c2),…,(rP,cP).
+You should print a single line containing 2P+12P+1 space-separated integers P,r1,c1,…,rP,cPP,r1,c1,…,rP,cP.
+PP must be maximum possible.
+If there are multiple possible answers, the sequence r1,c1,…,rP,cPr1,c1,…,rP,cP should be lexicographically smallest.
+
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N≤1061≤N≤106
+0≤K≤N0≤K≤N
+1≤ri,ci≤N1≤ri,ci≤N for each valid ii
+no two initially placed rooks attack each other
+the positions of all initially placed rooks are pairwise distinct
+the sum of NN over all test cases does not exceed 106106
+
+Subtasks
+Subtask #1 (10 points):
+
+T=10T=10
+N≤8N≤8
+
+Subtask #2 (20 points):
+
+T=10T=10
+N≤1,000N≤1,000
+
+Subtask #3 (70 points): original constraints
+
+                        Sample Input 1
+                        
+
+2
+4 2
+1 4
+2 2
+4 0
+
+                        Sample Output 1
+                        
+
+2 3 1 4 3
+4 1 1 2 2 3 3 4 4
+
+Author:
+7★watcher
+Editorial:
+https://discuss.codechef.com/problems/RKS
+Tags:
+
+               
+                 Sets, Chess
+                 
+                     
+                     Data Structures, Special
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1624
+Date Added:
+21-01-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

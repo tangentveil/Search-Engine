@@ -1,0 +1,59 @@
+
+ Read problems statements in Mandarin Chinese  , Russian and Vietnamese
+Olya has written N binary integers (i.e. either zero or one) on a blackboard. She recently learned about XOR operation. Now she wants to erase exactly one integer in the array so that the XOR of the remaining N - 1 numbers is zero. Please help her to calculate the number of ways of doing so.
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N denoting the number of numbers that Olya has written on a blackboard.
+The second line contains N space-separated integers A1, A2, ..., AN denoting the numbers she had written. 
+Output
+For each test case, output a single line containing the number of ways to erase exactly one integer so that the XOR of the remaining integers is zero. The ways where you erase the same integer but on different places in the given sequence are considered different.
+
+Constraints
+
+1 ≤ T ≤ 20
+2 ≤ N ≤ 105
+0 ≤ Ai ≤ 1
+
+Example
+Input:
+2
+5
+1 0 0 0 0
+5
+1 1 1 1 1
+
+Output:
+1
+5
+
+Explanation
+Example case 1. If you erase the first number on the blackboard, then the XOR of the rest of numbers will be equal to zero.
+Example case 2. You can erase any of the given 5 numbers, it will make the XOR of the rest equal to zero.
+
+Author:
+sergey_adm
+Editorial:
+https://discuss.codechef.com/problems/MXZERO
+Tags:
+
+               
+                 ad-hoc, counting-sort, sergey_adm, snck151b
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+13-05-2015
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

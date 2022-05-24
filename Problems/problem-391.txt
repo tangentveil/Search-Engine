@@ -1,0 +1,70 @@
+
+JJ has a binary string SS of length NN. JJ can perform the following operation on SS:
+
+Select an ii such that 1≤i≤N1≤i≤N, and flip SiSi (i.e. change 00 to 11 and 11 to 00)
+
+JJ wants to minimize the number of inversions in SS by performing the above operation at most KK times. Can you help JJ do so?
+Recall that a pair of indices (i,j)(i,j) in SS is called an inversion if i<ji<j and Si>SjSi>Sj.
+Input Format
+
+The first line contains a single integer TT - the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers NN and KK - the length of the binary string SS and the maximum number of times JJ can perform the given operation.
+The second line of each test case contains a binary string SS of length NN containing 00s and 11s only.
+
+Output Format
+For each test case, output the minimum number of inversions possible after performing the given operation at most KK times.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤N≤1051≤N≤105
+0≤K≤N0≤K≤N
+Sum of NN over all test cases does not exceed 2⋅1052⋅105
+                        Sample Input 1
+                        
+
+3
+8 3
+00010111
+5 1
+10100
+6 2
+111000
+
+                        Sample Output 1
+                        
+
+0
+2
+3
+Explanation
+Test case 1: We are allowed to perform at most 33 operations. We can perform the following operation on SS: 00010–111→0001111100010_111→00011111 which has 00 inversions. Therefore 00 is the answer.
+Test case 2: We can perform the following operation on SS: 1–0100→001001_0100→00100 which has 22 inversions. It can be proven that this is the minimum number of inversions possible.
+Test case 3: We can perform the following operations on SS: 11100–0→111010–→11101111100_0→111010_→111011 which has 33 inversions. It can be proven that this is the minimum number of inversions possible.
+
+Author:
+6★jeevanjyot
+Editorial:
+https://discuss.codechef.com/problems/FLIPINV
+Tags:
+
+               
+                 april222, greedy, jeevanjyot
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2692
+Date Added:
+16-04-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

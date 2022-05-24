@@ -1,0 +1,54 @@
+
+Let's call a number ONO (Odd Not Odd) if the number is an odd but the sum of it's digits is not odd.
+E.g. 1515, 12345671234567 .
+You will be given an integer number. Find out if it is possible to make the number ONOONO by deleting some(possibly zero) digits from the number. You can also shuffle the digits which will not count as a move.
+If it is possible then print the minimum number of digits  you need to remove in order to make the number ONOONO . If it is not possible to make the number ONOONO then just print −1−1.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, one single integer NN. 
+
+Output:
+For each testcase, output in a single line minimum operation to make the number NN Odd not Odd.
+Constraints
+
+1≤T≤30001≤T≤3000
+2≤N≤101002≤N≤10100
+
+Sample Input:
+1
+15
+
+Sample Output:
+0
+
+N.B-
+The idea of ​​the statement is inspired by a problem whose link will be given in the editorial.
+
+Author:
+3★samia2001
+Editorial:
+https://discuss.codechef.com/problems/ONO
+Tags:
+
+               
+                 greedy, samia2001
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+23-11-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

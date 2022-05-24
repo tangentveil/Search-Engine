@@ -1,0 +1,65 @@
+
+You are given an integer N. You have to arrange all integers in range(0≤i<N0≤i<N) in M arrays such that each array consists of only distinct elements in it and all M arrays have the equal size. But there is one twist. You are also given an integer K and you have to ensure that union of any k or more arrays should result in the complete set of elements (0≤i<N0≤i<N) but union of any number of arrays less than k should not satisfy the same.
+Print the answer arrays in lexicographically increasing manner.
+Note: A solution may or may not exist depending on values of N,M,K. But we have made sure to test your solution only on those input values for which solution exists.
+Input:
+
+single-line will contain 3 integers N, M, K.
+
+Output:
+
+M lines will contain M arrays in non-decreasing order.
+
+Constraints
+
+1≤N≤6450
+1≤M≤15
+1≤K≤15
+
+Sample Input:
+10 5 3
+
+Sample Output:
+ 0 1 2 4 5 7 
+ 0 1 3 4 6 8 
+ 0 2 3 5 6 9 
+ 1 2 3 7 8 9 
+ 4 5 6 7 8 9   
+
+EXPLANATION:
+Here N=10 hence elements will be 0,1,2,3,…,9.
+M arrays are in non-decreasing order and none of the arrays has repeated elements.
+Union of any k (3)  arrays results in the N set. 
+e.g 
+1 U 2 U 3 = (0 1 2 4 5 7) U (0 1 3 4 6 8) U (0 2 3 5 6 9)= 0 1 2 3 4 5 6 7 8 9
+1 U 3 U 5= (0 1 2 4 5 7) U (0 2 3 5 6 9) U (4 5 6 7 8 9) = 0 1 2 3 4 5 6 7 8 9
+2 U 4 U 5 = (0 1 3 4 6 8) U (1 2 3 7 8 9) U (4 5 6 7 8 9) = 0 1 2 3 4 5 6 7 8 9
+But any number less than k do not satisfy this. ( no 2 arrays can complete the set as  2<k ).
+
+Author:
+4★freakcap
+Editorial:
+https://discuss.codechef.com/problems/PERMUTTT
+Tags:
+
+               
+                 colg2020, combinatorics, freakcap, medium, vector
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+24-05-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

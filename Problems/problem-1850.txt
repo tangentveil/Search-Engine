@@ -1,0 +1,76 @@
+
+Chef, who is a chef by profession as well, has created NN pies (enumerated 11 through N) and has placed them in a row. Now he wants to taste all the pies, but by following a rather peculiar order of tasting.
+At each step, he chooses (uniformly randomly and independently) either the current leftmost pie or the rightmost pie, and eats that pie.
+For example, if N=7, then one valid order of tasting the pies is (1,2,7,3,4,6,5). However, (1,2,7,6,4,5,3) is not a valid order.
+Chef can't wait to taste all the pies, so for each i (1≤i≤N), he wants to know the expected value of the number of steps he'll need to eat the ith pie.
+It can be shown that each expected value can be expressed as a fraction PQ. You should compute P⋅Q−1 modulo 109+7, where Q−1 denotes the modular multiplicative inverse of Q under 109+7
+Input Format
+
+The first line of input contains a single integer T, denoting the number of test cases. The description of T test cases follows.
+Each test case consists of a single line containing one integer N — the number of pies.
+
+Output Format
+For each test case, print a single line containing N space-separated integers, the ith of which is the expected number of steps Chef needs to eat the ith pie.
+Constraints
+
+1≤T≤10
+1≤N≤105
+                        Sample Input 1
+                        
+
+2
+3
+7
+
+                        Sample Output 1
+                        
+
+750000007 500000006 750000007
+859375008 593750008 390625008 312500008 390625008 593750008 859375008 
+Explanation
+Test case 1: 
+There are 3 ways of eating the 1st pie:
+
+(1) : The probability of this ordering is 12 and number of steps is 1
+(3,1) : The probability of this ordering is 14 and number of steps is 2
+(3,2,1) : The probability of this ordering is 14 and number of steps is 3
+
+Therefore, the expected number of steps for the 1st pie is 12⋅1+14⋅2+14⋅3=74
+There are 4 ways of eating the 2nd pie:
+
+(1,2) : The probability of this ordering is 14 and number of steps is 2
+(3,2) : The probability of this ordering is 14 and number of steps is 2
+(1,3,2) : The probability of this ordering is 14 and number of steps is 3
+(3,1,2) : The probability of this ordering is 14 and number of steps is 3
+
+Therefore, the expected number of steps for the 2nd pie is 14⋅2+14⋅2+14⋅3+14⋅3=52
+
+Author:
+4★singlabharat
+Tester:
+7★aryanc403
+Editorial:
+https://discuss.codechef.com/problems/TASTYPIE
+Tags:
+
+               
+                 combinatorics, expected-value, medium, singlabharat, start22
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+3322
+Date Added:
+5-07-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

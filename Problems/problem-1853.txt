@@ -1,0 +1,103 @@
+
+This is an Interactive problem  
+Zeno sama hosted a Martial arts competition between 1212 universes in which the twin universes will be teaming together to fight. To participate in the tournament you must have exactly kk fighters from your team.  
+Beerus from Universe 7 and Champa from Universe 6 are teaming together and choose you as the manager of their team.  
+You have total NN fighters after combining Universe 6 & 7 numberd from 1−N , from which you have to choose k fighters.
+Now to win the tournament, your team of k should consist of more fighters from Universe 7 compared to Universe 6 as universe 7 is strong.  
+NOTE: There should be at least one fighter from each universe 
+You know that to build the team you should know the count of fighters from Universe 7 and Universe 6, and to get that you can ask 2 types of Queries to beerus,Asking too much queries can cost you HAKAI from beerus which can destroy you, so you can ask maximum Q queries of Type-1 and F queries of Type-2.
+The Queries are given below:  
+
+For Type-1 query you give i and j as index of fighters and beerus will reply id ith and jth fighter are of same universe or not.  
+For Type-2 query you give i as an index of fighter and beerus will reply with the universe tow which that ith fighter belong to.
+After processing queries, you should find the probability of making such team which can win the tournament.
+The probability can be represented as P/Q you have to calculate P∗Q−1 mod (109+7), Where Q−1 is the modular multiplicative inverse of Q (mod (109+7))
+
+Interaction
+
+First, your program should read a line containing a single integer ― the number of test cases T. The description of interaction for T test cases follows.  
+Read the first line of each test case that contains two space-separated integers N and K denoting number of fighters after combining both the universes and number of fighters required in a team  
+Now for each test case you may ask queries as below
+Type-1 : To ask this type of query print a line containing the character 'Q' a space and two space-separated integers i and j (1≤i,j≤N and i≠j),denoting the indexes of fighters.After this you should read one int which is the response from beerus, If both are from the same universe Beerus will reply with '1' else he will reply with '0'
+Type-2 : To ask this type of query print a line containing the character 'F' a space and an integer i denoting the index of fighter,After this you should read one int which is 6 or 7 ,the Universe to which the ith fighter belong to.
+When you think you got the probability you should print a line containing a character 'A' and your probability in the form of P∗Q−1 mod (109+7) space separated.
+Don't forget to flush the output after printing each line!!
+fflush(stdout) in C++.
+System.out.flush() in Java.
+print("output",flush=True) in Python.
+flush(output) in Pascal.
+See the documentation for other languages.   
+
+Constraints
+
+1≤T≤100
+2≤N≤105
+2≤K≤N
+
+Subtasks
+Subtask 1 (10 points) :
+
+F=N
+Q=N−1
+2≤N≤100 
+
+Subtask 2 (10 points) 
+
+Q=(N∗(N−1))/2
+F=1
+2≤N≤100 
+
+Subtask 3 (80 points) 
+
+F=1
+Q=N−1
+
+EXAMPLE:
+You                   Grader  
+                            1
+                            5 4  
+F 1  
+                            7 
+F 2  
+                            7  
+F 3  
+                            7  
+F 4  
+                            6
+F 5
+                            7
+A 600000005
+
+Explanation:
+From the interaction we can see that there are 4 fighters from universe 7 and 1 fighter from universe 6. As we have to make the team of 4 The probability can be given as P/Q
+where P=4C3∗1C1=4 and Q=5C4=5
+as P=4 and Q=5 the ans P∗Q−1 mod (109+7)=600000005
+NOTE : In This Interaction the Type-2 Queries has been asked N times so only subtask 1 will pass, This don't guarantee you 100 pts
+
+Author:
+3★mj_13
+Editorial:
+https://discuss.codechef.com/problems/TEAMTOP
+Tags:
+
+               
+                 c-plus-plus, combinatorics, easy-medium, imti2020, mj_13, modular-arith, modular-inv, probability
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+25-04-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,70 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+It is well-known that if you become rich, you will have a lot of trouble. Coach Khaled is one of the richest men in the world. He has NN jewels (numbered 11 through NN); for each valid ii, the ii-th jewel has value PiPi. The values of all jewels are pairwise distinct. Unfortunately for Khaled, one of the best thieves in the world, Ghoda, is trying to steal the jewels.
+Khaled knows that Ghoda wants to try to steal jewels during MM days (numbered 11 through MM). For each valid ii, on the ii-th day, consider all jewels with numbers between LiLi and RiRi (inclusive) which Ghoda has not stolen yet. If there is at least one such jewel, Ghoda decides to steal one of these jewels: the most valuable one. Khaled can only choose one day and prevent Ghoda from stealing any jewels on that day; Ghoda can steal jewels on subsequent days in the same way.
+Khaled wants to maximise the sum of values of the jewels Ghoda has not stolen during these MM days. Can you help him?
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and MM.
+The second line contains NN space-separated integers P1,P2,…,PNP1,P2,…,PN.
+MM lines follow. For each ii (1≤i≤M1≤i≤M), the ii-th of these lines contains two space-separated integers LiLi and RiRi.
+
+Output
+For each test case, print a single line containing one integer — the maximum possible sum of values of Khaled's remaining jewels.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤M≤N≤1051≤M≤N≤105
+1≤Pi≤1091≤Pi≤109 for each valid ii
+P1,P2,…,PNP1,P2,…,PN are pairwise distinct
+1≤Li,Ri≤N1≤Li,Ri≤N for each valid ii
+the sum of NN over all test cases does not exceed 2⋅1052⋅105
+                        Sample Input 1
+                        
+
+1
+4 4
+1 2 4 3
+1 3
+3 4
+1 2
+2 3
+
+                        Sample Output 1
+                        
+
+4
+Explanation
+Example case 1: Khaled can prevent Ghoda from stealing on day 22. Then, Ghoda steals the 33-rd jewel on the 11-st day and the 22-nd jewel on the 33-rd day; he cannot steal anything on the 44-th day. The remaining jewels are the 11-st and 44-th jewel, with values 11 and 33 respectively.
+
+Author:
+5★i_love_islam
+Editorial:
+https://discuss.codechef.com/problems/SAVJEW
+Tags:
+
+               
+                 Queues, Sets, Segment Trees
+                 
+                     
+                     Data Structures, Advanced Data Structures, Advanced Tree Structures
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2925
+Date Added:
+17-09-2019
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

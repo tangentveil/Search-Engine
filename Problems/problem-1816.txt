@@ -1,0 +1,67 @@
+
+          
+            We all know Asya is a little girl but her age doesn't stop her from conducting her own experiments and inventing her own games.
+ 
+One such day, while conducting one of such experiments, she fell in a rabbit hole and reached another world, the Pokeworld.
+ 
+Once she knew the way to the Pokeworld, she would visit the Pokemons living in the Pokeworld daily. The only problem is, her summer vacation is about to end and she has to complete her homework, thus she can go and meet only A number of Pokemons in her daily visit. Once she meets a Pokemon, she makes that Pokemon happy.
+ 
+If there are a total of P Pokemons in the Pokeworld, can you tell her the probability of making exactly Q number of distinct Pokemons happy in the remaining D days of her vacation?
+ 
+It is possible that she meets the same Pokemon on multiple days.
+Input : 
+
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+Every test case has four integers, P, A, D and Q which denotes, number of Pokemons in the Pokeworld, number of Pokemons Asya meets in one day, the number of days left in her vacation and the query number of Pokemons, respectively.
+
+ 
+Output : 
+
+For each test case, output a single line containing the probability of making exactly Q number of distinct Pokemons happy.
+The answer with absolute or relative error no more than 10-6 will be accepted.
+
+ 
+Constraints : 
+
+1 ≤ T ≤ 100
+1 ≤ P ≤ 25
+1 ≤ A ≤ P
+1 ≤ D ≤ 50
+0 ≤ Q ≤ P
+
+Example
+Input:
+2
+5 1 3 1
+3 2 2 2
+
+Output:
+0.0400000000
+0.3333333333
+
+
+Author:
+4★pakhandi
+Tags:
+
+               
+                 combinatorics, insomnia, mnnit, pakhandi
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-09-2016
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+JAVA, C, CPP14, PYP3
+
+Submit

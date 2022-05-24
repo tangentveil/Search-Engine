@@ -1,0 +1,147 @@
+
+ Read problems statements in Mandarin Chinese  , Russian and Vietnamese
+Chef Rams is famous for his amazing recipes and his use of colorful language, and he wants to open a new restaurant in the city of ManiLand.
+The city of ManiLand has a very regular grid structure. The city has three main roads from west to east, and N+1 shorter secondary roads from south to north. The first main road runs from (0, 0) to (N, 0), the second from (0, 1) to (N, 1), and the third from (0, 2) to (N, 2). The ith secondary road (0 ≤ i ≤ N) runs from (i, 0) to (i, 2). Additionally, there are arterial roads that run diagonally from some (x, y) to (x+1, y+1) or from some (x, y) to (x+1, y-1) (x and y are integers). All roads are bidirectional.
+We also define a block as the square area bounded by corners (x, y), (x, y+1), (x+1, y+1), (x+1, y) for integers x and y. ManiLand is N blocks long and 2 blocks wide.
+The following figure shows a sample layout of ManiLand (note that arterial roads on the same block also intersect).
+
+                         (N, 2)
+   +-----+-----+-----+-----+
+   |\   /|     |     |     |
+   | \ / |     |     |     |
+   |  X  |     |     |     |
+   | / \ |     |     |     |
+   |/   \|     |     |     |  
+   +-----+-----+-----+-----+
+   |     |\    |    /|    /|
+   |     | \   |   / |   / |
+   |     |  \  |  /  |  /  |
+   |     |   \ | /   | /   |
+   |     |    \|/    |/    |
+   +-----+-----+-----+-----+
+(0, 0)
+
+The police station is located at the intersection (0, 0). Now, the police have a daily routine of inspecting all roads, and to inspect any part of road they must pass through it. However, they find out that whenever they perform the inspection, they always end up traversing some road (or part of some road) more than once.
+A particular layout is called inspection-friendly if one can start from the police station, traverse all parts of all roads exactly once (except, possibly, intersections), and end back at the police station. The layout above is not inspection-friendly, but the following one is:
+
++-----+-----+-----+-----+            +--3--+--4--+--5--+--6--+
+|    /|    /|    /|     |            |    /|    /|    /|     |
+|   / |   / |   / |     |            |   / |   / |   / |     |
+|  /  |  /  |  /  |     |            2  17 16 15 14 13 12    7
+| /   | /   | /   |     |            | /   | /   | /   |     |
+|/    |/    |/    |     |            |/    |/    |/    |     |
++-----+-----+-----+-----+   ----->   +--18-+--19-+--20-+--11-+
+|     |\   /|     |    /|            |     |\   /|     |    /|
+|     | \ / |     |   / |            |     |26 24|     |   / |
+|     |  X  |     |  /  |            1    25  X  23    21 10 8
+|     | / \ |     | /   |            |     | / \ |     | /   |
+|     |/   \|     |/    |            |     |/   \|     |/    |
++-----+-----+-----+-----+            +--28-+--27-+--22-+--9--+
+
+(Note that each road is traversed exactly once. Some intersections are traversed twice, but that's okay.)
+Now, the government wants to make ManiLand inspection-friendly because the police hate traversing a road twice and sometimes end up skipping roads. Specifically, the government plans to destroy some arterial roads and build new ones. However, the main roads and secondary roads will be left unchanged.
+The cost of building and destroying an arterial road that goes from (x, y) to (x+1, y+1) is Hb and Hd respectively, and the cost of building and destroying an arterial road that goes from (x, y) to (x+1, y-1) is Lb and Ld respectively. The government wants to know the minimum total cost it needs to make ManiLand inspection-friendly, and the number of ways to achieve this minimum total cost. The arterial roads must obey the ManiLand Public Works and Highways Law:
+
+ All arterial roads must run diagonally from some (x, y) to (x+1, y+1) or from some (x, y) to (x+1, y-1); 
+ they cannot be built outside the grid; and
+no two arterial roads can connect the same pair of intersections.
+
+Note that the order in which the roads are built/destroyed doesn't matter; two ways are considered different only if the resulting layout is different.
+In the first figure above, assuming Hb = 20, Hd = 15, Lb = 4, Ld = 31, then the minimum total cost is 106, and there are 2 ways to do it, as shown in the following figure:
+
++-----+-----+-----+-----+         +-----+-----+-----+-----+
+|    /|    /|    /|     |         |    /|     |\   /|     |
+|   / |   / |   / |     |         |   / |     | \ / |     |
+|  /  |  /  |  /  |     |         |  /  |     |  X  |     |
+| /   | /   | /   |     |         | /   |     | / \ |     |
+|/    |/    |/    |     |         |/    |     |/   \|     |
++-----+-----+-----+-----+         +-----+-----+-----+-----+
+|     |\   /|     |    /|         |     |    /|    /|    /|
+|     | \ / |     |   / |         |     |   / |   / |   / |
+|     |  X  |     |  /  |         |     |  /  |  /  |  /  |
+|     | / \ |     | /   |         |     | /   | /   | /   |
+|     |/   \|     |/    |         |     |/    |/    |/    |
++-----+-----+-----+-----+         +-----+-----+-----+-----+
+
+The government hired Chef Rams to calculate these two values for them (they didn't want to hire real programmers because they're very temperamental). They also imposed this as a necessary pre-condition for licensing Chef Rams' proposed restaurant. Chef Rams, desperate to open his restaurant but not knowing any programming at all, turned to you for help. Please help Chef Rams!
+Now, ManiLand is very long (i.e. N is very large), but thankfully, the current layout is predictable. The whole layout of length N consists of a segment of length K (i.e. 2K blocks) that repeats N/K times. (Note that you don't have to maintain this regular structure when trying to make the city inspection-friendly)
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains six integers Hb, Hd, Lb, Ld, N and K, denoting the costs of building/destroying as described above, the length of the layout and the length of the pattern that repeats. The second and third line both contain a string of length K consisting of the characters ‘/’, ‘\’, ‘X’ and  ‘.’, each representing a block. The ‘/’ and ‘\’ represents a block with one arterial road, ‘X’ represents a block with two arterial roads, and ‘.’ represents a block with no arterial roads. See the sample input for more information.
+Output
+For each test case, output a single line containing two integers, which is the minimum total cost and the number of ways to achieve this cost. Since the number of ways to achieve this total cost can be very large, only output the answer modulo 109 + 7.
+If it is impossible to make it inspection-friendly, output “a kitchen nightmare” (without quotes).
+Constraints
+
+1 ≤ T ≤ 105
+1 ≤ K ≤ 105
+1 ≤ N ≤ 1015
+The sum of all values K in a single test file is at most 105
+K divides N
+1 ≤ Hb, Hd, Lb, Ld ≤ 1000
+
+Example
+Input:
+3
+20 15 4 31 4 4
+X...
+.\//
+1 3 4 10 2 1
+X
+/
+11 11 11 11 1 1
+.
+.
+
+Output:
+106 2
+26 2
+a kitchen nightmare
+
+Explanation
+Example case 1. This is the example above.
+Example case 2. Note that N = 2 and K = 1, which means the pattern given in the input is repeated N/K = 2 times. There are two ways make this inspection-friendly with the minimum cost of 26, as shown in the following:
+
++-----+-----+            +-----+-----+         +-----+-----+
+|\   /|\   /|            |    /|     |         |     |\    |
+| \ / | \ / |            |   / |     |         |     | \   |
+|  X  |  X  |            |  /  |     |         |     |  \  |
+| / \ | / \ |            | /   |     |         |     |   \ |
+|/   \|/   \|            |/    |     |         |     |    \|
++-----+-----+   ----->   +-----+-----+         +-----+-----+
+|    /|    /|            |     |    /|         |\    |     |
+|   / |   / |            |     |   / |         | \   |     |
+|  /  |  /  |            |     |  /  |         |  \  |     |
+| /   | /   |            |     | /   |         |   \ |     |
+|/    |/    |            |     |/    |         |    \|     |
++-----+-----+            +-----+-----+         +-----+-----+
+
+Example case 3. No matter which arterial roads you build, it's impossible to make this layout inspection-friendly.
+
+Author:
+7★kevinsogo
+Editorial:
+https://discuss.codechef.com/problems/RAMSINSP
+Tags:
+
+               
+                 combinatorics, cycle, eulerian-tour, kevinsogo, snck15fl
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+3-10-2014
+Time Limit:
+ - 1.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,78 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+There are NN chefs (numbered 11 through NN) and MM dishes (numbered 11 through MM). For each valid ii, the ii-th chef can cook dishes of exactly one type FiFi. Also, each chef is a friend of KK different chefs.
+Whenever some chef cooks a dish, he asks all chefs who either are his friends or know how to cook this dish to evaluate the dish. No chef may evaluate his own dish.
+All the chefs are arranged in a row from chef 11 to chef NN. Chefina is going to choose two valid integers LL and RR and allow the chefs L,L+1,…,RL,L+1,…,R to cook their dishes and have them evaluated as described above. She wants to choose LL and RR in such a way that each of the NN chefs evaluates at least one dish. Find the number of such pairs.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains three space-separated integers NN, MM and KK.
+The second line contains NN space-separated integers F1,F2,…,FNF1,F2,…,FN.
+NN lines follow. For each ii (1≤i≤N1≤i≤N), the ii-th of these lines contains KK space-separated integers D1,D2,…,DKD1,D2,…,DK denoting the friends of the ii-th chef.
+
+Output
+For each test case, print a single line containing one integer ― the number of pairs such that each chef evaluates at least one dish.
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤M≤N≤3⋅1051≤M≤N≤3⋅105
+1≤K≤31≤K≤3
+1≤Fi≤M1≤Fi≤M for each valid ii
+1≤Di≤N1≤Di≤N for each valid ii
+i !=Dii !=Di for each valid ii
+D1,D2,…,DKD1,D2,…,DK are pairwise disticnt
+the sum of N⋅(K+1)N⋅(K+1) over all test cases does not exceed 2⋅1062⋅106
+                        Sample Input 1
+                        
+
+2
+3 3 1
+1 2 3
+3
+3
+1
+6 2 1
+1 1 1 2 2 2
+2
+1
+4
+3
+6
+5
+
+                        Sample Output 1
+                        
+
+0
+9
+
+Author:
+5★rishup_nitdgp
+Editorial:
+https://discuss.codechef.com/problems/CHEFPRTY
+Tags:
+
+               
+                 Lazy Propagation, Two pointers
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures, Segment Trees, Algorithms, Simple Algos
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2831
+Date Added:
+15-08-2020
+Time Limit:
+3 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

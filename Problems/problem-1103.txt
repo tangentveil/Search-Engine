@@ -1,0 +1,72 @@
+
+Chef is playing a game with his brother Chefu. He asked Chefu to choose a positive integer NN, multiply it by a given integer AA, then choose a divisor of NN (possibly NN itself) and add it to the product. Let's denote the resulting integer by MM; more formally, M=A⋅N+dM=A⋅N+d, where dd is some divisor of NN.
+Chefu told Chef the value of MM and now, Chef should guess NN. Help him find all values of NN which Chefu could have chosen.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains two space-separated integers AA and MM.
+
+Output
+For each test case, print two lines. The first line should contain a single integer CC denoting the number of possible values of NN. The second line should contain CC space-separated integers denoting all possible values of NN in increasing order.
+It is guaranteed that the sum of CC over all test cases does not exceed 107107.
+Constraints
+
+1≤T≤1001≤T≤100
+2≤M≤10102≤M≤1010
+1≤A<M1≤A<M
+
+Subtasks
+Subtask #1 (50 points):
+
+M≤106M≤106
+
+Subtask #2 (50 points): original constraints
+
+                        Sample Input 1
+                        
+
+3
+3 35
+5 50
+4 65
+
+                        Sample Output 1
+                        
+
+1
+10
+0
+
+3
+13 15 16
+
+Author:
+6★kingofnumbers
+Editorial:
+https://discuss.codechef.com/problems/GUESSNUM
+Tags:
+
+               
+                 Basic Maths, Divisors
+                 
+                     
+                     Mathematics, Number Theory, Integer Factorisation
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1987
+Date Added:
+28-12-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

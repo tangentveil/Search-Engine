@@ -1,0 +1,71 @@
+
+A string consisting only of parentheses (( and )) is called a parentheses string. The balanced parentheses strings are defined recursively as follows:
+
+An empty string is a balanced parentheses string.
+If ss is a balanced parentheses string, then (s)(s) is also a balanced parentheses string.
+If ss and tt are balanced parentheses strings, then stst (concatenation of ss and tt) is also a balanced parentheses string.
+
+For a parentheses string, an operation on this string is defined as follows:
+
+Choose any substring of this string which is balanced.
+Remove this substring and concatenate the remaining parts.
+
+Given a parentheses string SS, find the minimum length of the string one can get by applying the above operation any number of times. Also find the minimum number of operations required to achieve this minimum length.
+Input Format
+
+The first line of the input contains TT, the number of test cases. Then the test cases follow.
+Each test case contains string SS in a single line, which consists only of the characters (( and )).
+
+Output Format
+For each test case, in a single line output the minimum length of the string we can get by applying the given operation any number of times and the minimum number of operations required to achieve this minimum length separated by a single space.
+Constraints
+
+1≤T≤1061≤T≤106
+1≤|S|≤2⋅1061≤|S|≤2⋅106
+Sum of |S||S| over all test cases does not exceed 2⋅1062⋅106.
+                        Sample Input 1
+                        
+
+3
+(())
+)()(
+()(()
+
+                        Sample Output 1
+                        
+
+0 1
+2 1
+1 2
+Explanation
+Test Case 11: The given string is balanced and hence we can choose the whole string for the operation and remove it. So, the minimum length of the string we can achieve is equal to 00 and it requires a minimum of 11 operation to achieve this.
+Test Case 22: The only non-empty balanced substring of )()()()( is ()(). By applying the operation once, the string changes to )()(. This string has no non-empty balanced substring. Therefore, the minimum length of the string we can achieve is equal to 22 and it requires a minimum of 11 operation to achieve this.
+Test Case 33: Apply the operation on the string S=()(()S=()(() by removing the substring S[1,2]=()S[1,2]=() to get (()((). Now, apply the operation by removing the substring ()() to get ((. Therefore, the minimum length of the string we can achieve is equal to 11 and it requires a minimum of 22 operations to achieve this.
+
+Author:
+suryaprak_adm
+Editorial:
+https://discuss.codechef.com/problems/REMBAL
+Tags:
+
+               
+                 start37, strings, suryaprak_adm
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2231
+Date Added:
+12-09-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

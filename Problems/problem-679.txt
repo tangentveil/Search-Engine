@@ -1,0 +1,120 @@
+
+Uneori îmi spun: am să mor
+atât de singuratecă-n mijlocul lor;
+limba simplă a bucuriilor n-am învâțat;
+am să mor ca o pasăre care prea mult a zburat,
+dar n-a făcut cuib nicăieri.
+― Oamenii ma uimesc, Magda Isafost
+
+As of writing the informal statement, the winter just came and the statement was in season. Now, it is not winter anymore, so here is the formal statement instead:
+You are given a connected graph with NN nodes and MM edges. You are given QQ queries of the following types:
+
+1 u1 u: Given node uu (1≤u≤N)(1≤u≤N), set the state of the node uu to frozen.
+2 t2 t: Given tt, let tt units of time pass by.
+3 v3 v: Given node vv (1≤v≤N)(1≤v≤N), answer if node vv is currently frozen.
+
+Initially, no node is frozen.
+The graph has the following property:
+
+If, at time TT, a node uu is frozen, then, at time (T+1)(T+1), all neighbours of uu become frozen.
+
+For each query of type 33, answer whether the node is currently frozen. 
+Note:
+
+If a node is already frozen, it remains unaffected after a type 11 query.
+If, for a frozen node uu, a neighbour vv of node uu is frozen at time TT, node vv remains unaffected at time (T+1)(T+1).
+
+Input Format
+
+The first line of input contains three integers N,M,N,M, and QQ.
+MM lines follow, the ithith of which contains two integers uiui and vivi, representing there is an edge between nodes uiui and vivi.
+Then, QQ lines follow, the jthjth of which contains two integers typejtypej and xjxj.
+If typejtypej is 11 or 22, it indicates that you must effectuate an update of the type typejtypej with parameter xjxj. Otherwise, answer the query with parameter xjxj
+
+Output Format
+For each query of type 33, print YESYES if the queried node is frozen. Otherwise, print NONO. 
+You may print each character of the string in uppercase or lowercase (for example, the strings YeSYeS, yEsyEs, yesyes and YESYES will all be treated as identical).
+Constraints
+
+1≤N,Q≤1051≤N,Q≤105
+1≤M≤3⋅1051≤M≤3⋅105
+1≤ui,vi≤N1≤ui,vi≤N
+1≤typej≤31≤typej≤3
+1≤xj≤N1≤xj≤N, if the query type is 11 or 33.
+1≤xj≤1091≤xj≤109, if the query type is 22.
+
+Subtasks
+
+Subtask 1 (10 points): 1≤N≤1000,1≤Q≤2000,1≤M≤30001≤N≤1000,1≤Q≤2000,1≤M≤3000.
+Subtask 2 (30 points): Each node in the given graph has at most two neighbours.   
+Subtask 3 (60 points): Original constraints.
+                        Sample Input 1
+                        
+
+6 6 6
+1 2
+2 3
+4 1
+5 4
+6 1
+6 5
+1 1
+3 1
+1 5
+2 1
+3 4
+3 3
+
+                        Sample Output 1
+                        
+
+YES
+YES
+NO
+Explanation
+Test Case 11: The graph looks like:
+Query 11: Freeze the node 11. The graph looks like:
+
+Query 22: Find the status of node 11. Since node 11 is frozen, we print YESYES.
+Query 33: Freeze the node 55. The graph looks like:
+
+Query 44: 11 unit of time passes. Before this, nodes 11 and 55 were frozen.
+After 11 second, all the neighbours of node 11, i.e., nodes 2,4,2,4, and 66, and all the neighbours of node 55, i.e., nodes 44 and 66 are frozen.
+Thus, after this query, the frozen nodes in the graph are 1,2,4,5,1,2,4,5, and 66. The graph looks like:
+
+Query 55: Find the status of node 44. Since node 44 is frozen, we print YESYES.
+Query 66: Find the status of node 33. Since node 33 is not frozen, we print NONO.
+
+
+Author:
+kinto
+Tester:
+5★mexomerf
+Editorial:
+https://discuss.codechef.com/problems/ELWINTER
+Tags:
+
+               
+                 Queues, Graphs
+                 
+                     
+                     Data Structures
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2007
+Date Added:
+17-03-2022
+Time Limit:
+0.4 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

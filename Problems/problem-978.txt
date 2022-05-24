@@ -1,0 +1,71 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef has an integer NN and he wants to generate a matrix MM with NN rows (numbered 11 through NN) and NN columns (numbered 11 through NN). He thinks that MM would be delicious if:
+
+Each element of this matrix is an integer between 11 and N2N2 inclusive.
+All the elements of the matrix are pairwise distinct.
+For each square submatrix containing cells in rows rr through r+ar+a and in columns cc through c+ac+a (inclusive) for some valid integers rr, cc and a≥0a≥0:
+Mr,c+Mr+a,c+aMr,c+Mr+a,c+a is even
+Mr,c+a+Mr+a,cMr,c+a+Mr+a,c is even
+
+Can you help Chef generate a delicious matrix? It can be proved that a solution always exists. If there are multiple solutions, you may find any one.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains a single integer NN.
+
+Output
+For each test case, print NN lines describing a delicious matrix MM. For each valid ii, the ii-th of these lines should contain NN space-separated integers Mi,1,Mi,2,…,Mi,NMi,1,Mi,2,…,Mi,N.
+Constraints
+
+1≤T≤101≤T≤10
+1≤N≤1031≤N≤103
+the sum of NN over all test cases does not exceed 103103
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+2
+
+                        Sample Output 1
+                        
+
+1 2
+4 3
+Explanation
+Example case 1: The matrix MM has five square submatrices. Four of them ([1][1], [2][2], [4][4], [3][3]) have a=0a=0, so they obviously satisfy all conditions. The last square submatrix is the whole matrix MM, with r=c=a=1r=c=a=1, and we can see that M1,1+M2,2=1+3=4M1,1+M2,2=1+3=4 and M1,2+M2,1=2+4=6M1,2+M2,1=2+4=6 are both even.
+
+Author:
+4★vitz_6
+Editorial:
+https://discuss.codechef.com/problems/EVENM
+Tags:
+
+               
+                 2D Arrays
+                 
+                     
+                     Data Structures, Arrays
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1376
+Date Added:
+19-01-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

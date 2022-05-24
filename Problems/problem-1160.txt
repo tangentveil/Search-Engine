@@ -1,0 +1,66 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+For an array BB, while it has more than one element, you can apply an operation on it - you choose any two elements x,yx,y  (they may be the same value, but they should have different indices), delete them, and add an element g(x,y)g(x,y) instead. 
+Here g(x,y)g(x,y) denotes the highest set bit in x⊕yx⊕y, or 00 if they are equal. In other words, g(x,y)=max2kg(x,y)=max2k, such that 2k≤(x⊕y)2k≤(x⊕y) for x≠yx≠y, and g(x,y)=0g(x,y)=0 if x=yx=y. For example, g(1,1)=0,g(1,2)=2,g(2,4)=4,g(13,17)=16g(1,1)=0,g(1,2)=2,g(2,4)=4,g(13,17)=16.
+Given an array BB, we try to apply the operations repeatedly in such a way that when we are left with only one element at the end, that element is as small as possible. Let's denote this smallest possible value of the element at the end as f(B)f(B).
+You are given an array AA with NN elements, you need to find the sum of f(Al…r)f(Al…r) among all subsegments 1≤l≤r≤N1≤l≤r≤N.
+The answer may be large, so you need to find it modulo 998244353998244353.
+Input:
+
+The first line contains one integer NN.
+The second line contains NN integers A1,A2,…,ANA1,A2,…,AN.
+
+Output:
+In a single line, print the sum, modulo 998244353998244353.
+Constraints
+
+1≤N≤3000001≤N≤300000
+0≤Ai<2300≤Ai<230
+
+Subtasks
+
+10 points : 1≤N≤101≤N≤10
+10 points : 1≤N≤5001≤N≤500
+10 points : 1≤N≤50001≤N≤5000
+70 points : 1≤N≤3000001≤N≤300000
+                        Sample Input 1
+                        
+
+10  
+0 1 2 3 4 5 6 7 8 9
+
+                        Sample Output 1
+                        
+
+160
+
+Author:
+ildar_adm
+Editorial:
+https://discuss.codechef.com/problems/SEGCOMPR
+Tags:
+
+               
+                 Bitwise Operation, ad-hoc
+                 
+                     
+                     Mathematics, Bit Manipulation, Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2724
+Date Added:
+28-09-2020
+Time Limit:
+4 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,69 @@
+
+Read problem statements in Mandarin Chinese, Vietnamese, and Russian
+Nishant does pretty weird stuff. Today, he wants to create a weird sequence.
+According to Nishant, a sequence AA of length NN is called weird if:
+
+N≥3N≥3
+2⋅Ai>Ai−1+Ai+1 ∀i∈{2,3,4....,N−1}2⋅Ai>Ai−1+Ai+1 ∀i∈{2,3,4....,N−1}
+
+Nishant wants to construct a long weird sequence to impress his weird friends, but there's a problem:  he only knows how to count up to KK, so the sequence can only contain integers in the range [1,K][1,K]. 
+Help Nishant determine the length of the longest weird sequence he can construct using only integers from 11 to KK.
+Input Format
+
+The first line contains a single integer TT denoting the number of testcases. The description of TT testcases follows.
+The first and only line of each testcase contains a single integer KK.
+
+Output Format
+For each testcase, print one line containing a single integer - the maximum length of a weird sequence which can be obtained using only integers in [1,K][1,K].
+Constraints
+
+1≤T≤1051≤T≤105
+2≤K≤1092≤K≤109
+                        Sample Input 1
+                        
+
+3
+3
+5
+1073
+
+                        Sample Output 1
+                        
+
+4
+6
+92
+Explanation
+Test Case 11: One possible weird sequence is {1,3,3,2}{1,3,3,2}. It can be shown that there is no weird sequence with length >4>4.
+Test Case 22: One possible weird sequence is {2,4,5,5,4,1}{2,4,5,5,4,1}. It can be shown that there is no weird sequence with length >6>6.
+
+Author:
+utkarsh_adm
+Editorial:
+https://discuss.codechef.com/problems/HLPNISHANT
+Tags:
+
+               
+                 Greedy, ad-hoc
+                 
+                     
+                     Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+27-10-2021
+Time Limit:
+0.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

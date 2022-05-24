@@ -1,0 +1,72 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef recently read about the mex function and came up with a function similar to that. For a (possibly empty) sequence of positive integers SS, Chef defines f(S)f(S) as the smallest positive integer that does not appear in S. For example, f([])=1, f([3,4,3,5])=1, f([2,5,1,1,2,3])=4.
+Chef's friend heard about Chef's idea and found it really cool. Therefore, he sent a sequence a1,a2,…,aN to Chef and asked him to find the sum of f(S) over all 2N possible subsequences S of this sequence. Since Chef is busy, he entrusted you with solving the problem.
+Since the resulting sum can be very big, compute it modulo 998,244,353.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers a1,a2,…,aN.
+
+Output
+For each test case, print a single line containing one integer ― the sum of f(S) over all subsequences modulo 998,244,353.
+Constraints
+
+1≤T≤50
+1≤N≤105
+1≤ai≤109 for each valid i
+the sum of N over all test cases does not exceed 5⋅105
+
+Subtasks
+Subtask #1 (50 points): the sum of N over all test cases does not exceed 1,000
+Subtask #2 (50 points): original constraints
+
+                        Sample Input 1
+                        
+
+2
+2
+1 1
+3
+1 2 1
+
+                        Sample Output 1
+                        
+
+7
+17
+Explanation
+Example case 1: The values for all possible subsequences are f([])=1, f([1])=2, f([1])=2, f([1,1])=2.
+Example case 2: The values for all possible subsequences are f([])=1, f([1])=2, f([2])=1, f([1])=2, f([1,2])=3, f([2,1])=3, f([1,1])=2, f([1,2,1])=3.
+
+Author:
+6★nirjhor
+Editorial:
+https://discuss.codechef.com/problems/MEXUM
+Tags:
+
+               
+                 Modular Exponentiation
+                 
+                     
+                     Mathematics, Modular Arithmetic
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2153
+Date Added:
+20-04-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

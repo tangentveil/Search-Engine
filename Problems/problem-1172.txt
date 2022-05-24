@@ -1,0 +1,86 @@
+
+Read problems statements Bengali , Mandarin chinese , Russian and Vietnamese as well.
+There is a programming contest held by ShareChat. According to the contest rules, submissions do not receive any feedback until the end of the contest. The judges wanted to benefit from this fact to make their favourite contestants win the contest.
+In one of the problems, there were a total of NN submissions (numbered 11 through NN) received. The judges prepared a total of MM tests (numbered 11 through MM) for this problem. For each submission ii and each test jj, we know that the time this submission ran on this test is Ai,jAi,j and whether it produced a correct answer or not.
+The judges can still decide the time limit for this problem. For each submission, they have decided whether they wanted it to pass all the tests or not. You are given an integer sequence D1,D2,…,DND1,D2,…,DN; Di=1Di=1 denotes that submission ii should pass all tests and Di=0Di=0 denotes that it should fail on at least one test, either by exceeding the time limit (getting TLE) or producing an incorrect answer (getting WA).
+Now, the judges want to decide the time limit of the problem and the subset of tests they should use so that each submission gets the desired verdict (passes or fails).
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and MM. 
+The second line contains NN space-separated integers D1,D2,…,DND1,D2,…,DN.
+NN lines follow. For each valid ii, the ii-th of these lines contains MM space-separated integers Ai,1,Ai,2,…,Ai,MAi,1,Ai,2,…,Ai,M.
+NN more lines follow. For each valid ii, the ii-th of these lines contains MM space-separated integers Bi,1,Bi,2,…,Bi,MBi,1,Bi,2,…,Bi,M. Here, Bi,j=1Bi,j=1 denotes that submission ii produced a correct answer on test jj and Bi,j=0Bi,j=0 denotes that it did not.
+
+Output
+For each test case, print a line containing the string "NO" if it is impossible to find a solution or "YES" otherwise. If a solution exists, print two more lines. The first of these lines should contain two space-separated integers TT (the time limit, 1≤T≤1091≤T≤109) and KK (the number of tests chosen). The last line should contain KK space-separated integers denoting the indices of the chosen tests.
+Constraints
+
+1≤T≤201≤T≤20
+1≤N≤1,0001≤N≤1,000
+1≤M≤1,0001≤M≤1,000
+the sum of NN for all test cases does not exceed 1,0001,000
+the sum of MM for all test cases does not exceed 1,0001,000
+1≤Ai,j≤1081≤Ai,j≤108 for each valid i,ji,j
+
+Subtasks
+Subtask #1 (30 points):
+
+N≤15N≤15
+M≤15M≤15
+
+Subtask #2 (70 points): original constraints
+Example Input
+2
+3 4
+1 1 1
+5 7 4 10
+7 4 7 20
+1 6 3 7
+1 1 1 0
+0 1 1 1
+0 1 1 1
+2 2
+1 0
+7 8
+4 5
+1 0
+1 0
+
+Example Output
+YES
+10 2
+2 3
+NO
+
+
+Author:
+6★kingofnumbers
+Editorial:
+https://discuss.codechef.com/problems/BJUDGE
+Tags:
+
+               
+                 Constructive, Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2739
+Date Added:
+28-09-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,61 @@
+
+          
+            Naruto's dream is to become the hokage of Hidden Leaf Village. To achieve this he has recently joined the Ninja Academy. On the first day at academy he developed a crush on Sakura. He asks Sakura to have dinner with him at Ramen Ichiraku. But Sakura instead of giving a straight forward answer, asked a puzzle and told him that the answer to the puzzle and her answer for his proposal are same. But Naruto is not good with puzzles, so he asked you to help him out. As Naruto is a very persistent ninja, he didn't her ask only once but multiple times to increase his chances.
+
+The puzzle which she gave him is : She gave him an integer N and Naruto has to answer whether or not a continuous sequence of natural numbers with each number less than N exists such that the sum of the sequence is equal to N.
+Note : Large test data. Use faster I/O methods
+
+ Input  
+The first line contains an integer T, the number of times Naruto asks Sakura out.
+Then follows T lines each containing an integer N.
+ Output  
+Output N lines containing "Yes" or "No" (without quotes) depending on whether such a sequence exists or not for the corresponding N.
+ Constraints  
+1 ≤ T,N ≤ 1000000
+Example  
+Input: 
+4
+3
+4
+5
+12
+
+Output: 
+Yes
+No
+Yes
+Yes
+
+Explanation 
+Proposal 1 : N = 3. Since 1 + 2 = 3 therefore a continuous sequence of natural numbers exist with sum 3. So answer is Yes.
+Proposal 2 : N = 4. The possible continuous sequences are (1), (1,2), (1,2,3), (2), (2,3), (3) and the sum of none of these is equal to 4. So answer is No.
+Proposal 3 : N = 5. Since 2 + 3 = 5 therefore a continuous sequence of natural numbers exist with sum 5. So answer is Yes.
+Proposal 4 : N = 12. Since 3 + 4 + 5 = 3 therefore a continuous sequence of natural numbers exist with sum 12. So answer is Yes.
+
+Author:
+5★aaijmrt
+Editorial:
+https://discuss.codechef.com/problems/INSQ16A
+Tags:
+
+               
+                 aaijmrt, ad-hoc, insomnia, mnnit
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+31-08-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+JAVA, C, CPP14, PYP3
+
+Submit

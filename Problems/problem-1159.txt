@@ -1,0 +1,62 @@
+
+          
+            Once upon a time there lived a "Lucky" guy named Devdas. Paaro and Chandramukhi were two best friends. Both of them liked him. On the occassion of his homecoming, both the girls decided to give him a present to impress him.
+
+Knowing that Devdas was a coder and he was very fond of palindromic subsequences of a string, Chandramukhi decided to gift him the longest subsequence of Dev's favourite string S which is a palindrome.
+
+Paaro somehow got to know Chandramukhi's plan and decided to do something more impressive. She wants to gift a subsequence of the string S, such that all subsequences of the given subsequence is a palindrome. As Paaro is not good with strings, she wants you to tell her how many such subsequences exist in the string S.
+
+You can see the definition of subsequence and palindrome by clicking on the links.
+
+As the answer may be very large, output it modulo 10^9+7.
+
+ Input  
+The first line contains the number of test cases.
+Each test case contains of the single line having string S.
+String S only consists of lowercase alphabets.
+
+ Output  
+For each test case output a single line containg the required answer.
+ Constraints  
+1 < T < 100
+1 < |S| < 100
+
+ Example  
+ Input:  
+2
+abcd
+aa
+ Output:  
+4
+3
+
+ Explanation  
+In first test cases 'a', 'b', 'c', 'd' are subsequences having all their subsequences as palindromes.
+
+Author:
+5★aaijmrt
+Editorial:
+https://discuss.codechef.com/problems/INSQ16B
+Tags:
+
+               
+                 aaijmrt, ad-hoc, insomnia
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-09-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+JAVA, C, CPP14, PYP3
+
+Submit

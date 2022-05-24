@@ -1,0 +1,67 @@
+
+You are given two integers NN and KK.
+Construct an array AA consisting of NN distinct positive integers such that the following conditions are met:
+
+1≤Ai≤2⋅104;1≤Ai≤2⋅104;
+There exists no subsequence of AA with sum KK.
+
+It can be shown that the answer always exists.
+Input Format
+
+The first line contains a single integer TT: the number of test cases.
+The only line of each test case contains two integers NN and KK - as mentioned in the statement.
+
+Output Format
+For each test case, print a single line containing NN space-separated elements: A1,A2,…,ANA1,A2,…,AN. If there are multiple answers, you may print any.
+Constraints
+
+1≤T≤201≤T≤20
+1≤N≤10001≤N≤1000
+1≤K≤1061≤K≤106
+                        Sample Input 1
+                        
+
+2
+4 10
+10 1000000
+
+                        Sample Output 1
+                        
+
+1 2 5 6
+327 8695 4 19852 14 736 46 15 37 928
+Explanation
+Test case 11: A=[1,2,5,6]A=[1,2,5,6]. All elements of the array are distinct. Also, 1≤Ai≤2⋅1041≤Ai≤2⋅104, and there isn't any subsequence of the array with sum 1010.
+Some other valid answers are: [2,6,5,1][2,6,5,1] and [3,27,869,541][3,27,869,541].
+Test case 22: A=[327,8695,4,19852,14,736,46,15,37,928]A=[327,8695,4,19852,14,736,46,15,37,928]. All elements of the array are distinct. Also, 1≤Ai≤2⋅1041≤Ai≤2⋅104, and there isn't any subsequence of the array with sum 10000001000000.
+
+Author:
+thescrasse
+Editorial:
+https://discuss.codechef.com/problems/ANTIKNAPSACK
+Tags:
+
+               
+                 Mathematics, Number Theory, Constructive, ad-hoc
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2566
+Date Added:
+9-05-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

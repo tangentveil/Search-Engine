@@ -1,0 +1,74 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+Every time Rami comes up with an idea for a nice problem, his grandfather Saeed rejects it, claiming that it takes a lot of work to write tests for such a problem. Therefore, Rami spent days thinking about a problem with only three numbers as the input. Finally, he thought up such a problem and ran happily to his grandfather, shouting:
+You are given three integers N, M and K. Find the number of sequences A1,A2,…,AN such that:
+
+For each valid i, Ai is an integer in the range [0, M-1].
+Let's define N prefix sums of A as S_i = \sum_{j=1}^i A_j, where 1 \le i \le N. At least K of these prefix sums are divisible by M.
+
+Let's see if you can solve this simple problem! Rami knows that the answer could be really large, so you should compute it modulo 10^9+7.
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first and only line of each test case contains three space-separated integers N, M and K.
+
+Output
+For each test case, print a single line containing one integer — the number of valid sequences modulo 10^9+7.
+Constraints
+
+1 \le T \le 100
+1 \le K \le N \le 10^5
+1 \le M \le 10^9
+the sum of N over all test cases does not exceed 10^6
+                        Sample Input 1
+                        
+
+2
+3 2 2
+3 2 1
+
+                        Sample Output 1
+                        
+
+4
+7
+Explanation
+For N = 3 and M = 2, there are eight possible sequences satisfying the first condition: [0,0,0], [0,0,1], [0,1,0], [0,1,1], [1,0,0], [1,0,1], [1,1,0] and [1,1,1]. Their prefix sums are [0,0,0], [0,0,1], [0,1,1], [0,1,2], [1,1,1], [1,1,2], [1,2,2] and [1,2,3] respectively.
+As we can see, there are:
+
+one sequence with 0 prefix sums divisible by 2: [1,0,0]
+three sequences with exactly 1 prefix sum divisible by 2: [0,1,0], [1,0,1], [1,1,1]
+three sequences with 2 prefix sums divisible by 2: [0,0,1], [0,1,1], [1,1,0]
+one sequence with 3 prefix sums divisible by 2: [0,0,0]
+
+
+Author:
+5★i_love_islam
+Editorial:
+https://discuss.codechef.com/problems/ANGGRA
+Tags:
+
+               
+                 Modulo Multiplicative Inverse, Combinatorics, Observation, Prefix Sum
+                 
+                     
+                     Mathematics, Modular Arithmetic, Algorithms, Simple Algos
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2294
+Date Added:
+17-09-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

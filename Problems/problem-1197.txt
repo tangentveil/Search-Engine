@@ -1,0 +1,63 @@
+
+ 
+A Keyboard manufacturing company, built some faulty qwerty keyboards. As soon as they realized that some of the keyboards are faulty they tried to develop a software to correct them but their developers are noobs so they ask you to develop the software for them.
+The issue with the keyboard is that the key placement is not appropriate. The keys of the right hand are faulty. 
+ When the user press j it appears h.
+ Similarly when you press h it appears as ;(semi-colon), y → p, b → .(full stop).
+Input
+
+The first line contains an integer T, total number of test cases. 
+Each of the next T lines contain a sentence S(containing only lower-case english alphabets and valid characters as described) printed by the faulty keyboard.
+
+Output
+For each test case print the correct sentence the user wants to type in a new line.
+
+Constraints
+
+1 ≤ T ≤ 100
+1 ≤ |S| ≤ 105
+
+ 
+Example
+Input:
+3
+;ekki wirkd
+cidec;ef
+origrannubg
+Output:
+hello world
+codechef
+programming
+ 
+Explanation
+For first test case ; replaces with h, k replaces with l, i replaces with o, the final output is hello world.
+N. B.All special character key except ;(semi-colon),  .(full stop) and ,(comma) have their approperiate place.
+ yuiop hjkl; bnm,. these keys comes under right hand placement.
+
+Author:
+1★apamit11
+Editorial:
+https://discuss.codechef.com/problems/MISKEY
+Tags:
+
+               
+                 ad-hoc, apamit11, apamit11, horsbug98, programming
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+3-08-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

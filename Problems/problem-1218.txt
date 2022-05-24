@@ -1,0 +1,77 @@
+
+Read problem statements in Mandarin Chinese, Russian, and Vietnamese as well.
+You are given a sequence A1,A2,…,ANA1,A2,…,AN. Chef wants you to handle QQ queries. There are two types of queries:
+
+1 L R X: for each ii (L≤i≤RL≤i≤R), add (X+i−L)2(X+i−L)2 to AiAi
+2 Y: find the current value of AYAY
+
+Input
+
+The first line of the input contains two space-separated integers NN and QQ.
+The second line contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+QQ lines follow. Each of these lines describes a query in the format described above.
+
+Output
+For each query of the second type, print a single line containing one integer AYAY.
+Constraints
+
+1≤N,Q≤1051≤N,Q≤105
+0≤|Ai|≤1060≤|Ai|≤106 for each valid ii
+1≤L≤R≤N1≤L≤R≤N
+0≤|X|≤1060≤|X|≤106
+1≤Y≤N1≤Y≤N
+                        Sample Input 1
+                        
+
+5 4
+1 10 3 6 5
+1 1 3 5
+2 3
+1 4 5 7
+2 5
+
+                        Sample Output 1
+                        
+
+52
+69
+Explanation
+
+the sequence after the first query is [1+52,10+(5+2−1)2,3+(5+3−1)2,6,5]=[26,46,52,6,5][1+52,10+(5+2−1)2,3+(5+3−1)2,6,5]=[26,46,52,6,5]
+the second query asks for A3A3, which is 5252
+the sequence after the third query is [26,46,52,6+72,5+(7+1)2]=[26,46,52,55,69][26,46,52,6+72,5+(7+1)2]=[26,46,52,55,69]
+the fourth query asks for A5A5, which is 6969
+
+
+Author:
+2★aryanag_adm
+Tester:
+6★iscsi
+Editorial:
+https://discuss.codechef.com/problems/CHEFQUER
+Tags:
+
+               
+                 Online Queries
+                 
+                     
+                     Algorithms, Queries
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1952
+Date Added:
+19-06-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

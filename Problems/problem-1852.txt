@@ -1,0 +1,60 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Dr.D has broken into O.W.C.A. (The Organization Without A Cool Acronym) in order to find Agent P's reports. He has already found the great vault of O.W.C.A. where Major Monogram keeps the O.W.C.A. files. Unfortunately, the vault is protected by Major Monogram's secret password.
+Dr.D knows that Major Monogram has always been fond of NN integers A1,A2,…,ANA1,A2,…,AN and the password he chose is the product of KK of these integers modulo some prime P (since the product itself might become huge and thus hard for him to remember). The integers in the product do not have to correspond to distinct elements of A, Major Monogram simply chose K indices i1,i2,…,iK and computed Ai1⋅Ai2⋅…⋅AiK modulo P.
+With a lot of effort, Dr.D found out P, K and A, but he does not know how Major Monogram chose K integers from the sequence A. In order to get into the vault, Dr.D has created the Bruteforceinator, which will try all sequences of K valid indices i1,i2,…,iK (NK sequences in total) and for each of them, compute the product Ai1⋅Ai2⋅…⋅AiK and try its remainder modulo P, instead of just trying all possible passwords from 0 to P−1. The Bruteforceinator keeps trying even after it has tried a correct password and only unlocks the vault after it tries all NK options.
+While the Bruteforceinator is doing its job, Dr.D is wondering how many times it will try each possible password. For each i beween 0 and P−1 (inclusive), find the number of times the Bruteforceinator will try i as the password. Since these numbers may get large, compute them modulo 998,244,353.
+Input
+
+The first line of the input contains three space-separated integers N, P and K.
+The second line contains N space-separated integers A1,A2,…,AN.
+
+Output
+Print a single line containing P space-separated integers. For each i (1≤i≤P), the i-th of these integers should be the number of times the Bruteforceinator will try i−1 as the password, modulo 998,244,353.
+Constraints
+
+1≤N,P≤259,431
+P is a prime number
+0≤Ai≤P−1 for each valid i
+0≤K≤109+9
+
+Subtasks
+Subtask #1 (16 points): 1≤N≤400
+Subtask #2 (84 points): original constraints
+
+                        Sample Input 1
+                        
+
+6 11 3
+9 8 4 3 5 3
+
+                        Sample Output 1
+                        
+
+0 27 9 31 28 32 19 15 18 22 15
+
+Author:
+7★kmaaszraa
+Tags:
+
+               
+                 binary-exponentation, combinatorics, fast-fourier-transform, jan20, kmaaszraa, kmaaszraa, math, primitive-root, vijju123
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+8-12-2019
+Time Limit:
+4 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

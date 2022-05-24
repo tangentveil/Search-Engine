@@ -1,0 +1,64 @@
+
+Read problems statements in Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+You have taken an eating challenge from Chef and now you have to eat exactly YY burgers. You will eat in the following way:
+
+In the first minute you will eat exactly XX burgers and every minute after that you will eat exactly twice the number of burgers you ate in the previous minute. 
+Since you can get tired of eating, Chef also allows you take a break from eating for exactly 11 minute.
+When you start eating again after taking a break, your eating streak resets, i.e. in the first minute after the break you will eat exactly XX burgers and every minute after that you will eat exactly double the burgers you ate on the previous minute. 
+
+Let a1,a2,...,aka1,a2,...,ak be the lengths of your eating streaks in minutes. Chef requires that all aiai are pairwise distinct.
+Find the minimum number of minutes you need to eat exactly YY burgers or determine it is impossible to do so.
+Input
+
+The first line contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains two space-separated integers XX and YY.
+
+Output
+For each test case, print a single line containing one integer — the minimum number of minutes you need to eat exactly YY burgers, or −1−1 if it is impossible.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤X,Y≤10181≤X,Y≤1018
+                        Sample Input 1
+                        
+
+2
+1 7
+1 4
+
+                        Sample Output 1
+                        
+
+3
+4
+
+Author:
+5★suni30102
+Editorial:
+https://discuss.codechef.com/problems/BURGER
+Tags:
+
+               
+                 Binary Exponentiation, Bitwise Operation, GP, Greedy, ad-hoc
+                 
+                     
+                     Mathematics, Number Theory, Bit Manipulation, Sequences and Progression, Exponentiation, Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2072
+Date Added:
+14-05-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

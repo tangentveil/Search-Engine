@@ -1,0 +1,63 @@
+
+Given a positive integer AA, find the total number of ordered pairs (B,C)(B,C) such that A+B2CA+B2C is any perfect square, where BB and CC are positive integers ranging between 11 to 105105.
+
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each test case contains a single number AA.
+Output:
+For each testcase, output in a single line answer i.e. total number of ordered pairs.
+
+Constraints
+1≤T,A≤1051≤T,A≤105
+
+Subtasks
+Subtask #1 (20 points) 
+
+1≤T≤101≤T≤10,
+1≤A≤1031≤A≤103
+
+ Subtask #2 (80 points)
+Original Constraints
+
+Sample Input:
+1
+
+7
+Sample Output:
+1
+EXPLANATION:
+A=7A=7
+Possible pairs  (B,C)(B,C) are (3,1)(3,1)
+
+7+32=167+32=16.
+
+Only above pair is able to produce perfect square number i.e. 1616 perfect square of 44. Thus answer is 11.
+
+Author:
+pec_chapter
+Editorial:
+https://discuss.codechef.com/problems/YAE
+Tags:
+
+               
+                 ad-hoc, math, number-theory, observation, pec_chapter, pre-computation, ucsp2021
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+31-03-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

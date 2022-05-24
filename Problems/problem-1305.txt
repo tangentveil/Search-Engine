@@ -1,0 +1,99 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Danya has a rooted tree with NN nodes (numbered 11 through NN). Node 11 is the root and for each ii (2≤i≤N2≤i≤N), the parent of the ii-th node is pipi. For each valid ii, the ii-th node also has a value aiai.
+Danya really loves his tree and wants to play with it. You should answer his QQ queries. In each query:
+
+You are given two integers XX and DD.
+Consider the set SS of all nodes vv that lie in the subtree of node XX (including XX) such that the distance between XX and vv does not exceed DD.
+The answer to this query is the number of different values avav among all v∈Sv∈S.
+
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains N−1N−1 space-separated integers p2,p3,…,pNp2,p3,…,pN.
+The third line contains NN space-separated integers a1,a2,…,aNa1,a2,…,aN.
+The fourth line contains a single integer QQ.
+QQ lines follow. Each of these lines contains two space-separated integers xx and dd describing a query; the parameters XX and DD can be computed in the following way:
+Let's denote the answer to the previous query by ansans (ans=0ans=0 if this is the first query).
+Then, X=x⊕ansX=x⊕ans and D=d⊕ansD=d⊕ans, where ⊕⊕ denotes the bitwise XOR operator.
+
+Output
+For each query, print a single line containing one integer ― the answer to the query.
+Constraints
+
+1≤T≤51≤T≤5
+1≤N≤2⋅1051≤N≤2⋅105
+1≤pi≤i−11≤pi≤i−1 for each valid ii
+1≤ai≤N1≤ai≤N for each valid ii
+1≤Q≤2⋅1051≤Q≤2⋅105
+0≤x,d≤4⋅1050≤x,d≤4⋅105
+1≤X≤N1≤X≤N
+0≤D≤N0≤D≤N
+
+Subtasks
+Subtask #1 (16 points): N,Q≤1,000N,Q≤1,000
+Subtask #2 (24 points): the tree is a bamboo, i.e. pi=i−1pi=i−1 for each valid ii
+Subtask #3 (60 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+11
+1 2 2 2 4 4 1 8 8 10
+5 3 2 3 1 1 2 4 1 2 3
+9
+2 1
+1 1
+2 3
+0 0
+2 1
+4 6
+13 4
+11 1
+13 4
+
+                        Sample Output 1
+                        
+
+3
+3
+1
+3
+5
+5
+3
+4
+1
+
+Author:
+6★sonechko
+Editorial:
+https://discuss.codechef.com/problems/DIFVAL
+Tags:
+
+               
+                 Trees, Persistent Segment Trees, Online Queries
+                 
+                     
+                     Data Structures, Graphs, Advanced Data Structures, Persistent Structures, Algorithms, Queries
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2726
+Date Added:
+20-05-2020
+Time Limit:
+3.3 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

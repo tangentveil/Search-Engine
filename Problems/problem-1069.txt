@@ -1,0 +1,85 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+You are given a set SS and QQ queries. Initially, SS is empty. In each query:
+
+You are given a positive integer XX.
+You should insert XX into SS.
+For each y∈Sy∈S before this query such that y≠Xy≠X, you should also insert y⊕Xy⊕X into SS (⊕⊕ denotes the XOR operation).
+Then, you should find two values EE and OO: the number of elements of SS with an even number of 11-s and with an odd number of 11-s in the binary representation, respectively.
+
+Note that a set cannot have duplicate elements, so if you try to insert into SS an element that is already present in SS, then nothing happens.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer QQ.
+Each of the next QQ lines contains a single integer XX describing a query.
+
+Output
+For each query, print a single line containing two space-separated integers EE and OO.
+Constraints
+
+1≤T≤51≤T≤5
+1≤Q,X≤1051≤Q,X≤105
+
+Subtasks
+Subtask #1 (30 points):
+
+1≤Q≤1,0001≤Q≤1,000
+1≤X≤1281≤X≤128
+
+Subtask #2 (70 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+3
+4
+2
+7
+
+                        Sample Output 1
+                        
+
+0 1
+1 2
+3 4
+Explanation
+Example case 1:
+
+Initially, the set is empty: S={}S={}.
+After the first query, S={4}S={4}, so there is only one element with an odd number of 11-s in the binary representation ("100").
+After the second query, S={4,2,6}S={4,2,6}, there is one element with an even number of 11-s in the binary representation (66 is "110") and the other two elements have an odd number of 11-s.
+After the third query, S={4,2,6,7,3,5,1}S={4,2,6,7,3,5,1}.
+
+
+Author:
+5★prnjl_rai
+Editorial:
+https://discuss.codechef.com/problems/PRTAGN
+Tags:
+
+               
+                 Bit Manipulation, Constructive
+                 
+                     
+                     Mathematics, Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1831
+Date Added:
+21-05-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

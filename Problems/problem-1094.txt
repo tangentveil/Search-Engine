@@ -1,0 +1,78 @@
+
+Read problems statements in Mandarin chinese, Russian and Vietnamese as well.
+ 
+You are given three integers A, B and C. You may perform the following operation an arbitrary number of times: choose one of the numbers A, B, C and either add 1 to it or subtract 1 from it.
+Find the minimum number of operations required to make the sequence A, B, C an arithmetic progression, i.e. a sequence which satisfies B - A = C - B.
+
+Input
+
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first and only line of each test case contains three space-separated integers A, B and C.
+
+Output
+For each test case, print a single line containing one integer — the minimum required number of operations.
+
+Constraints
+
+1 ≤ T ≤ 10,000
+-109 ≤ A, B, C ≤ 109
+
+Subtasks
+
+Subtask #1 (35 points): -102 ≤ A, B, C ≤ 102
+Subtask #2 (65 points): original constraints
+                        Sample Input 1
+                        
+
+5
+-5 0 5
+-5 7 6
+-10 -100 20
+1 -1 1
+51 23 10
+
+                        Sample Output 1
+                        
+
+0
+7
+105
+2
+8
+Explanation
+Example case 1: No operations are needed because 0-(-5) = 5-0.
+Example case 2: We can obtain an arithmetic progression in seven operations by adding 1 to A = -5 and subtracting 1 six times from B = 7.
+Example case 3: We should add 1 to B 105 times.
+
+Author:
+6★mgch
+Tester:
+7★lg5293
+Editorial:
+https://discuss.codechef.com/problems/AFK
+Tags:
+
+               
+                 Basic Maths, AP
+                 
+                     
+                     Mathematics, Sequences and Progression
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+27-03-2018
+Time Limit:
+0.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

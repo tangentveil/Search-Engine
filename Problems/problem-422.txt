@@ -1,0 +1,68 @@
+
+Chef has decided to move on in life and forget his last girlfriend. He has decided to get rid of all the love letters which he had received from his girlfriend by burning them. But he can burn the letters only when he is alone at home. 
+ Chef has a total of N love letters which he had received from his girlfriend and he is alone at home for S hours. Each love letter depending on the length and paper it is made up of takes time b minutes to burn. Even though Chef is sad but he’s concerned about the environment too. Therefore he want’s to burn the minimum possible letters so as to last for S hours.
+If the love letters burn for exact S hours then print the number of love letters which are burned, if the letters burn for less than S hours then print the total number of minutes for which the letters burn,which happens in case Chef runs out of letters. However, if the letters burn for more than S hours then print the minimum number of letters burned and the minimum time in minutes for which the fire burns for after S hours.
+Input
+The first line of the input contains an integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains two space separated integers N and S, where N is the number of letters chef has in total and S is the time in hours for which the fire should burn.
+N lines lines follow which each contain an integer b, which is the time taken in minutes by that letter to burn.
+Output
+For each test case, print the minimum number of letters required to be burned at least for time S. If it burns for more than S, also print the minimum difference between S and the time for which they burn. If it burns for less than S, then print the time for which it burns. If it burns for time S, then only print the no. of letters to be burned.
+
+Constraints
+
+1 ≤ T ≤ 100
+1 ≤ N ≤ 10^5
+1 ≤ S ≤ 10^4
+1 ≤ b ≤ 10^6
+
+Example
+Input:
+2
+3 12
+360
+300
+240
+5 10
+120
+120
+480
+180
+180
+
+Output:
+3 180
+2
+
+Explanation
+Example case 1. 12 hours is equal to 720 minutes.(360+300+240 ) > (720) but (360+300) < (720), (240+300)< (720), (360+240) < (720), therefore minimum no. of letters required is 3 to burn for at least 12 hours. Since it burns for time 900 minutes, so the difference between S and time is (900-720)=180.
+
+Note:The letters are burned one after the other. When one letter finishes burning, the next will be burned without any delay.
+
+Author:
+akashdeep_uiet
+Editorial:
+https://discuss.codechef.com/problems/COEX01
+Tags:
+
+               
+                 akashdeep_uiet, greedy, knapsack, medium
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+16-02-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

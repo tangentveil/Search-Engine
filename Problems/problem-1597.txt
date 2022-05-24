@@ -1,0 +1,86 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Having already mastered cooking, Chef has now decided to learn how to play the guitar. Often while trying to play a song, Chef has to skip several strings to reach the string he has to pluck. Eg. he may have to pluck the 1st1st string and then the 6th6th string. This is easy in guitars with only 66 strings; However, Chef is playing a guitar with 106106 strings. In order to simplify his task, Chef wants you to write a program that will tell him the total number of strings he has to skip while playing his favourite song.
+
+This is how guitar strings are numbered (In ascending order from right to left). Eg. to switch from string 11 to 66, Chef would have to skip 44 strings (2,3,4,5)(2,3,4,5). 
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+The first line of each test case contains NN, the number of times Chef has to pluck a string
+The second line of each test case contains NN space separated integers - S1S1, S2S2, …, SNSN, where SiSi is the number of the ithith string Chef has to pluck.
+
+Output:
+For each testcase, output the total number of strings Chef has to skip over while playing his favourite song. 
+Constraints
+
+1≤T≤101≤T≤10
+2≤N≤1052≤N≤105
+1≤Si≤1061≤Si≤106
+For each valid ii, Si≠Si+1Si≠Si+1
+
+Subtasks
+
+30 points : for each valid ii, Si<Si+1Si<Si+1
+70 points : No additional constraints
+                        Sample Input 1
+                        
+
+2
+6
+1 6 11 6 10 11
+4
+1 3 5 7
+
+                        Sample Output 1
+                        
+
+15
+3
+Explanation
+Test Case 11 
+
+Chef skips 44 strings (2,3,4,5)(2,3,4,5) to move from 11 to 66 
+Chef skips 44 strings (7,8,9,10)(7,8,9,10) to move from 66 to 1111 
+Chef skips 44 strings (10,9,8,7)(10,9,8,7) to move from 1111 to 66 
+Chef skips 33 strings (7,8,9)(7,8,9) to move from 66 to 1010 
+Chef skips 00 strings to move from 1010 to 1111 
+
+Therefore, the answer is 4+4+4+3+0=154+4+4+3+0=15 
+Test Case 22 
+
+Chef skips 11 string to move from 11 to 33 
+Chef skips 11 string to move from 33 to 55 
+Chef skips 11 string to move from 55 to 77 
+
+Therefore, the answer is 1+1+1=31+1+1=3
+
+Author:
+2★aryanag_adm
+Editorial:
+https://discuss.codechef.com/problems/CHEFSTR1
+Tags:
+
+               
+                 Implementation
+                 
+                     
+                     Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1094
+Date Added:
+3-07-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

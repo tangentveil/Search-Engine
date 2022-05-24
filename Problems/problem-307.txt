@@ -1,0 +1,80 @@
+
+There are MM levels for a building numbered from 11 to MM from top to bottom, each level having NN parking spots numbered from 11 to NN from left to right. Some spots might have a car while other may be empty, the information of which is given in form of two dimensional character array CC (Ci,jCi,j denote parking spot at jj-th position on ii-th level).
+There is a thief who wants to unlock all the cars. Now, he is skilled such that for the first time, he can directly reach in any parking spot in no time. Basically he can reach the first car to be stolen in 0 time.
+Now, he can move within the parking lot only in following manner, each taking 1 unit of time:
+
+Move down a level. That is, if current position is (i,j)(i,j), then he reaches (i+1,j)(i+1,j)
+If current position is (i,j)(i,j) and if
+ii is odd, then he can move from (i,j)(i,j) to (i,j+1)(i,j+1)
+ii is even, then he can move from (i,j)(i,j) to (i,j−1)(i,j−1)
+
+Note that he wants to unlock the cars in minimum time and the car is unlocked as soon as the thief reaches that parking spot.If the parking lot is empty, then the time taken is considered to be 0.  
+Find the minimum time when all the cars would be unlocked. Note that once all cars are unlocked, the thief can escape instantly, so this time does not count.
+Input :
+
+The first line of input contains a single integer TT (number of test cases).
+First liine of each test case contains MM and NN(number of levels and spots per each level)  
+Next MM line contains NN space separated characters Ci,1,Ci,2…Ci,NCi,1,Ci,2…Ci,N  where (1≤i≤M)(1≤i≤M) and Ci,jCi,j is either ′P′′P′ or ′N′′N′ (without quotes).
+If the spot contains ′P′′P′, then a car is parked there. else, it’s not parked.
+
+Output :
+For each test case print a single integer, the minimum time in which thief can unlock all cars.
+Constraints :
+
+1≤T≤100.1≤T≤100. 
+1≤M,N≤3001≤M,N≤300 
+
+Subtasks :
+
+Subtask 1 (20 points): 1≤M≤2.1≤M≤2. 
+Subtask 2 (80 points): Original Constraints
+
+Sample Input :
+2
+4 5
+N P N N P
+N N P N N
+N P N N N
+P N N N N
+3 3
+N P P
+P P P 
+P P N
+
+Sample Output :
+10
+6
+
+Explanation:
+In the first case, He will select the spot (1,2)(1,2) and the path he takes will be (1,2)→(1,3)→(1,4)→(1,5)→(2,5)→(2,4)→(2,3)→(2,2)→(3,2)→(4,2)→(4,1)(1,2)→(1,3)→(1,4)→(1,5)→(2,5)→(2,4)→(2,3)→(2,2)→(3,2)→(4,2)→(4,1)
+So, he takes 10 steps to unlock all the cars.
+In the second case, He will select the spot (1,2)(1,2) and the path he takes will be (1,2)→(1,3)→(2,3)→(2,2)→(2,1)→(3,1)→(3,2)(1,2)→(1,3)→(2,3)→(2,2)→(2,1)→(3,1)→(3,2).
+So, he takes 6 steps.
+
+Author:
+4★imreally_john
+Editorial:
+https://discuss.codechef.com/problems/CARLOT
+Tags:
+
+               
+                 chptrs01, greedy, imreally_john, matrices
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+24-03-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

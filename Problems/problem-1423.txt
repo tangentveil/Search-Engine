@@ -1,0 +1,71 @@
+
+Omi loves to play with Segment Trees. Now, Govi wants to test his knowledge about segment trees. He gave him a array of length NN, where each element of the array is from 11 to KK ( both inclusive ) . He asked him QQ queries of two types :
+
+Type 1 :  1 uu vv -> Update the value at position uu to vv.
+Type 2 :  2 -> Find the length of the shortest contiguous subarray which contain all the integers from 11 to KK.
+
+Input:
+
+The first line contains three space-separated integers NN, KK and QQ
+The second line contains N space-separated integers A1,A2,…,AN.
+Next QQ lines contain two types of queries-> 
+1 u v OROR 2
+
+Output:
+For each query of type 22, output in a single line answer given by Omi, if no subarray exist print −1−1.
+Constraints
+
+1≤N≤1051≤N≤105
+1≤K≤501≤K≤50
+1≤Q≤1051≤Q≤105
+1≤A[i]≤K1≤A[i]≤K
+1≤u≤N1≤u≤N
+1≤v≤K1≤v≤K
+
+Sample Input:
+  6 3 4
+  1 3 2 1 2 3    
+  1 1 2
+  2
+  1 4 3
+  2
+
+Sample Output:
+3
+
+-1
+EXPLANATION:
+
+After First Query, array becomes : [2,3,2,1,2,3][2,3,2,1,2,3]
+Output for Second Query = 3
+After third query, array becomes : [2,3,2,3,2,3][2,3,2,3,2,3]
+Output for the  Fourth Query = -1 (No contiguous subarray that contains all the integers from 11 to KK) 
+
+
+Author:
+2★piyushbhutani
+Editorial:
+https://discuss.codechef.com/problems/SEGTREES
+Tags:
+
+               
+                 hard, heap, lico2020, piyushbhutani, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+18-06-2020
+Time Limit:
+1 - 3 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

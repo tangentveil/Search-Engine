@@ -1,0 +1,89 @@
+
+Given 33 string S1S1, S2S2 and XX, find the number of non-empty substrings of XX which can expressed as P+QP+Q i.e. concatenation of strings PP and QQ, where PP is some prefix of S1S1 (possibly empty) and QQ is some prefix of S2S2 (possibly empty).
+A substring of a string is a contiguous subsequence of that string. For example, "chef" is a substring of "codechef", but "def" is not.
+A prefix of a string SS is a substring of SS that occurs at the beginning of SS. For example, "code" is a prefix of "codechef", but "chef" is not. Also, an empty string is a prefix of any string.
+Input Format
+
+First line of the input contains TT, the number of test cases. Then the test cases follow.
+Each test case contains three lines, string S1S1 in the first line, string S2S2 in the second line and string XX in the third line. All strings consist of only lowercase Latin letters.
+
+Output Format
+For each test case, print a single line containing one integer denoting the number of substrings of XX that satisfy the above conditions.
+Constraints
+
+1≤T≤1051≤T≤105
+1≤|X|,|S1|,|S2|≤1061≤|X|,|S1|,|S2|≤106
+Sum of |X||X| over all test cases doesn't exceed 106106.
+Sum of |S1||S1| over all test cases doesn't exceed 106106.
+Sum of |S2||S2| over all test cases doesn't exceed 106106.
+                        Sample Input 1
+                        
+
+3
+ab
+bc
+abc
+aa
+bb
+ab
+aab
+acb
+bcaabacbc
+
+                        Sample Output 1
+                        
+
+5
+3
+10
+Explanation
+Test case 1:
+There are 6 substrings of X=abcX=abc namely [a,b,c,ab,bc,abc][a,b,c,ab,bc,abc].
+
+Observe that aa is a prefix of S1=abS1=ab and an empty string is a prefix of S2=bcS2=bc. By concatenating them, we get the string aa.
+Now an empty string is a prefix of S1S1 and bb is a prefix of S2S2. And by concatenating them, we get the string bb.
+Observe that there is no prefix of S1S1 starting with cc and also no prefix of S2S2 starting with cc. So we cannot express the string cc as a concatenation of prefixes.
+The string abab is a prefix of S1S1 and an empty string is a prefix of S2S2. And by concatenation, we get abab.
+Similarly, an empty string is a prefix of S1S1 and bcbc is a prefix of S2S2. And by concatenating them, we get bcbc.
+Finally, by taking the prefix aa of S1S1 and the prefix bcbc of S2S2, we get abcabc when we concatenate them.
+
+So all substrings of XX except for the substring cc can be expressed as a concatenation of some prefix of S1S1 and some prefix of S2S2. Therefore, the answer for this test case is 55.
+Test case 2:
+There are 3 substrings of X=abX=ab namely [a,b,ab][a,b,ab].
+
+Observe that aa is a prefix of S1=aaS1=aa and an empty string is a prefix of S2=bbS2=bb. By concatenating them, we get the string aa.
+An empty string is a prefix of S1S1 and bb is a prefix of S2S2. And by concatenating them, we get the string bb.
+Finally, by taking the prefix aa of S1S1 and the prefix bb of S2S2, we get abab when we concatenate them.
+
+So all substrings of XX can be expressed as a concatenation of some prefix of S1S1 and some prefix of S2S2. Therefore, the answer for this test case is 33.
+
+Author:
+suryaprak_adm
+Editorial:
+https://discuss.codechef.com/problems/SSTRPREF
+Tags:
+
+               
+                 Sparse Table, Segment Trees, Pre processing, Z Algorithm, Range Minimum Queries
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures, Advanced Algorithms, String Matching, Algorithms, Queries
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+23-09-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

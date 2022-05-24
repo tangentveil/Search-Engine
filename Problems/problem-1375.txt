@@ -1,0 +1,98 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+You are given NN segments (l1,r1),(l2,r2),(lN,rN)(l1,r1),(l2,r2),(lN,rN) and two integers AA and BB. Let's define playing a game with two parameters (x,y)(x,y), where 0≤x≤N0≤x≤N, as the following recursive process:
+
+If x=0x=0, the game ends immediately.
+Otherwise, if y≤lxy≤lx or rx≤yrx≤y, end this game and play a game with (x−1,y)(x−1,y).
+Otherwise (if lx<y<rxlx<y<rx), you must choose one of the following options:
+Pay AA coins, end this game and play a game with (x−1,y)(x−1,y).
+Pay BB coins, end this game and play two independent games — a game with (x−1,lx)(x−1,lx) and a game with (x−1,rx)(x−1,rx).
+
+You should answer QQ independent queries. In each query, you are given two integers xx and yy and you should start by playing a game with parameters (x,y)(x,y). Your goal is to reach a state when you should not play any games, since you have successfully ended every game you should have played. Find the minimum number of coins required for reaching this state.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains four space-separated integers NN, QQ, AA and BB.
+For each ii (1≤i≤N1≤i≤N), the ii-th of the next NN lines contains two space-separated integers lili and riri.
+QQ lines follow. Each of these lines contains two space-separated integers xx and yy describing a query.
+
+Output
+For each query, print a single line containing one integer — the minimum number of coins.
+Constraints
+
+1≤T≤1001≤T≤100
+1≤N,Q≤2⋅1051≤N,Q≤2⋅105
+1≤li≤ri≤2⋅1051≤li≤ri≤2⋅105 for each valid ii
+1≤x≤N1≤x≤N
+1≤y≤2⋅1051≤y≤2⋅105
+1≤A,B≤2⋅1051≤A,B≤2⋅105
+the sum of NN over all test cases does not exceed 5⋅1055⋅105
+the sum of QQ over all test cases does not exceed 5⋅1055⋅105
+
+Subtasks
+Subtask #1 (40 points): Q,N≤103Q,N≤103
+
+the sum of NN over all test cases does not exceed 5⋅1035⋅103
+the sum of QQ over all test cases does not exceed 5⋅1035⋅103
+
+Subtask #2 (60 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+4 3 3 4
+3 5
+3 5
+1 3
+2 5
+4 4
+4 5
+1 4
+
+                        Sample Output 1
+                        
+
+7
+0
+3
+Explanation
+Example case 1: One of the strategies that use the minimum number of coins is:
+
+Pay 33 coins and play a game with (3,4)(3,4).
+In the game with (3,4)(3,4), you just play a game with (2,4)(2,4), since 44 is outside the 33-rd segment.
+In the game with (2,4)(2,4), pay 44 coins and play games with (1,3)(1,3) and (1,5)(1,5).
+Both of these games end without paying any more coins. The only thing left is playing games with (0,3)(0,3) and (0,5)(0,5), which end immediately, also without paying any coins.
+
+The total number of coins used in this strategy is 77.
+
+Author:
+7★farhod_farmon
+Editorial:
+https://discuss.codechef.com/problems/BOFS
+Tags:
+
+               
+                 Lazy Propagation, Sorting
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures, Segment Trees, Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2914
+Date Added:
+21-06-2019
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

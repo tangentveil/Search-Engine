@@ -1,0 +1,67 @@
+
+Read problems statements in Mandarin chinese, Russian and Vietnamese as well.
+Given an integer A that contains n > 1 digits. You are asked to remove exactly one digit to make the result number is divisible by 6, also make it biggest possible.
+ 
+Input
+The first line contains an integer T, denotes the number of test cases. Each test case is described by an integer A in a single line.
+ 
+Output
+Each test case, output the answer on a single line (it's allowed to delete a digit such that the resulting number contains leading zeroes, you shouldn't remove them in this case). If it is impossible to make the result number satisfies the above condition,
+ output -1.
+ 
+Constraints
+
+1 ≤ T ≤ 100
+2 ≤ n ≤ 105
+A will not contain leading zeroes
+the sum of n over all test cases ≤ 106
+
+ 
+Subtasks:
+
+Subtask #1 (30 points): the sum of n over all test cases ≤ 2000
+Subtask #2 (70 points): original constrains
+                        Sample Input 1
+                        
+
+3
+123
+100222
+10003
+
+                        Sample Output 1
+                        
+
+12
+00222
+-1
+
+Author:
+6★chemthan
+Tester:
+6★melfice
+Editorial:
+https://discuss.codechef.com/problems/MAXNUM3
+Tags:
+
+               
+                 ad-hoc, chemthan, easy, ltime53
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2083
+Date Added:
+24-10-2017
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

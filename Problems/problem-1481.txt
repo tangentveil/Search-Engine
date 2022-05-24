@@ -1,0 +1,78 @@
+
+Gotham City is the home of Batman, and Batman likes to keep his people together. 
+There are NN houses in the city. The resident of the ithith house is of type AiAi. It is known that people of the same type are friends and people of different types are not friends. 
+To maintain peace, Batman can do the following type of operation:
+
+Choose indices ii and jj (1≤i≤j≤N)(1≤i≤j≤N) and reverse the substring A[i,j]A[i,j]. 
+
+Determine the length of the longest range of friends after applying at most kk operations on the string for all 0≤k≤N0≤k≤N.
+Input Format
+
+First line will contain TT, the number of test cases. Then the test cases follow.
+The first line of each test case contains a single integer NN, the number of houses in Gotham city.
+The next line contains a string AA with NN characters. The ithith character denotes the type of the ithith person.
+
+Output Format
+For each test case, output a single line, (N+1)(N+1) space-separated integers where the ithith integer signifies the length of the longest range of friends after applying  at most ii operations.
+Constraints
+
+1≤T≤10001≤T≤1000
+1≤N≤2⋅1051≤N≤2⋅105
+Sum of NN over all test cases does not exceed 2⋅1052⋅105.
+String AA contains lowercase English alphabets only.
+                        Sample Input 1
+                        
+
+3
+4
+aaaa
+4
+abca
+7
+babbaab
+
+                        Sample Output 1
+                        
+
+4 4 4 4 4
+1 2 2 2 2
+2 3 4 4 4 4 4 4
+Explanation
+Test case 11: All 44 people are friends. Thus, the answer is 44 for all values of kk.
+Test case 22: 
+
+For k=0k=0, the length of the longest range of friends is 11.
+For k=1k=1, we can choose i=1i=1 and j=3j=3. On reversing the substring [1,3][1,3], we get cbaa. Thus, length of longest range of friends is 22.
+For k=2,3,k=2,3, and 44, the length of the longest range of friends is 22 as no more people of the same type can be grouped together.
+
+
+Author:
+5★bwayne
+Editorial:
+https://discuss.codechef.com/problems/CRZYSUBSTR
+Tags:
+
+               
+                 Arrays, Mathematics, Dynamic Programming, Hashing
+                 
+                     
+                     Data Structures, Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2126
+Date Added:
+23-04-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

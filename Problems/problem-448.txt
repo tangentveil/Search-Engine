@@ -1,0 +1,61 @@
+
+Steve is in a fight with Hydra. He has nn gun shots. He has to kill the enemy in order to rule their territory. But, he can only fire 11 or 22 shots at each move. He also wants the number of moves to be a multiple of an integer kk otherwise the gun will explode.
+Help Steve to find the minimal number of moves to win the battle against Hydra by following the conditions given.
+
+Input:
+First line contains TT, number of testcases. Then the testcases follow.
+Each testcase contains two space separated integers nn, kk.
+
+*Note: Input file can be empty*
+
+Output:
+For each testcase, output an integer i.e. minimal number of moves being a multiple of kk. If there is no way he can win the battle by following the condition, print  −1−1.
+
+Constraints
+1≤T≤1031≤T≤103
+1≤n≤1041≤n≤104
+1≤k≤101≤k≤10
+
+Subtasks
+Subtask #1(100 points): Original Constraints
+
+Sample Input:
+2
+10 2
+3 5
+
+Sample Output:
+6
+-1
+
+EXPLANATION:
+For the first case, Steve could win the battle in 6 moves with following sequence of steps: {2, 2, 2, 2, 1, 1}. 
+For the second test, there are only three valid sequence of steps {2, 1}, {1, 2}, {1, 1, 1} with 2, 2, and 3 steps respectively. All these numbers are not multiples of 5.
+
+Author:
+pec_chapter
+Editorial:
+https://discuss.codechef.com/problems/STAG
+Tags:
+
+               
+                 greedy, implementation, math, pec_chapter
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+5-05-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,80 @@
+
+Read problems statements in Hindi,
+Mandarin chinese
+, Russian and Vietnamese as well.
+Chef is organising a contest with PP problems (numbered 11 through PP). Each problem has SS subtasks (numbered 11 through SS).
+The difficulty of a problem can be calculated as follows:
+
+Let's denote the score of the kk-th subtask of this problem by SCkSCk and the number of contestants who solved it by NSkNSk.
+Consider the subtasks sorted in the order of increasing score.
+Calculate the number nn of valid indices kk such that NSk>NSk+1NSk>NSk+1.
+For problem ii, the difficulty is a pair of integers (n,i)(n,i).
+
+You should sort the problems in the increasing order of difficulty levels. Since difficulty level is a pair, problem aa is more difficult than problem bb if the number nn is greater for problem aa than for problem bb, or if a>ba>b and nn is the same for problems aa and bb.
+Input
+
+The first line of the input contains two space-separated integers PP and SS denoting the number of problems and the number of subtasks in each problem.
+2P2P lines follow. For each valid ii, the 2i−12i−1-th of these lines contains SS space-separated integers SC1,SC2,…,SCSSC1,SC2,…,SCS denoting the scores of the ii-th problem's subtasks, and the 2i2i-th of these lines contains SS space-separated integers NS1,NS2,…,NSSNS1,NS2,…,NSS denoting the number of contestants who solved the ii-th problem's subtasks.
+
+Output
+Print PP lines containing one integer each — the indices of the problems in the increasing order of difficulty.
+Constraints
+
+1≤P≤100,0001≤P≤100,000
+2≤S≤302≤S≤30
+1≤SCi≤1001≤SCi≤100 for each valid ii
+1≤NSi≤1,0001≤NSi≤1,000 for each valid ii
+in each problem, the scores of all subtasks are unique
+
+Subtasks
+Subtask #1 (25 points): S=2S=2
+Subtask #2 (75 points): original constraints
+
+                        Sample Input 1
+                        
+
+3 3
+16 24 60
+498 861 589
+14 24 62
+72 557 819
+16 15 69
+435 779 232
+
+                        Sample Output 1
+                        
+
+2
+1
+3
+
+Author:
+5★vidyut_1
+Editorial:
+https://discuss.codechef.com/problems/PROBLEMS
+Tags:
+
+               
+                 ad-hoc, Sorting
+                 
+                     
+                     Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1601
+Date Added:
+15-06-2018
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,61 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+In Chefland, there are NN cities (numbered 11 through NN). Initially, there are no roads between them. The Mayor of Chefland has ordered engineers to build roads across Chefland in such a way that each city is reachable from all other cities.
+For each pair of distinct cities ii and jj, the cost of building a road between these cities is equal to (i∧ji∧j), where ∧∧ denotes the bitwise AND operation. However, leaders of the cities have a weird condition ― they only allow roads with positive costs to be built from their cities.
+Help the Mayor find the minimum cost of building roads in the required way or determine that it is impossible.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first and only line of each test case contains a single integer NN. 
+
+Output
+For each test case, print a single line containing one integer ― the minimum cost of building the roads or −1−1 if it is impossible.
+Constraints
+
+1≤T≤2⋅1051≤T≤2⋅105
+2≤N≤1092≤N≤109
+                        Sample Input 1
+                        
+
+2
+3
+5
+
+                        Sample Output 1
+                        
+
+3
+8
+Explanation
+Example case 1: We can connect city 11 with city 33 by a road with cost 11 and city 33 with city 22 by a road with cost 22.
+
+Author:
+5★pandey__ji
+Editorial:
+https://discuss.codechef.com/problems/CROADS
+Tags:
+
+               
+                 Bitwise Operation, Arithmetic, ad-hoc, Observation
+                 
+                     
+                     Mathematics, Bit Manipulation, Basic Maths, Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2136
+Date Added:
+2-05-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

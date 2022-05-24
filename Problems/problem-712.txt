@@ -1,0 +1,70 @@
+
+Due to the outbreak of the novel coronavirus, every one of us has been quarantined for months without being able to see our friends and relatives(yes relatives).
+There are two friends in our story namely Jawed and Mohan. Before the pandemic, they use to spend most of the time together solving Competitive problems. But due to lockdown, they have not been able to see each other for months. But their family members usually meet in the shops when they come out to purchase essential items such as medicine or groceries.
+Recently Jawed has been tested positive for Covid-19. It is highly expected the people who came within direct contact with Jawed may also posses this virus and need to be quarantined as quickly as possible. You being a family member of Mohan, want to know whether he needs to be quarantined or not.
+Input:
+
+First-line will contain TT, the number of test cases. Then the test-cases follow. 
+The first line of each test-case would contain 3 space-separated inputs- NN(number of relations), XX(string denoting Jawed) and YY(string denoting Mohan). 
+Next NN lines would contain 2 space-separated inputs-AA and BB such that BB is either the friend or relative of AA who came into direct contact with him during the lockdown
+
+Output:
+For each test case, output in a single line "Quarantine" if there is a possibility that Mohan is infected or else "Stay Home, Stay Safe".
+Constraints
+
+1≤T≤10001≤T≤1000
+2≤N≤1032≤N≤103
+|A|,|B|,|X|,|Y|≤10|A|,|B|,|X|,|Y|≤10
+A,B,X,YA,B,X,Y contain only capital english alphabets
+
+Sample Input:
+2
+5 JAVED MOHAN
+JAVED HARRY
+ROHAN SHIVAM
+AKASH ARNAB
+MOHAN ARNAB
+DEEPIKA ROHAN
+9 A X
+F H
+G W
+E A
+H W
+E B
+B U
+U F
+X O
+O W
+
+Sample Output:
+Stay Home, Stay Safe
+Quarantine
+
+
+Author:
+4★akay_99
+Editorial:
+https://discuss.codechef.com/problems/ECJN206
+Tags:
+
+               
+                 akay_99, graphs
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+17-06-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

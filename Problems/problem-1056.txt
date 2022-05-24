@@ -1,0 +1,71 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese, and Bengali as well.
+Chef just got a box of chocolates as his birthday gift. The box contains NN chocolates in a row (numbered 11 through NN), where NN is even. For each valid ii, the ii-th chocolate has a sweetness value WiWi.
+Chef wants to eat all the chocolates in the first half of the box and leave all chocolates in the second half uneaten. Since he does not like chocolates that are too sweet, he will be unhappy if at least one of the chocolates he eats has the maximum sweetness among all the chocolates in the box.
+A right cyclic shift by kk chocolates (0≤k<N0≤k<N) consists of moving the last kk chocolates in the row to the beginning in the same order and moving each of the remaining N−kN−k chocolates kk places to the right. Before eating the first half of the chocolates, Chef wants to perform some right cyclic shift in such a way that he will not be unhappy after eating them. Find the number of ways to do this, i.e. the number of valid integers kk such that if Chef performs the right cyclic shift by kk chocolates and then eats the first half of the chocolates in the box, he does not become unhappy.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers W1,W2,…,WNW1,W2,…,WN.
+
+Output
+For each test case, print a single line containing one integer ― the number of shifts for which Chef does not become unhappy.
+Constraints
+
+1≤T≤51≤T≤5
+1≤N≤1051≤N≤105
+NN is even
+1≤Wi≤1051≤Wi≤105 for each valid ii
+                        Sample Input 1
+                        
+
+2
+6
+1 1 2 1 1 1
+6
+1 1 2 1 1 2
+
+                        Sample Output 1
+                        
+
+3
+0
+Explanation
+Example case 1: The three valid right shifts and the contents of the box for these shifts are:
+
+shift by k=1k=1: (1,1,1,2,1,1)(1,1,1,2,1,1)
+shift by k=2k=2: (1,1,1,1,2,1)(1,1,1,1,2,1)
+shift by k=3k=3: (1,1,1,1,1,2)(1,1,1,1,1,2)
+
+
+Author:
+6★imanik
+Editorial:
+https://discuss.codechef.com/problems/CHCBOX
+Tags:
+
+               
+                 ad-hoc, Cyclic Rotation
+                 
+                     
+                     Algorithms, Constructive, Simple Algos
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1730
+Date Added:
+13-03-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

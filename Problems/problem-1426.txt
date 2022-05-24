@@ -1,0 +1,67 @@
+
+You have given a string SS of lenght NN consisting of only lowercase english letters.       
+Let F(S) =  no of unique palindromic substrings in SS 
+You need to minimize F(s) by doing following operation exactly once.
+Choose a index i and replace SiSi with 0.                
+Find the minimum value of F(S) and also find the index which gives minimum value of F(S) . If there are multiple indices which give minimum value of F(S). Then print the largest index.
+Input:
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of T test cases follows.       
+Next  Line contains a single integer NN.            
+Next Line contains a string SS.
+
+Output:
+For each testcase print two values Minimum value of F(X) , largest index which gives this Minimum value.
+Constraints
+
+1≤T≤101≤T≤10
+2≤N≤1052≤N≤105 
+S contains only lowercase english letters
+
+Sample Input:
+1
+3
+
+aaa
+Sample Output:
+3 3
+
+EXPLANATION:
+Operation 1 : S1S1 = 0 then S = "0aa"
+No of unique palindromes substrings in S = [ 0 , a, aa]
+F(S) = 3            
+Operation 2 : S2S2 = 0 then S = "a0a"
+No of unique palindromes substrings in S = [ 0 , a, a0a]
+F(S) = 3
+Operation 3 : S3S3 = 0 then S = "aa0"
+No of unique palindromes substrings in S = [ 0 , a, aa]
+F(S) = 3        
+All above 3 operations gives F(S) = 3 but index = 3  is the largest index which gives F(X) = 3
+
+Author:
+5★pankajsharma1
+Editorial:
+https://discuss.codechef.com/problems/ECPC10G
+Tags:
+
+               
+                 ecpg2020, hard, manachers-algorithm, pankajsharma1, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+22-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

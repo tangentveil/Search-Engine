@@ -1,0 +1,75 @@
+
+ 
+GANDEY and GHATAK play the following game. They choose a number N to play with.
+ The rules are as follows :
+1) GANDEY plays first, and the two players alternate.
+2) In his turn, if N is a perfect square the player reduces N to square root of N and if N is not a perfect square he subtracts 1 from N . The number thus obtained is the new N.
+3) The game ends when N reaches 1.
+4) The person who finally reduces N to 1 wins the game.
+Given N you have to predict who will win the game?
+
+ 
+Input
+The first line contains the number of test cases T. Each of the next T lines contains an integer N.
+ 
+Output
+Output T lines, one for each test case, containing "GANDEY" if GANDEY wins the game, or "GHATAK" (without quotes) otherwise.
+ 
+Constraints
+
+1 ≤ T ≤ 100
+2 ≤ N ≤ 10000
+
+ 
+Example
+Sample Input:
+3
+2
+3
+4
+Sample Output:
+GANDEY
+GHATAK
+GHATAK
+
+ 
+Explanation
+Case 1. GANDEY - 2->1
+		  Therefore GANDEY wins
+	
+Case 2.
+ GANDEY - 3->2 GHATAK  - 2->1Therefore GHATAK wins
+	
+Case 3.
+ GANDEY - 4->2
+GHATAK  - 2->1
+Therefore GHATAK wins
+	
+
+Author:
+2★mightysg
+Editorial:
+https://discuss.codechef.com/problems/RSGAME
+Tags:
+
+               
+                 ad-hoc, mightysg
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+6-03-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

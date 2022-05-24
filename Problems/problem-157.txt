@@ -1,0 +1,72 @@
+
+Tonmoy has a special torch. The torch has 44 levels numbered 11 to 44 and 22 states (OnOn and OffOff). Levels 1,2,1,2, and 33 correspond to the OnOn state while level 44 corresponds to the OffOff state. 
+The levels of the torch can be changed as:
+
+Level 11 changes to level 22.
+Level 22 changes to level 33.
+Level 33 changes to level 44.
+Level 44 changes to level 11.
+
+Given the initial state as KK and the number of changes made in the levels as NN, find the final state of the torch. If the final state cannot be determined, print AmbiguousAmbiguous instead.
+Input Format
+
+First line will contain TT, the number of test cases. Then the test cases follow.
+Each test case contains of a single line of input, two integers N,KN,K - the number of changes made in the levels and initial state of the torch. Here, K=0K=0 denotes OffOff state while K=1K=1 denotes OnOn state. 
+
+Output Format
+For each test case, output in a single line, the final state of the torch, i.e. OnOn or OffOff. If the final state cannot be determined, print AmbiguousAmbiguous instead.
+You may print each character of the string in uppercase or lowercase (for example, the strings OnOn, ONON, onon and oNoN will all be treated as identical).
+Constraints
+
+1≤T≤1051≤T≤105
+0≤N≤1090≤N≤109
+0≤K≤10≤K≤1
+                        Sample Input 1
+                        
+
+3
+4 0
+0 1
+3 1
+
+                        Sample Output 1
+                        
+
+Off
+On
+Ambiguous
+Explanation
+Test Case 11: Initially, the torch is in OffOff state. Since only level 44 corresponds to the OffOff state, the torch is at level 44 initially. After 44 changes, the final level would be 44. Level 44 corresponds to the OffOff state. Hence, finally the torch is OffOff. 
+Test Case 22: Initially, the torch is in OnOn state. After 00 changes, the torch remains in the OnOn state.
+Test Case 33: Initially, the torch is in OnOn state. This can correspond to any of the first 33 levels. Thus, we cannot determine the final level after 33 changes. Hence, the final state is AmbiguousAmbiguous.
+
+Author:
+4★rudro25
+Editorial:
+https://discuss.codechef.com/problems/DARLIG
+Tags:
+
+               
+                 Case work
+                 
+                     
+                     Special
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+994
+Date Added:
+4-04-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

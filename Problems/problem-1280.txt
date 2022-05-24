@@ -1,0 +1,68 @@
+
+          
+            Nuttela and horsbug were out fishing, when they suddenly remember the pending homework.
+They rush home to complete the task within a stipulated time. Provided with a string of length NN, they have to find vowels in a particular sub string. Since, this would be very easy to execute, the teacher also asked them to update some characters of the string in between. Looking at the watch, Nuttela and horsbug panics. They are very late and need your help. Can you help them complete the assignment as fast as possible?
+ 
+Input:
+
+ The first line of input contains TT test cases. 
+  For every TT test case, the first line will contain the string SS 
+ The next line will be QQ Queries. 
+ For every QQ queries, we take three space-separated inputs. 
+FF LL RR −−  Input LL and RR [1-based indexing] the Left and Right index of the sub string respectively. Find the number of vowels in the sub string.
+UU II VV −− Input II and VV ,the index [1-based indexing] of update and the updates letter respectively. Update the index II of the string SS with VV character.
+Output:
+For each FF  operation, we output a single integer, the number of vowels in the sub string [L.....RL.....R]. 
+For UU operation, we do not print anything.
+Constraints:
+
+ 11 ≤ TT ≤ 1010
+ 22 ≤ SS ≤ 101066
+ 22 ≤ QQ ≤ 101055
+ 11 ≤ II ≤ |SS|
+ 11 ≤ LL ≤ RR ≤ |SS|
+ VV and string has only lower case characters.
+
+Sample Input:
+2
+helloworld
+3
+F 1 10
+U 1 i
+F 1 10
+abcde
+2
+U 2 a
+F 1 2
+Sample Output:
+3
+4
+2
+
+Author:
+5★nuttela
+Editorial:
+https://discuss.codechef.com/problems/AVNP5
+Tags:
+
+               
+                 easy, enau2019, nuttela, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+3-04-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

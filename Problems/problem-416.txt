@@ -1,0 +1,64 @@
+
+ 
+Lazelle is a stubborn and rebellious child. On the morning of her 6th birthday, she decides to distribute candies to her classmates. Her class comprises of students seated in different rows of varying sizes. Known for her attitude, to dislike people, Lazzelle chooses to give candies only to certain people. After sharing candies, to the entire class, Lazzelle noticed that there was no row -that had a classmate who did not get candies seated in between two classmates who got candies.
+
+Given are a set of T rows with the sequence of given-not given. For each row determine the minimum number of changes(flips) required to make it a Lazelle Row
+
+0 - means candy not given
+
+1 - means candy given
+
+Input
+Input description.
+The first line of the input contains an integer T denoting the number of rows(test cases).
+Each test case contains an integer(length of string) N followed by a binary string S that specifes configuration of candies given-not given in that row. 
+ 
+Output
+Output description.
+For each row print a single integer denoting the minimum number of flips required to make it Lazzelle's row.
+ 
+Constraints
+
+1 ≤ T ≤ 10
+1 ≤ N ≤ 104
+string S contains 0s and 1s
+
+ 
+Example
+Input:
+2
+8 10100101
+9 111000111
+
+Output:
+2
+0
+
+
+Author:
+4★vivek_reddy
+Editorial:
+https://discuss.codechef.com/problems/LZRW
+Tags:
+
+               
+                 contest, easy, greedy, vivek_reddy
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-03-2018
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

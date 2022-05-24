@@ -1,0 +1,66 @@
+
+Recently Chefa started doubting that Chef is cheating on her as he remains busy most of the time and barely spends time with her. He claims to be busy with his college studies. Chefa does not belive this 
+claim obviously. But to test if he is really busy learning, she wants to play a game with Chef.
+Chefa has N boxes numbered 1 to N. The ith box contains Bi balls. Now Chefa gives an integer X to Chef. She will ask Chef Q queries which Chef has to 
+answer correctly to prove that he is telling the truth. Help Chef in answering the queries.
+See input format and example for clarification.
+
+Input
+
+The first line contains three space separated integers N and Q and X denoting the number of boxes, number of queries and the value of X respectively.
+The next line contains N space-separated integers the ith(1 <= i <= N) of which Bi is the number of balls in box i.
+Q lines follow. Each line contain a query.
+There are two types of queries:-
+
+1 l r Y - Add Y balls to each box between indices l and r (inclusive).
+2 l r - Report the number of boxes between indices l and r (inclusive) in which the number of balls are exactly divisible by X.
+
+Output
+For each query of type 2 l r, output a new line containing the answer to the corresponding query.
+Constraints
+
+1 <= N, Q <= 105
+1 <= X <= 10
+0 <= Bi, Y <= 106
+1 <= l <= r <= N
+
+Example Input
+6 4 2
+16 8 11 10 14 4
+1 2 5 4
+2 1 5
+1 3 5 3
+2 1 5
+
+Example Output
+4
+3
+
+
+Author:
+5★horsbug98
+Editorial:
+https://discuss.codechef.com/problems/CFATC
+Tags:
+
+               
+                 encoding, horsbug98, horsbug98, lazy-propagation, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+28-01-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

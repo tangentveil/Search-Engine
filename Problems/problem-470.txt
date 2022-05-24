@@ -1,0 +1,85 @@
+
+Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef found a matrix AA with NN rows (numbered 11 through NN) and MM columns (numbered 11 through MM), where for each row rr and column cc, the cell in row rr and column cc (denoted by (r,c)(r,c)) contains an integer Ar,cAr,c.
+This matrix has two interesting properties:
+
+The integers in each row form a non-decreasing sequence, i.e. for each valid ii, Ai,1≤Ai,2≤…≤Ai,MAi,1≤Ai,2≤…≤Ai,M.
+The integers in each column also form a non-decreasing sequence, i.e. for each valid jj, A1,j≤A2,j≤…≤AN,jA1,j≤A2,j≤…≤AN,j.
+
+A KK-worthy submatrix is a square submatrix of AA, i.e. a submatrix with ll rows and ll columns, for any integer ll, such that the average of all the integers in this submatrix is ≥K≥K. 
+Chef wants you to find the number of KK-worthy submatrices of AA.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains three space-separated integers NN, MM and KK.
+NN lines follow. For each valid ii, the ii-th of these lines contains MM space-separated integers Ai,1,Ai,2,Ai,3,…,Ai,MAi,1,Ai,2,Ai,3,…,Ai,M.
+
+Output
+For each test case, print a single line containing one integer ― the number of KK-worthy submatrices of AA.
+Constraints
+
+1≤T≤101≤T≤10
+1≤N⋅M≤1061≤N⋅M≤106
+N≤MN≤M
+0≤K≤1090≤K≤109
+0≤Ar,c≤1090≤Ar,c≤109 for each valid r,cr,c
+the sum of N⋅MN⋅M over all test cases does not exceed 106106
+
+Subtasks
+Subtask #1 (15 points): the sum of N⋅MN⋅M over all test cases does not exceed 103103
+Subtask #2 (25 points): the sum of N⋅MN⋅M over all test cases does not exceed 4⋅1054⋅105
+Subtask #3 (60 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+3 3 4
+2 2 3
+3 4 5
+4 5 5
+
+                        Sample Output 1
+                        
+
+7
+Explanation
+Example case 1: The following are the seven 44-worthy submatrices:
+
+[3445][3445]
+with average 44; this matrix occurs only once
+[4555][4555]
+with average 4.754.75; this matrix also occurs only once
+[4][4]
+with average 44; we find this matrix twice in AA
+[5][5]
+with average 55; we find this matrix 33 times in AA
+
+
+Author:
+5★shaanknight
+Editorial:
+https://discuss.codechef.com/problems/KAVGMAT
+Tags:
+
+               
+                 april21, binary-search, easy, shaanknight, two-pointers
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1817
+Date Added:
+28-02-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

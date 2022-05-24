@@ -1,0 +1,75 @@
+
+Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+On each of the following NN days (numbered 11 through NN), Chef is planning to cook either pizza or broccoli. He wrote down a string AA with length NN, where for each valid ii, if the character AiAi is '1', then he will cook pizza on the ii-th day, while if AiAi is '0', he will cook broccoli on this day.
+Chefu, his son, loves pizza but hates broccoli ― just like most kids. He wants to select a substring of AA with length KK and change each character '0' in this substring to '1'. Afterwards, let's define pizza time as the maximum number of consecutive days where Chef will cook pizza. Find the maximum pizza time Chefu can achieve.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains two space-separated integers NN and KK. 
+The second line contains a string AA with length NN.
+
+Output
+For each test case, print a single line containing one integer ― the maximum pizza time.
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤K≤N≤1051≤K≤N≤105
+AA contains only characters '0' and '1'
+the sum of NN over all test cases does not exceed 106106
+
+Subtasks
+Subtask #1 (50 points):
+
+N≤103N≤103
+the sum of NN over all test cases does not exceed 104104
+
+Subtask #2 (50 points): original constraints
+
+                        Sample Input 1
+                        
+
+2
+13 2
+0101110000101
+6 3
+100001
+
+                        Sample Output 1
+                        
+
+5
+4
+Explanation
+Example case 1: Chefu can choose the substring A[2,3]A[2,3] = "10", and change the third character of AA to '1'. Then, the pizza time is 55 days: from day 22 to day 66.
+Example case 2: Chefu can choose the substring A[2,4]A[2,4] = "000". Then, the pizza time is 44 days: from day 11 to day 44.
+
+Author:
+6★kingofnumbers
+Editorial:
+https://discuss.codechef.com/problems/PIBRO
+Tags:
+
+               
+                 String, Sliding Window, Two pointers
+                 
+                     
+                     Data Structures, Algorithms, Greedy, Simple Algos
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2000
+Date Added:
+28-11-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

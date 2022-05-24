@@ -1,0 +1,71 @@
+
+Chef has a binary string SS of length NN. He wonders if it is possible to divide SS into exactly KK non-empty substrings such that each SiSi belongs to exactly one substring and the XORXOR of each substring is the same. Can you help Chef to determine if it is possible to do so?
+Note: XORXOR of substring SL⋯RSL⋯R is defined as: XOR(SL⋯R)=SL⊕SL+1⊕⋯⊕SRXOR(SL⋯R)=SL⊕SL+1⊕⋯⊕SR.
+Here, ⊕⊕ denotes the bitwise XOR operation.
+Input Format
+
+The first line contains a single integer TT - the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers NN and KK - the length of the binary string SS and the number of substrings in which SS has to be divided.
+The second line of each test case contains a binary string SS of length NN containing 00s and 11s only.
+
+Output Format
+For each test case, output YES if SS can be divided into KK substrings such that XORXOR of each substring is the same. Otherwise, output NO.
+You may print each character of YES and NO in uppercase or lowercase (for example, yes, yEs, Yes will be considered identical).
+Constraints
+
+1≤T≤1051≤T≤105
+1≤K≤N≤1051≤K≤N≤105
+Sum of NN over all test cases does not exceed 2⋅1052⋅105
+                        Sample Input 1
+                        
+
+4
+3 2
+111
+5 3
+01100
+8 3
+01001111
+6 2
+000100
+
+                        Sample Output 1
+                        
+
+NO
+YES
+YES
+NO
+Explanation
+Test case 1: It can be proven that there is no way to divide S=111S=111 into K=2K=2 substrings such that XORXOR of each substring is the same.
+Test case 2: One of the possible ways of dividing SS is: 0–0_ 11–––11_ 00–––00_. Here XORXOR of each substring is 00.
+Test case 3: One of the possible ways of dividing SS is: 01–––01_ 001––––001_ 111––––111_. Here XORXOR of each substring is 11.
+Test case 4: It can be proven that there is no way to divide S=000100S=000100 into K=2K=2 substrings such that XORXOR of each substring is the same.
+
+Author:
+6★jeevanjyot
+Editorial:
+https://discuss.codechef.com/problems/BSXOR
+Tags:
+
+               
+                 jeevanjyot, simple, start34, strings, xor
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1943
+Date Added:
+9-04-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

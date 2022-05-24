@@ -1,0 +1,101 @@
+
+Jiraiya, one of the Konohagakure’s Sanin, is out for a world tour for MM months with his disciple Naruto Uzumaki, in search of knowledge that would help his friends. 
+On his journey, he discovers a fact SS (a string) every month. Also, he makes a list of several ladies who can help him in his important research for that month. But, he can meet exactly one of them at the end of month. To select the one, he first calculates the score for each lady in his list. He defines score for each lady based on her name as:
+“Total number of subsequences of fact SS, which are anagrams of the name, modulo 998244353”
+Jiraiya meets the lady with the highest score. If there are more than one ladies with the highest score, he meets the one whose name comes first in his list. If all names have score 0, then he cannot meet anyone.
+Naruto knows that this task will make his master, Jiraiya, spend too much time on calculations. So, he wants to help his master by writing a program which can do the above task quickly, so that his master can spend more time on his training. He wants the program to calculate the score for each lady in Jiraiya’s list, and finally print the result, i.e. the name of the lady whom Jiraiya will meet. If Jiraiya cannot meet anyone, the result should be ”No Research This Month” (without quotes). Since Naruto is not good at coding, he wants your team’s help to code this out. 
+Note: 
+
+A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements. Two subsequences are considered different if the positions of deleted elements (in the original string) are different for both the subsequences (Even if these two subsequences look similar). For Example: If abb is the original string, then the subsequences ab and ab will be considered different if they represent the positions {1,2} and {1,3} in the original string respectively.
+An anagram of a string is any rearrangement of that string. For example, for the sting abb, these strings are anagrams: abb, bab, bba.
+
+Input
+
+First line contains M, the number of  months. Each month is described as follows:
+First line contains a string S, representing the fact discovered in the month.
+Second line contains an integer N denoting the total number of names in Jiraiya’s list for the month. N more lines follow.
+ith line contains a string namei, i.e. the ith name in Jiraiya’s list. (for 1≤i≤N) 
+
+Output
+For each month, print N+1 lines:
+
+ith line (for 1≤i≤N) should contain a single integer denoting the score of ith lady in Jiraiya’s list.
+(N+1)th line should contain the result as described in the problem statement.
+
+Constraints
+
+1≤M≤5
+1≤|S|≤105
+1≤N≤20
+1≤|namei|≤|S|
+S and namei contain lowercase English alphabets only.
+
+Sample Input
+3
+doyouknowvegetahasatail
+3
+kylie
+disha
+tsunade
+twentytwentyisalmostdone
+2
+lordfifth
+tsunade
+gokuisunbeatable
+1
+kushina
+
+Sample Output
+2
+4
+16
+tsunade
+0
+0
+No Research This Month
+0
+No Research This Month
+
+Explanation
+1st Month:
+
+For kylie, these 2 subsequences are anagrams:
+ykeil (here e is from position 10).
+ykeil (here e is from position 12).
+Hence the score is 2mod998244353=2
+Similarly, for disha, 4 subsequences are anagrams, so the score is 4mod998244353=4.
+And, for tsunade, 16 subsequences are anagrams, so the score is 16mod998244353=16.
+Out of all ladies, tsunade has a maximum score, so Jiraya gets to meet tsunade this month.
+
+2nd Month:
+Both ladies have a score of 0. So Jiraya doesn’t get to meet anyone.
+3rd Month:
+No anagram is possible for kushina, so her score is 0.
+
+Author:
+5★mayureshpatle
+Editorial:
+https://discuss.codechef.com/problems/CMX1P03
+Tags:
+
+               
+                 anagram, combinatorics, comx2020, counting-sort, easy, mayureshpatle, modular-arith, modular-inv
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-08-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

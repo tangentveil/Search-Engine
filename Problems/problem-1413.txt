@@ -1,0 +1,64 @@
+
+Mayank and Rachit are best friends. They both are good programmers as well. They love programming together because if one of them gets stuck on some problems other can help. But these days Mayank is quite busy as his exams are approaching. So, Rachit has to tackle the problems alone. While practicing Rachit encounters an interesting problem which he was unable to solve efficiently. So, he asked Mayank for help.
+Problem as stated by Rachit :
+Given an array of N elements, Q queries need to be processed over this array. A query can be of any of the following three types:
+Type 0: u v
+Type 1: u v
+Type 2: l r c
+Explanation:
+for query Type 0: add v to the uth element of the array
+for query Type 1: replace uth element of the array by v
+for query Type 2: count the number of numbers which have c distinct digits between l to r, both inclusive. 
+Mayank likes the problem very much and wants to solve it. But being super busy with his exams, he has no time to help Rachit . Also, he can’t let Rachit feel helpless with any problem. So can you please help Rachit and save their friendship?
+NOTE: Value of an array element never exceeds the range of 64bit integer (10^18).
+INPUT FORMAT:-
+First line of the input contains a single integer N denoting the number of elements in the array. Next line of the input contains N space separated integers. Third line contains a single integer Q denoting the number of queries to be processed over the array. Next Q lines of input contain Q queries (one query per line).
+OUTPUT FORMAT:-
+for each query of type 2 print the desired answer.
+CONSTRAINTS:-
+1≤ Q,N ≤10^5
+1≤ A[i] ≤10^15
+1≤ v ≤10^15
+1≤ u,l,r ≤N
+SAMPLE INPUT/OUTPUT:-
+INPUT 1:-
+5
+1 2 3 4 5
+5
+2 1 5 1
+1 1 33
+2 1 5 1
+0 1 1 
+2 1 5 1
+OUTPUT 1:-
+5
+5
+4
+
+Author:
+3★manishdear11
+Editorial:
+https://discuss.codechef.com/problems/CM1906
+Tags:
+
+               
+                 comy2019, manishdear11, manishdear11, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+12-09-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

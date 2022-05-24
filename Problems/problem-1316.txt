@@ -1,0 +1,74 @@
+
+Chef has a list of scores of NN students [S1,S2,...SN][S1,S2,...SN] of IIIT Bhubaneswar where ii in SiSi represents the ID of the corresponding student. Chef wants you to perform two types of operations:
+
+11 DD MM
+Update the score of student with ID DD to MM.
+22 LL RR
+Find the maximum value of SameMarkDistanceSameMarkDistance in the range [SL,...SR][SL,...SR] (both inclusive) and print the score having maximum possible distance, where SameMarkDistanceSameMarkDistance is the difference between the IDs of the students having same score.
+
+NOTE: If two Marks have equal SameMarkDistanceSameMarkDistance, then print the minimum number of marks.
+Input:
+
+First line of contains two integers NN and QQ, the number of students and the number of operations Chef wants you to perform.
+The second line contains NN space-separated integers S1,S2,...,SNS1,S2,...,SN the scores of students with id 1,2,....N1,2,....N.
+Then QQ lines follow, each of these lines describes one query in the following format:
+11 DD MM for a query of the first type
+22 LL RR:  for a query of the second type
+
+Output:
+For each query of the second type, print a single line containing one integer — The marks having maximum SameMarkDistanceSameMarkDistance. 
+Constraints:
+
+1≤N,Q≤1051≤N,Q≤105
+1≤Si≤501≤Si≤50
+
+Sample Input:
+5 6
+12 13 13 12 1
+2 1 3
+2 1 2
+2 1 5
+1 3 5
+1 1 5
+2 1 3
+
+Sample Output:
+13
+12
+12
+5
+
+Explanation:
+In first operation, from ID 11 to 33, score 1212 has maximum distance 00 (1−11−1) and mark 1313 has maximum distance 11 (3−23−2, as both ID 33 and ID 22 have same marks).
+In second operation, from ID 11 to 22, both mark 1212 and 1313 have distance 00. So, we will print the minimum among them, i.e. 1212.
+In third operation, from ID 11 to 55, mark 1212 has the maximum distance 33 (4−14−1).
+After performing 4th and 5th operation, the array becomes: [5,13,5,12,1][5,13,5,12,1].
+In last operation, the score 55 has maximum distance i.e. 22 (3−13−1).
+
+Author:
+4★subash1
+Editorial:
+https://discuss.codechef.com/problems/IIITBH
+Tags:
+
+               
+                 segment-tree, set, subash1
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+2-02-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

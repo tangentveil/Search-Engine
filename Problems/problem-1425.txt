@@ -1,0 +1,76 @@
+
+Ram ,being unemployed, has decided to open up a Phone Trading Shop! 
+Each phone has two parameters : price (P)(P) and speed (S)(S).
+Initially Ram has NN phones and you are given the list of the price and speed of each of the phones.
+MM customers will visit Ram's shop today and each of them will do the following:   
+
+Sell their current phone.
+Look for the cheapest phone having atleast 22 times more speed than the phone they currently sold.
+If they find such a phone then they will buy it or else they will not buy any phone and return empty handed.
+If there are multiple phones having same price , the customer will buy the one that has more speed.
+If there are multiple phones having same speed , the customer will buy the one that has less price.
+
+The customers come one after another and if a customer buys a phone then it won't be available for the next customer.
+The phone that the current customer sells will be available for the subsequent customers to buy.
+You are given the list of MM customers and their current phones parameters.
+For each customer tell what phone will they buy.    
+
+Input:
+
+First line of input will have an integer NN denoting the number of phones Ram initially has.
+Then NN lines follow each having 22 integers denoting the price and speed of the ithith phone ( 1≤i≤N1≤i≤N).
+The next line will have an integer MM denoting the number of customers. 
+Then MM lines follow each having 22 integers denoting the price and speed of phone of the current customer.
+Output:
+For each customer, print the parameters(price , speed) of the phone they decided to buy or else print -1 if they don't buy any phone.
+
+Constraints
+
+1≤N,M≤1051≤N,M≤105
+1≤P,S≤1051≤P,S≤105
+Sample Input:
+2
+4 4
+3 5
+2
+2 2
+3 3
+
+Sample Output:
+4 4
+-1
+
+EXPLANATION:
+Ram initially has only 22 phones in his shop , having parameters (4,4)(4,4) and (3,5)(3,5).
+The first customer will sell his phone having parameters (2,2)(2,2) and buy the phone (3,5)(3,5).
+Then Ram will have phones (4,4)(4,4) and (2,2)(2,2) in his shop.
+The second customer will sell his phone having parameters (3,3)(3,3) and search for a phone having speed atleast 66.
+But won't find such phone and will not buy anything.
+
+Author:
+5★pritishn
+Editorial:
+https://discuss.codechef.com/problems/TRADE2
+Tags:
+
+               
+                 ftcf2020, pritishn, pritishn, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+8-06-2020
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

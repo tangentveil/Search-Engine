@@ -1,0 +1,79 @@
+
+          
+            Given a tree of NN nodes rooted at 11, where each node i ∈ [1,N1,N] has a value AiAi associated with it.
+There are QQ queries given, and each query can be one of the following two types:
+11 XX YY => Increase the values of all nodes in the subtree of XX (including XX) by YY.
+22 XX => Find number of values in the subtree of XX (including XX) which are odd.
+
+P.S. - Problem was too hard to convert into a Chaat problem :(
+            
+                
+                    Input Format
+
+The first line contains two integers N,QN,Q, the size of the tree and number of queries.
+The next N−1N−1 lines contain a pair of integers U,VU,V, implying an edge exists between node UU and VV.
+The next line contains the array AA of NN integers, with AiAi being the value of node ii.
+The next QQ contain queries, either of the type 11 XX YY or 22 XX.
+
+Output Format
+For each query of type 22, output a single value on a new line, the number of nodes with odd values in the subtree of XX.
+Constraints
+
+1≤N,Q≤1051≤N,Q≤105
+1≤Ai≤1091≤Ai≤109
+1≤X≤N1≤X≤N
+1≤Y≤1091≤Y≤109
+                        Sample Input 1
+                        
+
+5 3
+1 2
+1 3
+2 4
+2 5
+1 3 4 6 6
+2 2
+1 2 3
+2 2
+
+                        Sample Output 1
+                        
+
+1
+2
+Explanation
+                    Initially, the subtree of 2 has values {3,6,6}, out of which only 3 is odd. 
+Now after increasing all values in subtree of 2 by 3, the values become {6,9,9} 
+Now, there are 2 odd values.
+                
+            
+        
+
+        
+Author:
+5★vishalnonsense
+Editorial:
+https://discuss.codechef.com/problems/CHAAT8
+Tags:
+
+               
+                 eulerian-tour, segment-tree, trees, vishalnonsense
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+9-10-2021
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

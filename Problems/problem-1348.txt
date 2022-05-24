@@ -1,0 +1,98 @@
+
+Read problem statements in Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+You are given an array AA consisting of NN integers. You have to answer QQ queries of the following two types:
+
+11 LL RR (R>L)(R>L) which asks you to find gcd(AL,lcm(AL+1,gcd(AL+2,...,((R−L)mod2==1?gcd(AL,lcm(AL+1,gcd(AL+2,...,((R−L)mod2==1? gcd(AR−1,AR):lcm(AR−1,AR))…)))gcd(AR−1,AR):lcm(AR−1,AR))…))).
+22 LL RR (R>L)(R>L) which asks you to find the same as above but lcmlcm swapped with gcdgcd and vice-versa.
+
+Here lcm(a,b)lcm(a,b) and gcd(a,b)gcd(a,b) denotes the least common multiple and greatest common divisor of two integers aa and bb respectively.
+Example: Consider the array AA = [2,4,8,16,32,64][2,4,8,16,32,64].
+
+Suppose a query is of the form 11 11 66, so it asks you to find:
+gcd(2,lcm(4,gcd(8,lcm(16,gcd(32,64)))))gcd(2,lcm(4,gcd(8,lcm(16,gcd(32,64))))). 
+Suppose a query is of the form 22 11 55, so it asks you to find:
+lcm(2,gcd(4,lcm(8,gcd(16,32))))lcm(2,gcd(4,lcm(8,gcd(16,32)))). 
+
+Note: Since input-output is large, prefer using fast input-output methods.
+Input Format
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+Each testcase contains Q+2Q+2 lines of input.
+The first line of each test case contains two space-separated integers, NN and QQ.
+The second line of each test case contains NN space-separated integers A1,A2,…,ANA1,A2,…,AN.
+QQ lines follow. For each valid ii, the ithith of these lines contains three space-separated integers Typei,Li,RiTypei,Li,Ri, denoting the type and parameters of the ithith query.
+
+Output Format
+For each query, output in a single line answer to the problem.
+Constraints
+
+1≤T≤31≤T≤3
+2≤N≤2⋅1052≤N≤2⋅105
+1≤Q≤2⋅1051≤Q≤2⋅105
+1≤Ai≤1091≤Ai≤109
+1≤Typei≤21≤Typei≤2
+1≤Li<Ri≤N1≤Li<Ri≤N
+The sum of NN over all test cases does not exceed 2⋅1052⋅105.
+The sum of QQ over all test cases does not exceed 2⋅1052⋅105.
+
+Subtasks
+Subtask #1 (10 points): 
+
+2≤N≤6302≤N≤630
+The sum of NN over all test cases does not exceed 630630.
+Time limit: 11 sec
+
+Subtask #2 (90 points): 
+
+Original constraints
+Time limit: 1.51.5 sec 
+                        Sample Input 1
+                        
+
+1
+6 3
+2 4 8 16 32 64
+1 1 6
+2 1 5
+1 5 6
+
+                        Sample Output 1
+                        
+
+2
+4
+32
+Explanation
+Test case 11: The answer for the first query is  =gcd(2,lcm(4,gcd(8,lcm(16,gcd(32,64)))))=gcd(2,lcm(4,gcd(8,lcm(16,gcd(32,64))))) == gcd(2,lcm(4,gcd(8,lcm(16,32))))gcd(2,lcm(4,gcd(8,lcm(16,32)))) = gcd(2,lcm(4,gcd(8,32)))gcd(2,lcm(4,gcd(8,32))) = gcd(2,lcm(4,8))gcd(2,lcm(4,8)) = gcd(2,8)gcd(2,8) = 22. 
+The answer for the second query is =lcm(2,gcd(4,lcm(8,gcd(16,32))))=lcm(2,gcd(4,lcm(8,gcd(16,32)))) = lcm(2,gcd(4,lcm(8,16)))lcm(2,gcd(4,lcm(8,16))) = lcm(2,gcd(4,16))lcm(2,gcd(4,16)) = lcm(2,4)lcm(2,4) = 44.
+
+Author:
+daanish_adm
+Editorial:
+https://discuss.codechef.com/problems/ALTLG
+Tags:
+
+               
+                 Lazy Propagation, GCD, LCM, Prime Divisors, Dynamic Programming, Sorting
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures, Segment Trees, Mathematics, Number Theory, Integer Factorisation, Divisors, Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+3111
+Date Added:
+30-07-2021
+Time Limit:
+1 - 1.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,73 @@
+
+
+You have N pairs of integers (Ai, Bi) defined by two arrays A1, A2, ..., AN and B1, B2, ..., BN.
+You have to handle Q queries of form (a, b). For each such query, find an index i such that Ai ≥ a and Bi ≥ b and the sum Ai - a + Bi - b is minimised. If multiple such indices exist, output the minimum index. Or, output -1 if no such index exists.
+
+Input
+
+The first line of the input contains two integers N and Q.
+
+The second and third line contain arrays A and B respectively.
+
+Each of the next Q lines contain a pair of integers (a, b) denoting the queries.
+
+Output
+
+For each query output the required answer in one line.
+
+Constraints
+
+1 ≤ N, Q  ≤ 105
+1 ≤ Ai, Bi, a, b ≤ 109
+
+Example
+Input:
+3 3
+1 3 2
+1 1 2
+1 1
+2 1
+5 5
+
+Output:
+1
+2
+-1
+Explanation
+
+Query 1: All indices satisfy the inequality criteria, but pair with index 1 gives minimum difference.
+Query 2: Indices 2 and 3 satisfy the inequality criteria, and both pairs give same difference. So, we choose the minimum index.
+Query 3: No index satisfies the inequality.
+
+Note:
+
+Large input files. Use scanf/print in C++.
+
+
+Author:
+blunderspride
+Editorial:
+https://discuss.codechef.com/problems/QPAIRS
+Tags:
+
+               
+                 bit-manipulation, blunderspride, ipc151b, medium, offline-query, segment-tree
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+30-09-2015
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

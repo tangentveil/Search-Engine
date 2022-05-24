@@ -1,0 +1,69 @@
+
+ 
+
+Fluffy the squirrel is playing a game with Flippy the bird. Flippy the bird thinks of an array of integers a. After that, he constructs a 2D array of integers b such that bi, j = ai or aj for all i, j. (You may learn about the or bitwise operator here : https://en.wikipedia.org/wiki/Bitwise_operation)
+
+However, to make the game more challenging, Flippy doesn't given Fluffy the entire array b. Instead, he leave some of the elements blank and give the remaining entries to Fluffy. Fluffy's job is to determine a possible array a that matches the information Flippy gives him. (i.e. the entries that were given to him can be obtained by the array a) Can you help him?
+
+ 
+Input
+
+The first line contains a single integer n, the number of elements in the array. The next n lines contains n integers each, denoting the value of bi, j. If the value is -1, it means that Flippy did not give the value of bi, j to Fluffy.
+
+ 
+Output
+Output n space-seperated integers, an array a denoting a possible array that matches the given matrix. It is guaranteed that a solution exists. If there are multiple solutions, you may output any of them.
+ 
+Constraints
+
+1 ≤ n ≤ 1000
+0 ≤ bi, j ≤ 231 - 1
+
+Subtasks
+
+Subtask 1 (6 points) : 1 ≤ n ≤ 20, 0 ≤ bi, j ≤ 1
+Subtask 2 (7 points) : 0 ≤ bi, j ≤ 1
+Subtask 3 (87 points) : Original Constraints
+
+ 
+Example
+Input:
+3
+-1 7 -1
+-1 -1 6
+-1 -1 4
+
+Output:
+7 6 4
+ 
+Explanation
+Example case. It can be easily checked that this is one of the possible solutions. Note that 3 6 4 is also a possible solution.
+
+
+Author:
+6★zscoder
+Editorial:
+https://discuss.codechef.com/problems/MCO16501
+Tags:
+
+               
+                 greedy, zscoder
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+22-11-2016
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, CPP14, PYTH, PYP3
+
+Submit

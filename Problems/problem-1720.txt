@@ -1,0 +1,68 @@
+
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+Given N, count how many permutations of [1, 2, 3, ..., N] satisfy the following property.
+Let P1, P2, ..., PN denote the permutation. The property we want to satisfy is that there exists an i between 2 and n-1 (inclusive) such that
+Pj > Pj + 1  ∀    i ≤ j ≤ N - 1.
+Pj > Pj - 1  ∀    2 ≤ j ≤ i.
+Input
+First line contains T, the number of test cases. Each test case consists of N in one line.
+Output
+For each test case, output the answer modulo 109+7.
+Constraints
+1 ≤ T ≤ 100
+1 ≤ N ≤ 109
+Subtasks
+Subtask #1(40 points): 1 ≤ N ≤ 1000
+Subtask #2(60 points): original constraints
+                        Sample Input 1
+                        
+
+2
+2
+3
+
+                        Sample Output 1
+                        
+
+0
+2
+Explanation
+
+Test case 1:
+No permutation satisfies.
+Test case 2:
+Permutations [1, 3, 2] and [2, 3, 1] satisfy the property.
+
+
+Author:
+4★darkshadows
+Tester:
+6★xcwgf666
+Editorial:
+https://discuss.codechef.com/problems/CPERM
+Tags:
+
+               
+                 Modular Exponentiation
+                 
+                     
+                     Mathematics, Modular Arithmetic
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1650
+Date Added:
+18-04-2014
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, PIKE, SCM qobi, ST, NEM
+
+Submit

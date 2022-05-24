@@ -1,0 +1,66 @@
+
+Read problems statements in Hindi, Mandarin Chinese, Russian, Vietnamese and Bengali as well.
+Hussain really likes problems that involve summation over X, where X can be subsets, paths in a tree, intervals of numbers etc.
+You are given two integer sequences A1,A2,A3,…,ANA1,A2,A3,…,AN and B1,B2,B3,…,BNB1,B2,B3,…,BN. Consider an arbitrary non-empty subset SS of the set {1,2,…,N}{1,2,…,N}. Let's define the swagness of such a set as
+(max(p∈S)Ap)⋅(max(p∈S)Bp).(max(p∈S)Ap)⋅(max(p∈S)Bp).
+Hussain is interested in the sum of swagnesses of all possible sets SS. (Note that there are 2N−12N−1 such sets.) Since the sum may be very large, compute it modulo 109+7109+7.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains NN space-separated integers A1,A2,A3,…,ANA1,A2,A3,…,AN.
+The third line contains NN space-separated integers B1,B2,B3,…,BNB1,B2,B3,…,BN.
+
+Output
+For each test case, print a single line containing one integer — the total swagness modulo 109+7109+7.
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+2≤N≤2⋅1052≤N≤2⋅105
+1≤Ai,Bi≤1061≤Ai,Bi≤106 for each valid ii
+the sum of NN over all test cases does not exceed 106106
+                        Sample Input 1
+                        
+
+1
+3
+1 2 3
+6 5 4
+
+                        Sample Output 1
+                        
+
+91
+Explanation
+Example case 1: The answer is 1⋅6+2⋅5+3⋅4+2⋅6+3⋅6+3⋅5+3⋅61⋅6+2⋅5+3⋅4+2⋅6+3⋅6+3⋅5+3⋅6.
+
+Author:
+3★deadwing97
+Editorial:
+https://discuss.codechef.com/problems/SOSTD
+Tags:
+
+               
+                 Lazy Propagation
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures, Segment Trees
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2803
+Date Added:
+19-12-2018
+Time Limit:
+3 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

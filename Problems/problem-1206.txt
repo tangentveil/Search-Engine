@@ -1,0 +1,64 @@
+
+Ichika is the daughter of Kaneki and Touka. One day Kaneki and Touka
+went for a party and left Ichika at home. Ichika got tired and wanted to do
+a trick with her toys. She has NN toys and the weight of the iith toy is ii. Also
+being half ghoul she also has a superpower , which is she can make N−1N−1
+clones of that type of toy. So at last she has N2N2 toys.
+Now, she has infinite bags
+in a line. And she starts putting her 1st1st toy in the 1st1st  bag,then the clone
+of first toy in the 2nd2nd bag,such that all the clones lie in consecutive
+bags ,no bag has same toy and the iith toy is filled from iith bag (she starts
+filling first toy from first bag,second toy from second bag and so on).
+Being her caretaker you have to pick up all the bags. For that you need the
+weight of each bag also the number of bags should be minimum. Your task
+is to print the weight of all bags starting from 1st1st bag.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains of a single line of input, one integer NN. 
+
+Output:
+Print TT lines, each line should output weight of iith bag separated by space.
+Constraints
+
+1≤T≤10001≤T≤1000
+2≤N≤1062≤N≤106
+
+Sample Input:
+2
+1
+2
+
+Sample Output:
+1
+1 3 2
+
+EXPLANATION:
+
+Author:
+5★kaneki99
+Editorial:
+https://discuss.codechef.com/problems/IATOYS
+Tags:
+
+               
+                 ad-hoc, c-plus-plus, cnst2020, easy, implementation, kaneki99
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+21-10-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

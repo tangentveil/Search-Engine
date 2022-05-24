@@ -1,0 +1,72 @@
+
+ Read problems statements in Mandarin Chinese, Russian and Vietnamese as well.
+
+Watson has infinite supply of K different type of objects denoted by numbers 1 to K. He makes an array A of N objects, A1, A2, ..., AN using these objects.
+Now, he'll update this array Q times. In ith update, he'll replace an existing object in array with a new object of different type from 1 to K i.e. Axi = yi.
+After each update, he wants Sherlock to report the smallest size of a contiguous subarray which contains all types of objects i.e. smallest value of R - L + 1 such that number of distinct values in AL, AL + 1, ..., Ar is K. If no such subarray exists, Sherlock should output -1.
+
+Input
+
+First line contains N, K and Q denoting number of array elements, number of different types of objects and number of updates. Next line contains N space separated integers denoting the initial array A. ith of the next Q lines contains integers xi and yi, denoting the update parameters of the ith update.
+
+Output
+
+After each update, output an integer in one line denoting the smallest contiguous subarray size consisting of all types of objects. If no such subarray exists, output -1.
+
+Constraints
+
+1 ≤ N ≤ 105
+1 ≤ K ≤ 20
+1 ≤ Q ≤ 105
+1 ≤ xi ≤ N
+1 ≤ Ai, yi ≤ K
+                        Sample Input 1
+                        
+
+5 3 3
+1 1 1 1 1
+2 3
+5 2
+3 2
+
+                        Sample Output 1
+                        
+
+-1
+4
+3
+Explanation
+
+After first update, the array is [1, 3, 1, 1, 1]. No valid subarray exists at this stage.
+After next update, the array is [1, 3, 1, 1, 2]. Here you can observe that contiguous subarray [A2, A3, ..., A5] consists of all types of objects. 
+After next update, the array is [1, 3, 2, 1, 2]. Now, contiguous subarray [A1, A2, A3] is the smallest valid subarray.
+
+
+Author:
+4★darkshadows
+Tags:
+
+               
+                 Deque, Segment Trees, Bitmasking, Two pointers
+                 
+                     
+                     Data Structures, Queues, Advanced Data Structures, Advanced Tree Structures, Mathematics, Bit Manipulation, Algorithms, Simple Algos
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2936
+Date Added:
+5-10-2016
+Time Limit:
+3 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, PERL, SCALA, LUA, BASH, JS, LISP sbcl, PAS gpc, BF, CLOJ, D, CAML, FORT, ASM, FS, WSPC, LISP clisp, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

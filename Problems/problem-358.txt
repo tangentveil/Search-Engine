@@ -1,0 +1,86 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef works as a cook in a restaurant. Each morning, he has to drive down a straight road with length KK to reach the restaurant from his home. Let's describe this road using a coordinate XX; the position of Chef's home is X=0X=0 and the position of the restaurant is X=KX=K.
+The road has exactly two lanes (numbered 11 and 22), but there are NN obstacles (numbered 11 through NN) on it. For each valid ii, the ii-th obstacle blocks the lane LiLi at the position X=XiX=Xi and does not block the other lane.
+When driving, Chef cannot pass through an obstacle. He can switch lanes in zero time at any integer XX-coordinate which does not coincide with the XX-coordinate of any obstacle. However, whenever he switches lanes, he cannot switch again until driving for at least DD units of distance, and he can travel only in the direction of increasing XX. Chef can start driving in any lane he wants. He can not switch lanes at non-integer  XX-coordinate.
+Sometimes, it is impossible to reach the restaurant without stopping at an obstacle. Find the maximum possible distance Chef can travel before he has to reach an obstacle which is in the same lane as him. If he can avoid all obstacles and reach the restaurant, the answer is KK.
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains three space-separated integers NN, KK and DD.
+The second line contains NN space-separated integers X1,X2,…,XNX1,X2,…,XN.
+The third line contains NN space-separated integers L1,L2,…,LNL1,L2,…,LN.
+
+Output
+For each test case, print a single line containing one integer ― the maximum distance Chef can travel.
+Constraints
+
+1≤T≤1,0001≤T≤1,000
+1≤N≤1051≤N≤105
+2≤K≤1092≤K≤109
+1≤D≤1091≤D≤109
+1≤Xi≤K−11≤Xi≤K−1 for each valid ii
+Xi<Xi+1Xi<Xi+1 for each valid ii
+1≤Li≤21≤Li≤2 for each valid ii
+the sum of NN over all test cases does not exceed 106106
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+4
+2 10 20
+4 7
+1 2
+4 15 20
+4 6 9 13
+1 2 2 1
+5 10 1
+1 3 5 7 9
+1 2 1 2 1
+2 10 2
+4 5
+1 2
+
+                        Sample Output 1
+                        
+
+10
+13
+10
+5
+Explanation
+Example case 1: Chef can start in lane 22 and switch to lane 11 at the position X=6X=6, then continue until reaching the restaurant.
+Example case 2: Chef can start in lane 22 and switch to lane 11 at X=5X=5. However, he cannot avoid the obstacle at X=13X=13, because he has not driven for at least 2020 units since the last switch.
+Example case 3: Chef should start in lane 22 and then switch lanes at the positions X=2X=2, X=4X=4, X=6X=6 and X=8X=8. This way, he can reach the restaurant.
+Example case 4: Chef can start in lane 22 but he cannot escape the second obstacle at XX=5 since the first obstacle at XX=4 doesn't give enough space for Chef to switch lanes.
+
+Author:
+6★kingofnumbers
+Editorial:
+https://discuss.codechef.com/problems/TWOLANE
+Tags:
+
+               
+                 easy, greedy, kingofnumbers, ltime74
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2489
+Date Added:
+24-07-2019
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,87 @@
+
+There is a matrix of size N×MN×M. Two distinct cells of the matrix (x1,y1)(x1,y1) and (x2,y2)(x2,y2) are painted with colors 11 and 22 respectively.
+You have to paint the remaining cells of the matrix such that:
+
+No two adjacent cells are painted in same color. 
+Each color is an integer from 11 to 109109 (both inclusive).
+The number of distinct colors used is minimum (including 11 and 22). 
+
+Note: 
+
+You cannot repaint the cells (x1,y1)(x1,y1) and (x2,y2)(x2,y2).
+Two cells are adjacent if they share a common edge. Thus, for a cell (x,y)(x,y) there are 44 adjacent cells. The adjacent cells are (x,y+1),(x,y−1),(x+1,y),(x,y+1),(x,y−1),(x+1,y), and (x−1,y)(x−1,y).
+
+Input Format
+
+First line will contain TT, number of test cases. Then the test cases follow. Each test case consists of 33 lines.
+The first line contains two space seperated integers NN and MM denoting the dimensions of the matrix.
+The second line contains two integers x1x1 and y1y1, denoting the coordinates of cell which is painted 11.
+The third line contains two integers x2x2 and y2y2, denoting the coordinates of cell which is painted 22.
+
+Output Format
+For each test case, output NN lines, each consisting of MM space separated integers where jthjth integer in ithith line denotes the color of cell in ithith row and jthjth column of the matrix and must be in [1,109][1,109] inclusive.
+In case of multiple possible answers, output any.
+Constraints
+
+1≤T≤1001≤T≤100
+2≤N,M≤1052≤N,M≤105
+1≤x1,x2≤N1≤x1,x2≤N
+1≤y1,y2≤M1≤y1,y2≤M
+(x1,y1)≠(x2,y2)(x1,y1)≠(x2,y2)
+Sum of N⋅MN⋅M over all test cases does not exceed 105105.
+                        Sample Input 1
+                        
+
+2
+2 2
+1 1
+2 2
+2 3
+1 1
+1 2
+
+                        Sample Output 1
+                        
+
+1 4
+4 2
+1 2 1
+2 1 2
+Explanation
+Test Case 11:
+
+The initially painted cells are (1,1)(1,1) and (2,2)(2,2). One possible way is to paint the remaining cells with color 44. This way, no two adjacent cells have the same color.
+Note that, instead of color 44, we can use any other color in the range [1,109][1,109] except colors 11 and 22.
+The number of distinct colors used in this case is 33. It can be shown that the minimum number of distinct colors cannot be less than 33.
+Test Case 22:
+
+The initially painted cells are (1,1)(1,1) and (1,2)(1,2). One possible way is to paint the remaining cells as shown in the figure. This way, no two adjacent cells have the same color.
+The number of distinct colors used in this case is 22. It can be shown that the minimum number of distinct colors cannot be less than 22.
+
+Author:
+5★kugo
+Editorial:
+https://discuss.codechef.com/problems/MINCOLOR
+Tags:
+
+               
+                 ad-hoc, easy, kugo, start30
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+1713
+Date Added:
+12-03-2022
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

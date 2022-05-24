@@ -1,0 +1,82 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+Chef really admires Gordon Ramsay. Both of them have restaurant chains. While Chef's restaurant chain consists of NN facilities (numbered 11 through NN), Gordon Ramsay has only 33, and yet Gordon's restaurants are superior. Chef's marketing team has figured out how to take over the market. According to them, the problem is that the customers have too many restaurants to choose from and that Gordon's staff, by accident or by sheer marketing genius, has figured out the perfect distribution of restaurants. Therefore, Chef wants to close down N−3N−3 restaurants as fast as possible and create a restaurant structure similar to Gordon Ramsay's. For that, he needs your help!
+We know that Gordon Ramsay's restaurants are numbered 1,2,31,2,3, where restaurant 11 is the smallest and restaurant 33 is the largest. They are located on a line in the order p1,p2,p3p1,p2,p3, so the restaurants p1p1 and p2p2 are adjacent and the restaurants p2p2 and p3p3 are adjacent too.
+Chef's restaurant system is a tree with NN vertices, where each vertex is one of his precious restaurants. Just like with Gordon's restaurants, they are numbered in the order of increasing size. Chef wants to count the number of ordered triples of restaurants (a1,a2,a3)(a1,a2,a3) which he can keep open while satisfying the following rules:
+
+The restaurants a1a1, a2a2 and a3a3 are located on a line, i.e. a2a2 is on the shortest path between a1a1 and a3a3 (rebuilding the existing structure would be too costly).
+For each i,ji,j (1≤i,j≤31≤i,j≤3), if pi<pjpi<pj, then ai<ajai<aj.
+
+Help Chef and calculate the number of these triples!
+Input
+
+The first line of the input contains a single integer TT denoting the number of test cases. The description of TT test cases follows.
+The first line of each test case contains a single integer NN.
+The second line contains three space-separated integers p1p1, p2p2 and p3p3.
+Each of the next N−1N−1 lines contains two space-separated integers uu and vv denoting that the restaurants uu and vv are connected by an edge.
+
+Output
+For each test case, print a single line containing one integer ― the number of triples.
+Constraints
+
+1≤T≤201≤T≤20
+3≤N≤1053≤N≤105
+1≤u,v≤N1≤u,v≤N
+the graph of Chef's restaurants is a tree
+the sequence (p1,p2,p3)(p1,p2,p3) is a permutation of (1,2,3)(1,2,3)
+
+Subtasks
+Subtask #1 (5 points): 1≤N≤1001≤N≤100
+Subtask #2 (10 points): 1≤N≤1,0001≤N≤1,000
+Subtask #3 (10 points): the tree is a star graph
+Subtask #4 (15 points): the tree is a path graph
+Subtask #5 (30 points): the sum of NN over all test cases does not exceed 2⋅1052⋅105
+Subtask #6 (30 points): original constraints
+
+                        Sample Input 1
+                        
+
+1
+4
+2 1 3
+1 2
+2 3
+2 4
+
+                        Sample Output 1
+                        
+
+1
+Explanation
+Example case 1: The only valid triple is (3,2,4)(3,2,4).
+
+Author:
+5★sanroylozan
+Editorial:
+https://discuss.codechef.com/problems/CHGORAM
+Tags:
+
+               
+                 Trees, Policy Based Data Structures, Segment Trees, Fenwick Trees, DFS, Euler Tour
+                 
+                     
+                     Data Structures, Graphs, Advanced Data Structures, Advanced Tree Structures, Algorithms, Graph Algos, Traversals
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2536
+Date Added:
+19-06-2019
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

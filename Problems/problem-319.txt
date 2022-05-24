@@ -1,0 +1,85 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+You have NN piles of spoons numbered 1,2,…,N1,2,…,N. Initially the ii-th pile contains AiAi spoons. 
+In a single operation, you can do the following:
+
+Choose three integers p,q,xp,q,x satisfying 1≤p,q≤n1≤p,q≤n, p≠qp≠q, 1≤x≤Ap≤Aq1≤x≤Ap≤Aq. Shift xx spoons from pile pp to pile qq, that is, add xx to AqAq and subtract xx from ApAp.
+
+You want to shift all spoons to pile 11. It can be proved that, if it is possible to shift all spoons to pile 11, then there exists a sequence of ≤2n≤2n operations which achieves this objective. Either find such a sequence of ≤2n≤2n operations , or claim that no such sequence exists.
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow. 
+The first line of each testcase contains a single integer, NN.
+The second line contains NN space separated integers, A1,A2,…,ANA1,A2,…,AN.
+
+Output:
+For each testcase:
+
+If it is impossible to shift all spoons to the first pile, print −1−1.
+Else, first print the number of operations (say kk, which must be ≤2n≤2n) on a new line.Then, print kk lines. The ii-th line should contain the p,qp,q and xx you chose in the ii-th operation. If the triple (p,q,x)(p,q,x) doesn't satisfy 1≤p,q≤n,p≠q,1≤x≤Ap≤Aq1≤p,q≤n,p≠q,1≤x≤Ap≤Aq, you get a wrong answer verdict.
+
+Constraints
+
+1≤T≤1051≤T≤105
+2≤N≤1052≤N≤105
+The sum of NN over all testcases doesn't exceed 105105.
+1≤Ai≤10181≤Ai≤1018
+The total number of spoons doesn't exceed 10181018
+
+Subtasks
+Subtask #1 (100 points): original constraints
+
+                        Sample Input 1
+                        
+
+2
+    3
+    4 3 5
+    2
+    1 2
+
+                        Sample Output 1
+                        
+
+2
+    2 1 3
+    3 1 5
+    -1
+Explanation
+In the first example, A=[4,3,5]A=[4,3,5].
+
+First, choose p=2,q=1,x=3p=2,q=1,x=3. After this operation, A=[7,0,5]A=[7,0,5].
+Now, choose p=3,q=1,x=5p=3,q=1,x=5. Now, A=[12,0,0]A=[12,0,0] as required.
+
+In the second example, we will never be able to shift spoons from the second pile to the first. So, we print −1−1.
+
+Author:
+7★jtnydv25
+Editorial:
+https://discuss.codechef.com/problems/SHSPOONS
+Tags:
+
+               
+                 Sets, Greedy
+                 
+                     
+                     Data Structures, Algorithms
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+1-01-2021
+Time Limit:
+2 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

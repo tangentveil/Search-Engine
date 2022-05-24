@@ -1,0 +1,72 @@
+
+The college is divided into 2 teams, that are the Red team and Blue team.
+The division is done such that each team has the equal number of girls and boys. The red team has 2∗N2∗N members in total, while the Blue team has 2∗M2∗M members. 
+Both the teams were asked to stand in their separate queues.   
+A queue is called good when the number of girls before the boys are always greater than or equal to the number of boys for any position in the queue starting from the first position. 
+For example-:
+ One possible good queue for a team of 10 students is:
+GGBBGGBGBB
+Here G denotes Girl and B denotes Boy
+If A and B represents the number of ways for team Red and Blue to form good queues respectively, then find the value (A∗B)  % 1000000007 (109+7), where % denotes modulo operator.
+Input:
+
+First-line will contain a single integer T, number of test cases. Then the test cases follow. 
+Each of the next T line will contain 2 space-separated integers, N and M
+
+Output:
+Print a single integer value of (A∗B) modulo (109+7).
+Constraints
+
+1≤T≤105
+1≤N,M≤105
+
+Subtasks
+
+10 points : 1≤N,M≤19
+20 points:  1≤N,M≤30
+70 points :  Original Constraints 
+
+Sample Input:
+2
+1 2
+29 23
+Sample Output:
+2
+274620318
+Explanation:
+Test Case 1:
+We have n=1,m=2
+There is only 1 girl and only 1 boy in team Red, so the only way to make a good queue is 1 , i.e.   GB is good queue -> So A is 1
+(You may notice that B G is not a good queue)
+While there are 2 boys and 2 girls in team Blue, so the total number of ways of making a good queue are 2, i.e.
+GGBB , GBGB are good queues -> So B is 2
+(You may notice that G B B G , B G G B , B B G G ,… are not good queues)
+So , we finally output (1∗2) which is equals to 2.
+
+Author:
+4★jackiefer
+Editorial:
+https://discuss.codechef.com/problems/D2C107
+Tags:
+
+               
+                 combinatorics, d2co2020, jackiefer, medium, modular-arithmetic
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+20-12-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

@@ -1,0 +1,80 @@
+
+Chef is playing an easier variation of the board game ‘Risk’ with his friend Mike. There is an N∗MN∗M grid, depicting the world map. Each cell of the grid is either 11 or 00 where 11 denotes that there is land on this cell, while 00 denotes water. 
+In a turn, a player can capture an uncaptured cell that has land, and keep capturing neighbouring cells that share a side with it if they are on land. A cell once captured by a player can't be captured again by another player. The game continues till no uncaptured cell has land. Each player wants to be in control of as many cells of land as possible in total when the game finishes. Find the maximum number of cells of land that Chef can capture if he plays second, and both players play optimally. 
+Input:
+
+First line will contain TT, number of testcases. Then the testcases follow.
+Each testcase contains N+1N+1 lines of input.
+First line will contain 22 space separated integers NN and MM denoting the size of the grid. 
+Each of the next NN lines contains a binary string of length MM depicting the map. 
+
+Output:
+For each testcase, output in a single line answer to the problem.
+Constraints
+
+1≤N,M≤1051≤N,M≤105
+Each character in the grid is either 00 or 11
+There's atleast 11 land on the grid
+Sum of N∗MN∗M over all testcases is almost 106106.
+                        Sample Input 1
+                        
+
+3
+4 4
+1001
+0110
+0110
+1001
+2 2
+11
+11
+3 3
+100
+010
+001
+
+                        Sample Output 1
+                        
+
+2
+0
+1
+Explanation
+In test case 1, if both players play optimally, it takes 55 steps to finish the game:
+Step 1: First Mike chooses the cells {(2,2),(2,3),(3,2),(3,3)}{(2,2),(2,3),(3,2),(3,3)} adding 44 to his score.
+Step 2: Second Chef chooses the cell {(1,1)}{(1,1)} adding 11 to his score.
+Step 3: Next Mike chooses the cell {(1,4)}{(1,4)} adding 11 to his score.
+Step 4: Next Chef chooses the cell {(4,1)}{(4,1)} adding 11 to his score.
+Step 5: Finally, Mike chooses the cell {(4,4)}{(4,4)} adding 11 to his score.
+Hence total score of Chef is 1+1=21+1=2.
+
+Author:
+daanish_adm
+Editorial:
+https://discuss.codechef.com/problems/RISK
+Tags:
+
+               
+                 Greedy, BFS, Sorting
+                 
+                     
+                     Algorithms, Graph Algos, Traversals
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+2113
+Date Added:
+11-01-2021
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

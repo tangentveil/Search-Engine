@@ -1,0 +1,61 @@
+
+Read problem statements in Hindi, Bengali, Mandarin Chinese, Russian, and Vietnamese as well.
+A permutation p1,p2...pNp1,p2...pN of {1,2,...,N}{1,2,...,N} is beautiful if pi&pi+1pi&pi+1 is greater than 0 for every 1≤i<N1≤i<N . You are given an integer NN, and your task is toconstruct a beautiful permutation of length NN or determine that it's impossible.
+Note that a&ba&b denotes the bitwise AND of aa and bb.
+Input:
+First line will contain TT, number of testcases. Then the testcases follow. 
+Each testcase contains a single line of input, an integer NN.
+Output:
+For each test case output −1−1 if there is no suitable permutation of length NN, otherwise output NN integers in a single line which form a beautiful permutation. If there are multiple answers output any of them.
+Constraints
+
+1≤N≤1051≤N≤105
+The sum of NN over all test cases does not exceed 106106
+
+Subtasks
+
+50 points : 1≤N,T≤91≤N,T≤9
+50 points : Original constraints
+
+Sample Input:
+3
+4
+3
+5
+
+Sample Output:
+-1
+1 3 2
+2 3 1 5 4
+
+
+Author:
+3★abelyan
+Editorial:
+https://discuss.codechef.com/problems/POSAND
+Tags:
+
+               
+                 1D Arrays, Bitwise Operation, ad-hoc
+                 
+                     
+                     Data Structures, Arrays, Mathematics, Bit Manipulation, Algorithms, Constructive
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+N/A
+Date Added:
+25-09-2020
+Time Limit:
+1 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit

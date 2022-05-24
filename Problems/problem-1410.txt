@@ -1,0 +1,87 @@
+
+In the only movie theatre in Chefland, there is a single long row of MM seats. The seats are indexed 11 to MM from left to right. There is exactly one ticket for each individual seat. NN people, numbered 11 to NN, want to buy tickets for seats in this row.
+Person ii wants exactly SiSi number of tickets. They also have a strong preference for viewing angles. Specifically, person ii requires that each of their seats must be indexed between AiAi and BiBi. It is guaranteed that Ai≥Ai−1Ai≥Ai−1 for 2≤i≤N2≤i≤N.
+For each ii (1≤i≤N1≤i≤N), calculate the largest jj (i≤j≤Ni≤j≤N) such that all people from ii to jj can be accommodated together and given tickets according to their requirements.
+Input Format
+
+The first line contains TT - the number of test cases. Then the test cases follow.
+The first line of each test case contains two integers NN and MM - the number of people and seats respectively.
+NN lines then follow. The ii-th line contains integers AiAi, BiBi, and SiSi - the acceptable seat indices for person ii and the required number of tickets.
+
+Output Format
+For each test case, output a single line with NN space-separated integers. The ii-th of these integers should be the largest valid jj (i≤j≤Ni≤j≤N) such that all people from ii to jj can be accommodated together.
+Constraints
+
+1≤T≤5⋅1041≤T≤5⋅104
+2≤N≤2⋅1052≤N≤2⋅105
+1≤M≤1091≤M≤109
+1≤Ai≤Bi≤M1≤Ai≤Bi≤M
+Ai≥Ai−1Ai≥Ai−1 for 2≤i≤N2≤i≤N
+1≤Si≤Bi−Ai+11≤Si≤Bi−Ai+1
+Sum of NN over all test cases is at most 5⋅1055⋅105.
+                        Sample Input 1
+                        
+
+2
+7 10
+2 10 5
+3 10 5
+4 9 1
+5 9 5
+6 8 1
+7 8 1
+8 8 1
+3 10
+2 10 9
+2 9 1
+8 9 1
+
+                        Sample Output 1
+                        
+
+1 3 4 4 7 7 7
+1 3 3
+Explanation
+
+Test case 11:
+i=1i=1: It can be shown that person 22 cannot be accommodated with person 11. The maximum valid jj in this case is 11 itself.
+i=2i=2: We can accommodate persons 22 and 33 together, and more people after person 33 cannot be accommodated. One way to do this is by ensuring that the set of seats assigned to person 22 is {3,4,6,7,8}{3,4,6,7,8} and to person 33 is {5}{5}.
+i=3i=3: We can accommodate persons 33 and 44 together, and more people after person 44 cannot be accommodated. One way to do this is by ensuring that the set of seats assigned to person 33 is {4}{4} and to person 44 is {5,6,7,8,9}{5,6,7,8,9}.
+i=4i=4: We cannot accommodate more people after person 44.
+i=5i=5: We can accommodate all persons 55, 66, and 77 together. One way to do this is by ensuring that the set of seats assigned to person 55 is {6}{6}, to person 66 is {7}{7}, and to person 77 is {8}{8}.
+i=6i=6: We can accommodate persons 66 and 77 together. One way to do this is by ensuring that the set of seats assigned to person 66 is {7}{7} and to person 77 is {8}{8}.
+i=7i=7: The maximum jj possible is 77 itself.
+
+
+Author:
+6★shivensinha4
+Tester:
+7★aryanc403
+Editorial:
+https://discuss.codechef.com/problems/TCKTMACHINE
+Tags:
+
+               
+                 Lazy Propagation, Maximum Bipartite Matching
+                 
+                     
+                     Advanced Data Structures, Advanced Tree Structures, Segment Trees, Advanced Algorithms, Advanced Graph Algos, Flow Networks
+                 
+               
+             
+             
+
+                        Difficulty Rating:
+                    
+
+3204
+Date Added:
+16-12-2021
+Time Limit:
+2.5 secs
+Source Limit:
+50000 Bytes
+Languages:
+CPP17, PYTH 3.6, JAVA, C, CPP14, PYTH, PYP3, CS2, ADA, PYPY, TEXT, PAS fpc, NODEJS, RUBY, PHP, GO, HASK, TCL, kotlin, PERL, SCALA, LUA, BASH, JS, rust, LISP sbcl, PAS gpc, BF, CLOJ, R, D, CAML, swift, FORT, ASM, FS, WSPC, LISP clisp, SQL, SCM guile, PERL6, ERL, CLPS, PRLG, SQLQ, ICK, NICE, ICON, COB, SCM chicken, PIKE, SCM qobi, ST, NEM
+
+Submit
