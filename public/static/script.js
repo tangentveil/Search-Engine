@@ -10,7 +10,7 @@ const loading_div = document.querySelector('.loading');
 form.addEventListener('submit', async (e)=>{
     e.preventDefault();
     const question = questionElement.value;
-    for(let i = 0; i < 10; i++){
+    for(let i = 0; i < 5; i++){
         titles[i].innerHTML = ``;
         // urls[i].innerHTML = ``;
     }
@@ -19,17 +19,17 @@ form.addEventListener('submit', async (e)=>{
 
     // fetch
     try{
-        const result = await fetch(`/search?question=${question}`, { method : "GET", 
+        const res = await fetch(`/search?question=${question}`, { method : "GET", 
         });
-        const data = await result.json();
+        const data = await res.json();
 
         loading_div.innerHTML = ``;
 
 
         // titles.innerHTML = `<h3>${myJson.title}</h3>`;
         
-        for(let i = 0; i < 10; i++){
-            titles[i].innerHTML = `<h3>${data[i]}</h3>`;
+        for(let i = 0; i < 5; i++){
+            titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
             // urls[i].innerHTML = `<p>${data[i].url}</p>`;
         }
 
