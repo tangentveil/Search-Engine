@@ -29,7 +29,7 @@ form.addEventListener('submit', async (e)=>{
         // titles.innerHTML = `<h3>${myJson.title}</h3>`;
         
         for(let i = 0; i < 5; i++){
-            titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
+            titles[i].innerHTML = `<h3>${data[i]}</h3>`;
             // urls[i].innerHTML = `<p>${data[i].url}</p>`;
         }
 
