@@ -1,6 +1,10 @@
-# Dependencies for generating/publishing Python binaries.
-bob-builder==0.0.19
+###### Requirements without Version Specifiers ######
+nose
+nose-cov
+beautifulsoup4
 
-# Sub-dependencies of bob-builder.
-boto==2.49.0
-docopt==0.6.2
+###### Requirements with Version Specifiers ######
+docopt == 0.6.1             # Version Matching. Must be version 0.6.1
+keyring >= 4.1.1            # Minimum version 4.1.1
+coverage != 3.5             # Version Exclusion. Anything except version 3.5
+Mopidy-Dirble ~= 1.1        # Compatible release. Same as >= 1.1, == 1.*
