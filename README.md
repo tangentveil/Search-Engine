@@ -1,6 +1,6 @@
 # Search-Engine
 #step 1 : Web Scrapping
-**Here is the Python Code:** 
+**Here is the Python Code:**
 
 ```import time
 import os
@@ -76,10 +76,10 @@ for url in urls:
         txt = re.sub(r'\n\n\n', '\n', txt)
         # Removes the blank lines from the EOF
         txt = re.sub(r'\n*\Z', '', txt)
-        f.write(txt)```
-
-#Step 2: Preparing the Keywords.txt, sentence.txt, idf.txt, tf-df-matrix.txt and Magnitude.txt
-Python Code : 
+        f.write(txt)
+ ```       
+#Step 2: Preparing the Keywords.txt, sentence.txt, idf.txt, tf-df-matrix.txt and Magnitude.txt 
+**Python Code :** 
 
 ```import math
 import string
@@ -206,4 +206,5 @@ for i in (range(len(Magnitude))):
 
 f1 = open("./Magnitude.txt", 'w+')
 for i in Magnitude:
-  f1.write(str(i) + "\n")```
+  f1.write(str(i) + "\n")
+```
