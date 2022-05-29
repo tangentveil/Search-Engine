@@ -651,7 +651,10 @@ h1{
 **Move the files in their respective folders**
 ***Ignore the Some of the files which is shown in the screenshot***
 ![image](https://user-images.githubusercontent.com/59107332/170883742-c2d31256-7774-4be8-b437-f113a01b5711.png)
-
+#.gitignore
+```
+node_modules/
+```
 #open pacakge.json and modified
 ```
 {
@@ -672,3 +675,34 @@ h1{
 }
 ```
 # Deploying the Web App
+#Make a new git repository and push all the files.
+```
+git status
+```
+```
+git add .
+```
+```
+git commit -m 'first commit'
+```
+```
+git push
+```
+#Setting Up the Heroku
+[Click Here](https://devcenter.heroku.com/articles/heroku-cli)
+#After Heroku login
+```
+heroku login
+```
+#Add the keys
+```
+heroku add:keys
+```
+#create heroku app
+```
+heroku create APPNAME
+```
+#Push the data to heroku app
+```
+git push heroku main
+```
