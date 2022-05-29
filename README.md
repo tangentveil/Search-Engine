@@ -651,3 +651,24 @@ h1{
 **Move the files in their respective folders**
 ***Ignore the Some of the files which is shown in the screenshot***
 ![image](https://user-images.githubusercontent.com/59107332/170883742-c2d31256-7774-4be8-b437-f113a01b5711.png)
+
+#open pacakge.json and modified
+```
+{
+  "name": "search-engine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "stopword": "^2.0.2"
+  }
+}
+```
+# Deploying the Web App
