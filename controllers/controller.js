@@ -162,45 +162,13 @@ module.exports = (app) => {
 
             for (let i = 0; i < similarity.slice(0, 10).length; i++) {
             ques_no = similarity[i][1];
-            console.log(titles[ques_no]);
-            console.log(URLs[ques_no]);
+            // console.log(titles[ques_no]);
+            // console.log(URLs[ques_no]);
             arr.push({title:titles[ques_no],url:URLs[ques_no]});
             }
         }
 
         res.json(arr);
-    
-        // Tf-idf
-    
-        // const arr = [
-        //     {
-        //     title: 'asdassd',
-        //     url: 'google.com',
-        //     statement: "sum of the two element"
-        // },
-        //     {
-        //     title: 'asdassd',
-        //     url: 'google.com',
-        //     statement: "sum of the two element"
-        // },
-        //     {
-        //     title: 'asdassd',
-        //     url: 'google.com',
-        //     statement: "sum of the two element"
-        // },
-        //     {
-        //     title: 'asdassd',
-        //     url: 'google.com',
-        //     statement: "sum of the two element"
-        // },
-        //     {
-        //     title: 'asdassd',
-        //     url: 'google.com',
-        //     statement: "sum of the two element"
-        // }
-        // ];
-        
-        // res.json(arr);
 
         // var dataTosend;
         // var arr = [];
