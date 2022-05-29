@@ -59,10 +59,29 @@ h1{
 }
 
 .question{
-    /* display: flex; */
-    /* flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .loading{
     font-size: 2rem;
+}
+
+.url a{
+    text-decoration: none;
+    color: #989898;
+}
+
+.url a:link{
+    color: #fff;
+}
+
+.url a:active{
+    color: rgb(0, 247, 255);
+}
+
+.url a:hover{
+    color: #fff;
 }

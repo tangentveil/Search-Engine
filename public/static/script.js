@@ -26,11 +26,9 @@ form.addEventListener('submit', async (e)=>{
         loading_div.innerHTML = ``;
 
 
-        // titles.innerHTML = `<h3>${myJson.title}</h3>`;
-        
         for(let i = 0; i < 10; i++){
             titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
-            urls[i].innerHTML = `<a>${data[i].url}</a>`;
+            urls[i].innerHTML = `<a href="" target="_blank">${data[i].url}</a>`;
         }
 
     } catch(error){
