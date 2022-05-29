@@ -28,7 +28,7 @@ form.addEventListener('submit', async (e)=>{
 
         for(let i = 0; i < 10; i++){
             titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
-            urls[i].innerHTML = `<a href="" target="_blank">${data[i].url}</a>`;
+            urls[i].innerHTML = `<a href=${data[i].url} target="_blank">${data[i].url}</a>`;
         }
 
     } catch(error){

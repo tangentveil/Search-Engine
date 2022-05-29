@@ -19,21 +19,14 @@ module.exports = (app) => {
         let f1_titles = fs.readFileSync('./problem_titles.txt', {encoding:'utf8', flag:'r'});
         // titles = f1_titles.split('\n');
         titles = f1_titles.toString().replace(/\r\n/g,'\n').split('\n');
-        // console.log(titles.length);
-        // console.log(typeof(data));
 
 
         let f1_URLs = fs.readFileSync('./problem_urls.txt', {encoding:'utf8', flag:'r'});
         URLs = f1_URLs.toString().replace(/\r\n/g,'\n').split('\n');
-        // URLs = f1_URLs.split('\n');
-        // console.log(URLs.length);
-        // console.log(typeof(data));
 
 
         let f1_keywords = fs.readFileSync('./Keywords.txt', {encoding:'utf8', flag:'r'});
         keywords = f1_keywords.toString().replace(/\r\n/g,'\n').split('\n');
-        // console.log(keywords.length);
-
 
 
         let f1_sentence = fs.readFileSync('./sentence.txt', {encoding:'utf8', flag:'r'});
@@ -47,9 +40,6 @@ module.exports = (app) => {
             result = parseFloat(IDF_s[i]);
             IDF.push(result);
         }
-        // console.log(IDF);
-        // console.log(IDF.length);
-
 
         Importance_Matrix = [];
         let f1_tfidf = fs.readFileSync('./tf-idf.txt', {encoding:'utf8', flag:'r'});
@@ -70,14 +60,12 @@ module.exports = (app) => {
             Magnitude.push(result);
         }
 
-        // queryString = "Sum of two numbers Magnus tree Given Number diagram integers array string graph";
         queryString = question;
 
         queryString = queryString.toLowerCase();
         query_keywords = [];
         queryString = queryString.split(' ');
         filtered_sentence = removeStopwords(queryString);
-        // filtered_sentence = filtered_sentence.toLowerCase;
         filtered_sentence = filtered_sentence.sort();
         query_TF = [];
 
@@ -92,9 +80,6 @@ module.exports = (app) => {
 
 
         for (let j = 0; j < keywords.length; j++){
-            // cnt = filtered_sentence.join(' ').split(keywords[j]).length-1;
-            // cnt = (filtered_sentence.match(/keywords[j]/g) || length).length;
-
             cnt = search(filtered_sentence, keywords[j]);
 
             if (cnt === 0) {
@@ -176,21 +161,5 @@ module.exports = (app) => {
         }
 
         res.json(arr);
-
-        // var dataTosend;
-        // var arr = [];
-        // const python = spawn('python', ['tf-idf.py', question]);
-        // python.stdout.on('data', (data)=>{
-        //     console.log('Pipe data from python script...');
-        //     dataTosend = data.toString();
-        //     console.log(dataTosend);
-        //     arr.push(dataTosend + '\n');
-        //     // arr.title.push(dataTosend + '\n');
-        // });
-
-        // python.on('close', (code)=>{
-        //     console.log(`child process close all stdio with code ${code}`);
-        //     res.json(arr);
-        // });
     });
 };
