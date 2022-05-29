@@ -71,17 +71,13 @@ h1{
 
 .url a{
     text-decoration: none;
-    color: #989898;
+    color: #fff;
 }
 
 .url a:link{
-    color: #fff;
-}
-
-.url a:active{
-    color: rgb(0, 247, 255);
+    color: #989898;
 }
 
 .url a:hover{
-    color: #fff;
+    color: #3b4553;
 }
