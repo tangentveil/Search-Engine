@@ -414,6 +414,7 @@ module.exports = (app) => {
     });
 };
 ```
+# Search Engine Web Page
 #index.ejs
 ```
 <!DOCTYPE html>
@@ -646,3 +647,7 @@ h1{
     color: #fff;
 }
 ```
+**After preparing all the files**
+**Move the files in their respective folders**
+***Ignore the Some of the files which is shown in the screenshot***
+![image](https://user-images.githubusercontent.com/59107332/170883742-c2d31256-7774-4be8-b437-f113a01b5711.png)
