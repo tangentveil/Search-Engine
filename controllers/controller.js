@@ -14,7 +14,7 @@ module.exports = (app) => {
 
         var arr = [];
 
-        var IDF, Imp_Matrix, Importance_Matrix, Magnitude, URLs, cnt, filtered_sentence, keywords, queryString, query_Importance_Matrix, query_Magnitude, query_TF, ques_no, result, sentence, sim, similarity, tf_local, titles, toCheckKeyword;
+        var IDF, Imp_Matrix, Importance_Matrix, Magnitude, URLs, cnt, filtered_sentence, keywords, queryString, query_Importance_Matrix, query_Magnitude, query_TF, ques_no, result, sentence, sim, similarity, tf_local, titles, toCheckKeyword, corpus;
 
         let f1_titles = fs.readFileSync('./problem_titles.txt', {encoding:'utf8', flag:'r'});
         // titles = f1_titles.split('\n');
@@ -160,8 +160,15 @@ module.exports = (app) => {
 
             similarity = similarity.sort().reverse();
 
+            // copus = [];
+            // let f1_corpus = fs.readFileSync('./corpus.txt', {encoding:'utf8', flag:'r'});
+            // corpus = f1_corpus.toString().replace(/\r\n/g,'\n').split('\n');
+            // corpus = f1_corpus.split('\n');
+            // console.log(corpus[0]);
+
             for (let i = 0; i < similarity.slice(0, 10).length; i++) {
             ques_no = similarity[i][1];
+            // console.log(corpus[0][ques_no]);
             // console.log(titles[ques_no]);
             // console.log(URLs[ques_no]);
             arr.push({title:titles[ques_no],url:URLs[ques_no]});
