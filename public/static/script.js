@@ -10,9 +10,9 @@ const loading_div = document.querySelector('.loading');
 form.addEventListener('submit', async (e)=>{
     e.preventDefault();
     const question = questionElement.value;
-    for(let i = 0; i < 5; i++){
+    for(let i = 1; i <= 10; i++){
         titles[i].innerHTML = ``;
-        // urls[i].innerHTML = ``;
+        urls[i].innerHTML = ``;
     }
 
     loading_div.innerHTML = `Loading...`;
@@ -28,9 +28,9 @@ form.addEventListener('submit', async (e)=>{
 
         // titles.innerHTML = `<h3>${myJson.title}</h3>`;
         
-        for(let i = 0; i < 5; i++){
-            titles[i].innerHTML = `<h3>${data[i]}</h3>`;
-            // urls[i].innerHTML = `<p>${data[i].url}</p>`;
+        for(let i = 1; i <= 10; i++){
+            titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
+            urls[i].innerHTML = `<a>${data[i].url}</a>`;
         }
 
     } catch(error){
