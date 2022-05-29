@@ -1,6 +1,6 @@
 # Search-Engine
-step 1 : Web Scrapping
-Here is the Python Code: 
+#step 1 : Web Scrapping
+**Here is the Python Code:** 
 
 ```import time
 import os
@@ -78,7 +78,7 @@ for url in urls:
         txt = re.sub(r'\n*\Z', '', txt)
         f.write(txt)```
 
-Step 2: Preparing the Keywords.txt, sentence.txt, idf.txt, tf-df-matrix.txt and Magnitude.txt
+#Step 2: Preparing the Keywords.txt, sentence.txt, idf.txt, tf-df-matrix.txt and Magnitude.txt
 Python Code : 
 
 ```import math
