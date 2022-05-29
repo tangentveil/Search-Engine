@@ -2,7 +2,7 @@
 First step : Web Scrapping
 Here is the Code: 
 
-import time
+```import time
 import os
 import re
 
@@ -76,4 +76,4 @@ for url in urls:
         txt = re.sub(r'\n\n\n', '\n', txt)
         # Removes the blank lines from the EOF
         txt = re.sub(r'\n*\Z', '', txt)
-        f.write(txt)
+        f.write(txt)```
