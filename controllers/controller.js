@@ -14,7 +14,7 @@ module.exports = (app) => {
 
         var arr = [];
 
-        var IDF, Imp_Matrix, Importance_Matrix, Magnitude, URLs, cnt, doc_URL, doc_titles, docs, f1, f1_URL, filtered_sentence, keywords, queryString, query_Importance_Matrix, query_Magnitude, query_TF, query_keywords, ques_no, result, sentence, sim, similarity, tf_local, titles, toCheckKeyword;
+        var IDF, Imp_Matrix, Importance_Matrix, Magnitude, URLs, cnt, filtered_sentence, keywords, queryString, query_Importance_Matrix, query_Magnitude, query_TF, ques_no, result, sentence, sim, similarity, tf_local, titles, toCheckKeyword;
 
         let f1_titles = fs.readFileSync('./problem_titles.txt', {encoding:'utf8', flag:'r'});
         // titles = f1_titles.split('\n');
