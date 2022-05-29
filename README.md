@@ -676,6 +676,8 @@ node_modules/
 ```
 # Deploying the Web App
 #Make a new git repository and push all the files.
+![image](https://user-images.githubusercontent.com/59107332/170885365-9191137d-8a61-4d60-8861-bf5edf3d3569.png)
+
 ```
 git status
 ```
