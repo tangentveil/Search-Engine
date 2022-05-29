@@ -30,7 +30,7 @@ module.exports = (app) => {
         // console.log(typeof(data));
 
 
-        let f1_keywords = fs.readFileSync('./keywords.txt', {encoding:'utf8', flag:'r'});
+        let f1_keywords = fs.readFileSync('./Keywords.txt', {encoding:'utf8', flag:'r'});
         keywords = f1_keywords.toString().replace(/\r\n/g,'\n').split('\n');
         // console.log(keywords.length);
 
