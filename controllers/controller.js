@@ -145,10 +145,9 @@ module.exports = (app) => {
 
             similarity = similarity.sort().reverse();
 
-            // copus = [];
-            // let f1_corpus = fs.readFileSync('./corpus.txt', {encoding:'utf8', flag:'r'});
-            // corpus = f1_corpus.toString().replace(/\r\n/g,'\n').split('\n');
-            // corpus = f1_corpus.split('\n');
+            copus = [];
+            let f1_corpus = fs.readFileSync('./corpus.txt', {encoding:'utf8', flag:'r'});
+            corpus = f1_corpus.toString().replace(/\r\n/g,'\n').split('\n');
             // console.log(corpus[0]);
 
             for (let i = 0; i < similarity.slice(0, 10).length; i++) {
@@ -156,7 +155,12 @@ module.exports = (app) => {
             // console.log(corpus[0][ques_no]);
             // console.log(titles[ques_no]);
             // console.log(URLs[ques_no]);
-            arr.push({title:titles[ques_no],url:URLs[ques_no]});
+            arr.push(
+                {
+                    title:titles[ques_no],
+                    url:URLs[ques_no],
+                    question_body:corpus[ques_no]
+                });
             }
         }
 

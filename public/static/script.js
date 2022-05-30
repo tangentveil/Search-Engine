@@ -13,6 +13,7 @@ form.addEventListener('submit', async (e)=>{
     for(let i = 0; i < 10; i++){
         titles[i].innerHTML = ``;
         urls[i].innerHTML = ``;
+        question_body[i].innerHTML = ``;
     }
 
     loading_div.innerHTML = `Loading...`;
@@ -29,6 +30,7 @@ form.addEventListener('submit', async (e)=>{
         for(let i = 0; i < 10; i++){
             titles[i].innerHTML = `<h3>${data[i].title}</h3>`;
             urls[i].innerHTML = `<a href=${data[i].url} target="_blank">${data[i].url}</a>`;
+            question_body[i].innerHTML = `<p>${data[i].question_body}</p>`;
         }
 
     } catch(error){
