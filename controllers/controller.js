@@ -60,6 +60,7 @@ module.exports = (app) => {
             Magnitude.push(result);
         }
 
+        // Query String
         queryString = question;
 
         queryString = queryString.toLowerCase();
@@ -118,7 +119,12 @@ module.exports = (app) => {
 
 
         if (query_Magnitude[0] === 0.0) {
-            console.log("Not Found");
+            arr.push(
+                {
+                    title:0,
+                    url:0,
+                    question_body:0
+                });
         } else {
             similarity = [];
 
@@ -145,7 +151,7 @@ module.exports = (app) => {
 
             similarity = similarity.sort().reverse();
 
-            copus = [];
+            corpus = [];
             let f1_corpus = fs.readFileSync('./corpus.txt', {encoding:'utf8', flag:'r'});
             corpus = f1_corpus.toString().replace(/\r\n/g,'\n').split('\n');
             // console.log(corpus[0]);
