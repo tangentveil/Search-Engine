@@ -3,6 +3,8 @@ const fs = require('fs');
 const console = require('console');
 const { removeStopwords, eng, fra } = require('stopword');
 
+
+
 module.exports = (app) => {
     app.get('/', (req, res)=>{
         res.render('index');
@@ -63,6 +65,25 @@ module.exports = (app) => {
         // Query String
         queryString = question;
 
+        // var myHeaders = new Headers();
+        // myHeaders.append("apikey", "73438FFARQkkQLCFdGh6nTULCJD7ymrC");
+
+
+        // var requestOptions = {
+        // method: 'GET',
+        // redirect: 'follow',
+        // headers: myHeaders
+        // };
+
+        // q = queryString; 
+
+        // fetch(`https://api.apilayer.com/spell/spellchecker?q={${q}}`, requestOptions)
+        // .then(response => response.text())
+        // .then(result => console.log(result))
+        // .catch(error => console.log('error', error));
+
+        queryString = queryString.replace(/[^a-zA-Z ]/g, "");
+        queryString = queryString.replace(/[!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~]/g, "");
         queryString = queryString.toLowerCase();
         query_keywords = [];
         queryString = queryString.split(' ');
