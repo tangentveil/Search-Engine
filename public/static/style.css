@@ -4,6 +4,14 @@ body{
     color: #989898;
 }
 
+.searchbar{
+    display: flex;
+    margin: 6px 11px;
+    padding: 2px 2px;
+    flex-direction: column;
+    justify-content: center;
+}
+
 input[type="text"]{
     width: 60%;
     padding: 20px;
@@ -96,6 +104,8 @@ h2{
 .formtable{
     display: flex;
     flex-direction: column;
+    padding: 2px 10px;
+    margin-left: 81px;
 }
 
 * {
