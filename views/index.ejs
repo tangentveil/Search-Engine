@@ -5,17 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Engine</title>
+    <link rel="icon" href="/static/icon.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!-- Title icon -->
     <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-    <h1>Search Engine</h1>
+    <div class="header">
+        <div>
+            <img src="/static/icon.png" alt="">
+        </div>
+        <div>
+            <h1>Search Engine</h1>
+        </div>
+    </div>
     <h2>Data Structures and Algorithms Problems</h2>
+    
 
     <div class="formtable">
-        <form>
-            <input type="text" name="question" id="question" contenteditable="true" spellcheck="true" placeholder="Search... Array, DP, Binary Serach..." />
-            <input type="submit" id="submit" value="Ake Me:"/>
+        <!-- The form -->
+        <form class="example" action="action_page.php">
+            <input type="text" placeholder="Search... Array, DP, Binary Serach..." name="question" id="question" contenteditable="true" spellcheck="true">
+            <button type="submit"><i class="fa fa-search"></i></button>
         </form>
         <div>
             <p>Note : </p>

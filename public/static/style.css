@@ -14,17 +14,22 @@ input[type="text"]{
     color: #989898;
 }
 
-#submit{
-    padding: 20px;
-    width: 30%;
-    float: right;
-    background: #23282e;
-    border: 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-size: 20px;
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.header img{
+    height: 100px;
+    width: 100px;
+}
+
+.header h1{
+    padding: 10px;
+}
+
 
 ul{
     list-style-type: none;
@@ -92,3 +97,43 @@ h2{
     display: flex;
     flex-direction: column;
 }
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the search field */
+  /* form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  } */
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 30%;
+    height: 63px;
+    padding: 20px;
+    background: #23282e;
+    color: white;
+    font-size: 18px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    border: none;
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: #202831;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
