@@ -2,7 +2,8 @@
 #step 1 : Web Scrapping
 **Here is the Python Code:**
 
-```import time
+```python
+import time
 import os
 import re
 
@@ -81,7 +82,8 @@ for url in urls:
 #Step 2: Preparing the Keywords.txt, sentence.txt, idf.txt, tf-df-matrix.txt and Magnitude.txt 
 **Python Code :** 
 
-```import math
+```python
+import math
 import string
 import re
 
@@ -223,7 +225,7 @@ npm i ejs
 npm i stopword
 ```
 #Create app.js
-```
+```javascript
 const express = require('express');
 const ejs = require('ejs');
 const PORT = process.env.PORT || 3000;
@@ -247,7 +249,7 @@ app.listen(PORT, ()=>{
 ```
 # Search Engine Algorithm
 #controller.js
-```
+```javascript
 // const { spawn } = require('child_process');
 const fs = require('fs');
 const console = require('console');
@@ -416,7 +418,7 @@ module.exports = (app) => {
 ```
 # Search Engine Web Page
 #index.ejs
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -518,7 +520,7 @@ module.exports = (app) => {
 
 ```
 #script.js
-```
+```javascript
 const form = document.querySelector('form');
 const questionElement = form.question;
 
@@ -558,7 +560,7 @@ form.addEventListener('submit', async (e)=>{
 });
 ```
 #style.css
-```
+```CSS
 body{
     background: #0d1521;
     font-family: tahoma;
@@ -656,7 +658,7 @@ h1{
 node_modules/
 ```
 #open pacakge.json and modified
-```
+```json
 {
   "name": "search-engine",
   "version": "1.0.0",
